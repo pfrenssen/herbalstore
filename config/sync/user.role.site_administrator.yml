@@ -1,0 +1,20 @@
+uuid: 3ed8309e-ca5e-4cf2-91e5-0f31aeaa88a2
+langcode: en
+status: true
+dependencies: {  }
+id: site_administrator
+label: 'Site administrator'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access user profiles'
+  - 'administer nodes'
+  - 'administer users'
+  - 'change own username'
+  - 'delete all revisions'
+  - 'revert all revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'
