@@ -1,0 +1,22 @@
+uuid: cb7a4345-7905-4c6f-8c34-5d65416e8e84
+langcode: en
+status: true
+dependencies:
+  theme:
+    - barrio_herbalstore
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: barrio_herbalstore_local_tasks
+theme: barrio_herbalstore
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

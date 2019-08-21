@@ -1,0 +1,22 @@
+uuid: b231e8f6-c8af-415f-b2f1-9de13f43eaf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - barrio_herbalstore
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: barrio_herbalstore_messages
+theme: barrio_herbalstore
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

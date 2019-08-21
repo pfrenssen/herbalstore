@@ -1,0 +1,20 @@
+uuid: 1d645c93-c65e-442d-bb21-39bac7657848
+langcode: en
+status: true
+dependencies:
+  theme:
+    - barrio_herbalstore
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: barrio_herbalstore_local_actions
+theme: barrio_herbalstore
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 9352d0e4-d6d2-47ff-8256-f75439e7fd81
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - barrio_herbalstore
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: barrio_herbalstore_content
+theme: barrio_herbalstore
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

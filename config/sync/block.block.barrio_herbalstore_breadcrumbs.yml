@@ -1,0 +1,22 @@
+uuid: 9685ab08-9434-49be-be9f-f73529e6ddaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - barrio_herbalstore
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: barrio_herbalstore_breadcrumbs
+theme: barrio_herbalstore
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
