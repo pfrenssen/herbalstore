@@ -1,0 +1,27 @@
+uuid: 5d68e6d2-8b9f-4f16-b3fd-95570232318a
+langcode: en
+status: true
+dependencies: {  }
+id: site_administrator
+label: 'Site administrator'
+weight: 2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer nodes'
+  - 'administer users'
+  - 'bypass node access'
+  - 'change own username'
+  - 'create page content'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'revert all revisions'
+  - 'revert page revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view the administration theme'
