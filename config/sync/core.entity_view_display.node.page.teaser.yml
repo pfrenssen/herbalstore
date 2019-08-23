@@ -1,5 +1,5 @@
 uuid: 2930629d-bf91-409c-97f1-c7db3900b4c7
-langcode: en
+langcode: nl
 status: true
 dependencies:
   config:
@@ -27,4 +27,5 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  langcode: true

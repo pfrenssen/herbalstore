@@ -1,5 +1,5 @@
 uuid: 2c44bbe8-3261-4b1d-8c21-0ab718e8ef03
-langcode: en
+langcode: nl
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: nvrL9bFilzBvm2bjO9rQnFDpBA7dBBUjShSSt6NS-DU
 id: user_cancel_user_action
-label: 'Cancel the selected user account(s)'
+label: 'De geselecteerde gebruikersaccount(s) annuleren'
 type: user
 plugin: user_cancel_user_action
 configuration: {  }

@@ -1,11 +1,11 @@
 uuid: c40a80f2-c53a-466a-a50e-1fb243204733
-langcode: en
+langcode: nl
 status: true
 dependencies: {  }
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
-label: 'Authenticated user'
+label: 'Geverifieerde gebruiker'
 weight: 1
 is_admin: false
 permissions:

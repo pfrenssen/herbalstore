@@ -1,5 +1,5 @@
 uuid: c41fcc33-7d26-49ea-b3e0-54b5c22518a0
-langcode: en
+langcode: nl
 status: false
 dependencies:
   module:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: fVFfJv_GzBRE-wpRHbfD5a3VjnhbEOXG6lvRd3uaccY
 id: node.search_index
-label: 'Search index'
+label: Zoekindex
 targetEntityType: node
 cache: true

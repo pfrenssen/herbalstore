@@ -1,5 +1,5 @@
 uuid: fcfcc444-d4a2-4509-a01f-c04983cba4c1
-langcode: en
+langcode: nl
 status: true
 dependencies:
   config:
@@ -35,4 +35,5 @@ content:
     third_party_settings: {  }
     weight: -1
     region: content
-hidden: {  }
+hidden:
+  langcode: true

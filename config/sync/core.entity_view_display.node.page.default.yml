@@ -1,5 +1,5 @@
 uuid: ff490e1f-1f81-494b-bfbe-17c0270cfc52
-langcode: en
+langcode: nl
 status: true
 dependencies:
   config:
@@ -25,4 +25,5 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  langcode: true

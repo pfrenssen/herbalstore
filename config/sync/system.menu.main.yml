@@ -1,10 +1,10 @@
 uuid: e5940746-2ae4-4cee-8853-bd2ce893152c
-langcode: en
+langcode: nl
 status: true
 dependencies: {  }
 _core:
   default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
 id: main
-label: 'Main navigation'
-description: 'Site section links'
+label: Hoofdnavigatie
+description: 'Sectielinks van de site'
 locked: true
