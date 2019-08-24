@@ -23,6 +23,7 @@
         "drupal/bootstrap_barrio": "^4.22",
         "drupal/core": "^8.7.0",
         "drush/drush": "^9.0.0",
+        "vlucas/phpdotenv": "^3.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
         "zaporylie/composer-drupal-optimizations": "^1.0"
@@ -43,7 +44,8 @@
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php"
-        ]
+        ],
+        "files": ["load.environment.php"]
     },
     "scripts": {
         "pre-install-cmd": [
