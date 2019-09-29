@@ -16,6 +16,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/bootstrap_barrio": "^4.22",
         "drupal/core": "^8.7.0",
+        "drupal/page_manager": "^4.0@beta",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^3.4",
         "webflo/drupal-finder": "^1.0.0",

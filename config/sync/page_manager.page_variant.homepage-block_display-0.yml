@@ -1,0 +1,21 @@
+uuid: efcaea36-7ad4-4c56-bcd7-192da5c71286
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+id: homepage-block_display-0
+label: 'Block page'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 4d3ecf78-b840-46e7-a84d-197d45bcf23d
+  label: null
+  weight: 0
+  page_title: Home
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
