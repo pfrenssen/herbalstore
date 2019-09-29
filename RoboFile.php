@@ -21,7 +21,11 @@ class RoboFile extends Tasks
 
         $replace = ['${WEBROOT}' => __DIR__ . '/web'];
 
-        $environment_variables = ['BASE_URL', 'WEBDRIVER_HOST'];
+        $environment_variables = [
+            'BASE_URL',
+            'SCREENSHOTS_PATH',
+            'WEBDRIVER_HOST',
+        ];
         foreach ($environment_variables as $environment_variable) {
             $value = getenv($environment_variable);
             if ($value === FALSE) {

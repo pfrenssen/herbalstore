@@ -9,12 +9,6 @@
             "role": ""
         }
     ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        }
-    ],
     "require": {
         "php": ">=7.1",
         "composer/installers": "^1.2",
@@ -31,6 +25,7 @@
     "require-dev": {
         "composer/composer": "^1.9",
         "drupal/drupal-extension": "~4.0",
+        "lovers-of-behat/screenshot-extension": "dev-master",
         "webflo/drupal-core-require-dev": "^8.7.0"
     },
     "conflict": {
@@ -61,6 +56,16 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ]
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/LoversOfBehat/ScreenshotExtension.git"
+        }
+    ],
     "extra": {
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
