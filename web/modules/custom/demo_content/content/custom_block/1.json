@@ -1,0 +1,102 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/nl\/block\/1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/hero_image"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero_image\/field_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2019-09\/vitamins-supplements.jpeg"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "22e9dc90-25a0-4b32-9ed7-1caf35447cac"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 1
+        }
+    ],
+    "langcode": [
+        {
+            "value": "nl",
+            "lang": "nl"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "hero_image"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2019-09-30T20:48:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "nl"
+        }
+    ],
+    "info": [
+        {
+            "value": "Homepage hero image",
+            "lang": "nl"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-09-30T20:50:47+00:00",
+            "lang": "nl",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "reusable": [
+        {
+            "value": true
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "nl"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "nl"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero_image\/field_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2019-09\/vitamins-supplements.jpeg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c955ab45-1335-42eb-8fa7-419bfcb5575b"
+                    }
+                ]
+            }
+        ]
+    }
+}

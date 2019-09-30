@@ -1,0 +1,8 @@
+uuid: b34d7c88-577f-4a4c-8d4d-7b6f6f9eef40
+langcode: en
+status: true
+dependencies: {  }
+id: hero_image
+label: 'Hero image'
+revision: 0
+description: ''
