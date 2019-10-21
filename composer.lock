@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "afdd2bdb8d9314d1af3c1d161e856483",
+    "content-hash": "ac6307045dfc4da5fec38e77f3c9e3d4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1926,6 +1926,53 @@
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
             "time": "2019-03-30T10:41:38+00:00"
+        },
+        {
+            "name": "drupal/block_content_permissions",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_content_permissions.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_content_permissions-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "86d4ba3970c627de48938c886a8a60f8ba6c4fd0"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1566763981",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "joshua.roberson",
+                    "homepage": "https://www.drupal.org/user/2999235"
+                }
+            ],
+            "description": "Adds specific permissions for administering block content and block content types.",
+            "homepage": "https://www.drupal.org/project/block_content_permissions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_content_permissions"
+            }
         },
         {
             "name": "drupal/bootstrap_barrio",
@@ -6772,8 +6819,7 @@
             "homepage": "https://www.drupal.org/project/demo_content",
             "support": {
                 "source": "https://git.drupalcode.org/project/demo_content"
-            },
-            "time": "2017-02-11T10:08:40+00:00"
+            }
         },
         {
             "name": "drupal/drupal-driver",
@@ -9133,7 +9179,6 @@
     "stability-flags": {
         "drupal/page_manager": 10,
         "drupal/default_content": 15,
-        "drupal/demo_content": 20,
         "lovers-of-behat/screenshot-extension": 20
     },
     "prefer-stable": true,

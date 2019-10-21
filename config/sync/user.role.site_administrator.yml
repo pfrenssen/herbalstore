@@ -21,6 +21,7 @@ permissions:
   - 'edit own page content'
   - 'revert all revisions'
   - 'revert page revisions'
+  - 'update any hero_image block content'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view page revisions'
