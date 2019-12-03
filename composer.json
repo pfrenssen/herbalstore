@@ -18,7 +18,7 @@
         "drupal/bootstrap_barrio": "^4.22",
         "drupal/core": "^8.7.0",
         "drupal/page_manager": "^4.0@beta",
-        "drush/drush": "^9.0.0",
+        "drush/drush": "^10.0.2",
         "vlucas/phpdotenv": "^3.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
