@@ -26,7 +26,7 @@ services:
 
 install:
   - composer --verbose install
-  - ./vendor/bin/drush --existing-config --db-url=mysql://root@localhost/herbalstore --yes
+  - ./vendor/bin/drush site:install --existing-config --db-url=mysql://root@localhost/herbalstore --yes
 
 before_script:
   - ./vendor/bin/robo behat:generate-config
