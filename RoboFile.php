@@ -16,7 +16,7 @@ class RoboFile extends Tasks
      */
     public function behatGenerateConfig(): void
     {
-        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, ['.env', '.env.dist']);
         $dotenv->load();
 
         $replace = ['${WEBROOT}' => __DIR__ . '/web'];
