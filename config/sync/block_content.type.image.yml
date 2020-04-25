@@ -1,0 +1,8 @@
+uuid: 040b082f-efd0-43d0-b238-69a02c9e470d
+langcode: en
+status: true
+dependencies: {  }
+id: image
+label: Image
+revision: 0
+description: 'A block containing a single image.'

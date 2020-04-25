@@ -9,7 +9,7 @@ _core:
 id: barrio_herbalstore_local_tasks
 theme: barrio_herbalstore
 region: content
-weight: -40
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

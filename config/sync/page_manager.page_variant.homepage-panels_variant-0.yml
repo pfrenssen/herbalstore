@@ -1,0 +1,83 @@
+uuid: dd907611-c419-4dc5-b460-351d5980ee27
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - views.view.promoted_products
+  content:
+    - 'block_content:basic:1172c25c-b832-4087-8cd5-d38ec62b275c'
+    - 'block_content:hero_image:22e9dc90-25a0-4b32-9ed7-1caf35447cac'
+    - 'block_content:image:8a32c123-c0a2-4871-8b93-774bedc0800a'
+  module:
+    - block_content
+    - panels
+    - views
+id: homepage-panels_variant-0
+label: Homepage
+variant: panels_variant
+variant_settings:
+  blocks:
+    40cb57ff-0ffe-4143-9ea4-875b49e27ae1:
+      id: 'block_content:22e9dc90-25a0-4b32-9ed7-1caf35447cac'
+      label: 'Homepage hero image'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: top
+      weight: 0
+      uuid: 40cb57ff-0ffe-4143-9ea4-875b49e27ae1
+      context_mapping: {  }
+    f4ab0fe2-4323-43bd-a4da-21c494878c71:
+      id: 'block_content:1172c25c-b832-4087-8cd5-d38ec62b275c'
+      label: 'Homepage introduction text'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: first_above
+      weight: 0
+      uuid: f4ab0fe2-4323-43bd-a4da-21c494878c71
+      context_mapping: {  }
+    5f2e70d5-e51b-4985-aa52-7352e4aea638:
+      id: 'block_content:8a32c123-c0a2-4871-8b93-774bedc0800a'
+      label: 'Homepage introduction image'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: second_above
+      weight: -1
+      uuid: 5f2e70d5-e51b-4985-aa52-7352e4aea638
+      context_mapping: {  }
+    63785e63-ab56-40ff-9dc8-1a62ba699dbf:
+      id: 'views_block:promoted_products-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: -1
+      uuid: 63785e63-ab56-40ff-9dc8-1a62ba699dbf
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 202bce9f-8520-4aef-90f0-04e93f593991
+  label: null
+  weight: 0
+  layout: layout_twocol_bricks
+  layout_settings:
+    label: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: standard
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

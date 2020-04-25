@@ -1,0 +1,35 @@
+uuid: 7b0a5c39-cc6a-4346-bab9-47694250dd3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.promoted
+    - field.field.node.product.body
+    - field.field.node.product.field_category
+    - field.field.node.product.field_price
+    - field.field.node.product.field_product_image
+    - image.style.medium
+    - node.type.product
+  module:
+    - image
+    - user
+id: node.product.promoted
+targetEntityType: node
+bundle: product
+mode: promoted
+content:
+  field_product_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true
+  field_category: true
+  field_price: true
+  langcode: true
+  links: true
