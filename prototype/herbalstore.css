@@ -95,7 +95,11 @@ padding-bottom: 50px;
     padding-right: 0px;
 
     }
-
+/* PRODUCT OVERVIEW */
+.category-subcategory .breadcrumb {
+    background-color:transparent;
+    padding-top: 20px;
+}
 
 .footer {
   background-color: #c3b8a0;
