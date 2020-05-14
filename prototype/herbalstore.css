@@ -28,6 +28,18 @@ body {
   transform: translate(-50%, -50%);
   color: white;
 }
+/*ABOUT US OVERVIEW */
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.information-for-rob{
+padding-top: 50px;
+padding-bottom: 50px;
+}
 
 /* PRODUCTS OVERVIEW */
 .row.category-details-row{
