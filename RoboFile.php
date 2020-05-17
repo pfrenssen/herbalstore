@@ -45,4 +45,14 @@ class RoboFile extends Tasks {
       ->run();
   }
 
+  /**
+   * Enables development mode.
+   */
+  public function siteDevMode(): void {
+    $this->output()->writeln('$ cp ./web/sites/example.settings.local.php ./web/sites/default/settings.local.php');
+    $this->output()->writeln('$ cp ./web/sites/default/default.services.yml ./web/sites/default/services.yml');
+    $this->output()->writeln('Uncomment the section about settings.local.php in ./web/sites/default/settings.php');
+    $this->output()->writeln('Set `debug = true` in ./web/sites/default/services.yml');
+  }
+
 }
