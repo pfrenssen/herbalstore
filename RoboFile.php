@@ -7,40 +7,42 @@ use Robo\Tasks;
 /**
  * Robo task runner configuration for the Herbal Store project.
  */
-class RoboFile extends Tasks
-{
-    /**
-     * Generates the behat.yml configuration file.
-     *
-     * The `behat.yml.dist` file will be copied to `behat.yml` and the environment variables in it will be replaced.
-     */
-    public function behatGenerateConfig(): void
-    {
-        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, ['.env', '.env.dist']);
-        $dotenv->load();
+class RoboFile extends Tasks {
 
-        $replace = ['${WEBROOT}' => __DIR__ . '/web'];
+  /**
+   * Generates the behat.yml configuration file.
+   *
+   * The `behat.yml.dist` file will be copied to `behat.yml` and the
+   * environment variables in it will be replaced.
+   */
+  public function behatGenerateConfig(): void {
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, ['.env', '.env.dist']);
+    $dotenv->load();
 
-        $environment_variables = [
-            'BASE_URL',
-            'SCREENSHOTS_PATH',
-            'WEBDRIVER_HOST',
-        ];
-        foreach ($environment_variables as $environment_variable) {
-            $value = getenv($environment_variable);
-            if ($value === FALSE) {
-                throw new \InvalidArgumentException("Environment variable $environment_variable is not set.");
-            }
-            $replace['${' . $environment_variable . '}'] = $value;
-        }
+    $replace = ['${WEBROOT}' => __DIR__ . '/web'];
 
-        $this->taskFilesystemStack()
-            ->copy('behat.yml.dist', 'behat.yml', TRUE)
-            ->run();
-        $this->taskReplaceInFile('behat.yml')
-            ->from(array_keys($replace))
-            ->to(array_values($replace))
-            ->run();
+    $environment_variables = [
+      'BASE_URL',
+      'SCREENSHOTS_PATH',
+      'WEBDRIVER_HOST',
+    ];
+    foreach ($environment_variables as $environment_variable) {
+      $value = getenv($environment_variable);
+      if ($value === FALSE) {
+        throw new \InvalidArgumentException(
+          "Environment variable $environment_variable is not set."
+        );
+      }
+      $replace['${' . $environment_variable . '}'] = $value;
     }
+
+    $this->taskFilesystemStack()
+      ->copy('behat.yml.dist', 'behat.yml', TRUE)
+      ->run();
+    $this->taskReplaceInFile('behat.yml')
+      ->from(array_keys($replace))
+      ->to(array_values($replace))
+      ->run();
+  }
 
 }
