@@ -11,8 +11,8 @@ dependencies:
     - barrio_herbalstore
 id: howtoshopwithus
 theme: barrio_herbalstore
-region: content
-weight: 0
+region: featured_bottom
+weight: -4
 provider: null
 plugin: 'block_content:983fe87e-8679-4d1d-8f0a-04db308ac58f'
 settings:
