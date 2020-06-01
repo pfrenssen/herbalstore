@@ -67,13 +67,154 @@
  * @see html.html.twig
  */
 #}
+{% if page.header %}
+<div class="container">
+  <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+    {{ page.header }}
+
+  </nav>
+</div>
+{% endif %}
+<!-- End header -->
+<div class="container">
+  {{ page.featured_top }}
+  <div class="hero-image">
+    <div class="hero-text">
+      <h2>Gezondheidswinkel</h2>
+      <p>Health/beauty</p>
+    </div>
+  </div>
+  <article class="row single-post mt-5 no-gutters">
+    <div class="col-md-12 shop-info">
+      <div class="image-wrapper float-right pr-3 d-none d-md-block">
+        <img data-src="holder.js/250x250?theme=thumb" alt="Thumbnail [250x250]" style="width: 250px; height: 250px;"
+             src="./images/shop_view_image.png" data-holder-rendered="true">
+      </div>
+      <div class="single-post-content-wrapper p-3">
+        {{ page.content }}
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga minus reprehenderit asperiores
+        earum incidunt. Possimus maiores dolores voluptatum enim soluta omnis debitis quam ab nemo necessitatibus.
+        <br><br>
+        Phasellus congue tempor justo sed cursus. Quisque non quam turpis. Curabitur mollis luctus tempor. Aliquam sit
+        amet nisl vel arcu rutrum ornare at vel sem. Ut consequat scelerisque adipiscing.
+
+        Praesent pretium libero nec lectus elementum interdum. Ut at odio lorem. Sed posuere tempus libero, in cursus mi
+        accumsan id. Nulla facilisi. Maecenas varius leo id lacus pretium aliquet. Pellentesque ac erat elit.
+
+      </div>
+    </div>
+  </article>
+
+</div>
+<div class="container">
+  {{page.featured_bottom}}
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Zonnedauw Gallery</h1>
+  <hr class="mt-2 mb-5">
+  <div class="row text-center text-lg-left zonnedauw-gallerry">
+    <div class="col-md-3 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./images/zonderkabel.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-md-3 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./images/007.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-md-3 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./images/007.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-md-3 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./images/zonderkabel.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-md-3 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./images/007.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-md-3 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./images/zonderkabel.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-md-3 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./images/zonderkabel.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-md-3 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./images/007.jpg" alt="">
+      </a>
+    </div>
+
+  </div>
+  <footer class="footer">
+    {{page.footer}}
+    <div class="row">
+
+      <div class="col-3 footer-image-left d-none d-md-block">
+        <img src="./images/footer_image_left.png" alt="Herbs" width="100%">
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span> Hruvenstaat 66</span> Hasselt, Belgium</p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p> (+32)11 81 73 67</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> office@company.com</a></p>
+          </div>
+        </div>
+        <div class="social-media-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 d-none d-sm-block footer-image-right">
+        <img src="./images/footer_image_right.png" alt="Herbs"
+             width="100%">
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+
+
+
 <div class="container header-container">
   {% block head %}
   {% if page.secondary_menu or page.top_header or page.top_header_form %}
   {% if container_navbar %}
   <div class="container">
     {% endif %}
-    <nav
+    <nav class="nav"
       {{ navbar_top_attributes }}>
       {{ page.secondary_menu }}
       {{ page.top_header }}
@@ -109,27 +250,6 @@
     {% endif %}
   </nav>
   {% endblock %}
-  <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
-    <a href="#" class="navbar-brand d-none d-md-block">
-      <!-- Logo Image -->
-      <img src="./images/Logo.png" width="45" alt="Logo" class="d-inline-block align-middle mr-2">
-      <!-- Logo Text -->
-      <span class="text-uppercase font-weight-bold">Zonnedauw</span>
-    </a>
-
-    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-            class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-
-    <div id="navbarSupportedContent" class="collapse navbar-collapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
 </div>
 <div id="page-wrapper">
   <div id="page">
