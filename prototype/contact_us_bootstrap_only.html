@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="file:///home/veselka/Documents/websites/test/just_for_test/contact_us_bootstrap_only.css" type="text/css">
+    <link rel="stylesheet" href="./herbalstore.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,7 +16,7 @@
   <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
     <a href="#" class="navbar-brand d-none d-md-block">
       <!-- Logo Image -->
-      <img src="/home/veselka/Documents/websites/Zonnedaeuw/images/Logo.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+      <img src="./images/Logo.png" alt="Logo" class="d-inline-block align-middle mr-2" width="45">
       <!-- Logo Text -->
       <span class="text-uppercase font-weight-bold">Zonnedauw</span>
     </a>
@@ -32,10 +32,9 @@
       </ul>
     </div>
 </nav>
-</div>
-<div class="container">
-	<div class="row information-row">
-        <div class="col-sm">
+
+	<div class="row information-row" style="border: 1px solid gainsboro;background-color: white;margin-left: 0px;margin-right: 0px;">
+        <div class="col-sm" style="padding-top: 10px;padding-left: 30px;">
             <div class="address">
 		      <h5>Address:</h5>
 		          <ul class="list-unstyled">
@@ -68,8 +67,8 @@
 		          </ul>
 		    </div>
         </div>
-        <div class="col-sm">
-            <div class="open-hours">
+        <div class="col-sm" style="padding-top: 10px;padding-left: 30px;">
+            <div class="open-hours" style="">
 		      <h5>Open Hours:</h5>
 		          <ul class="list-unstyled">
 		              <li> Monday:</li>
@@ -82,50 +81,47 @@
 		          </ul>
 		    </div>
             </div>
-        <div class="col-sm">
+        <div class="col-sm" style="padding-top: 10px;">
             <div class="map-responsive col-md-6">
                 <div class="container-fluid">
                     <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" style="border:0" allowfullscreen="" width="600" height="450" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
        </div>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="card d-flex justify-content-center mx-auto my-3 p-5">
-            <h2>Get In Touch</h2>
+    <div class="row" style="margin-left: 0px;margin-right: 0px;">
+        <div style="margin-top: 50px;padding-top: 20px;padding-bottom: 20px;" class="col-12 card d-flex  ">
+            <h2>Get In Touch With Us</h2>
             <div class="form-row">
-                <div class="form-group col-md-6 first"> <label for="inputFirstName">FIRST NAME <span>*</span></label> <input type="text" class="form-control" id="inputFirstName" name="firstname" required>
+                <div class="form-group col-md-6 first" style="padding-top: 20px;"> <label for="inputFirstName">FIRST NAME <span>*</span></label> <input type="text" class="form-control" id="inputFirstName" name="firstname" required="">
                     <div id="fname_error" class="val_error"></div>
                 </div>
-                <div class="form-group col-md-6 first"> <label for="inputLastName">LAST NAME <span>*</span></label> <input type="text" class="form-control" id="inputLastName" name="lastname">
+                <div class="form-group col-md-6 first" style="padding-top: 20px;"> <label for="inputLastName">LAST NAME <span>*</span></label> <input type="text" class="form-control" id="inputLastName" name="lastname">
                     <div id="lname_error" class="val_error"></div>
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-6"> <label for="inputEmail">EMAIL <span>*</span></label> <input type="email" class="form-control" id="inputEmail" name="youremail">
+                <div class="form-group col-md-6" style="padding-top: 10px;"> <label for="inputEmail">EMAIL <span>*</span></label> <input type="email" class="form-control" id="inputEmail" name="youremail">
                     <div id="email_error" class="val_error"></div>
                 </div>
-                <div class="form-group col-md-6"> <label for="inputPhone">PHONE <span>*</span></label> <input type="text" class="form-control" id="inputPhone" name="yourphoneno">
+                <div class="form-group col-md-6" style="padding-top: 10px;"> <label for="inputPhone">PHONE <span>*</span></label> <input type="text" class="form-control" id="inputPhone" name="yourphoneno">
                     <div id="phone_error" class="val_error"></div>
                 </div>
             </div>
-            <div class="form-group mt-0"> <label for="exampleFormControlTextarea1">MESSAGE <span>*</span></label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="yourmessage"></textarea>
+            <div class="form-group mt-0" style="padding-top: 10px;"> <label for="exampleFormControlTextarea1">MESSAGE <span>*</span></label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="yourmessage"></textarea>
                 <div id="message_error" class="val_error"></div>
             </div>
-            <div class="form-button pt-4">
-                <button type="submit" class="btn btn-primary btn-block btn-lg" value="Register" name="register">
+            <div style="padding-left: 0px;padding-top: 10px;" class="form-button">
+                <button type="submit" value="Register" name="register" class="btn btn-primary">
                     <span>SEND MESSAGE</span></button>
             </div>
         </div>
-    </div>
   <footer class="footer">
     <div class="row">
       <div class="col-3 footer-image-left d-none d-md-block">
-        <img src="file:///home/veselka/Documents/websites/Zonnedaeuw/images/footer_flower_left_flip.png" alt="Herbs" width="100%">
+        <img src="./images/footer_image_left.png" alt="Herbs" width="100%">
       </div>
       <div class="col-12 col-sm-6">
         <div class="footer-center">
@@ -150,13 +146,12 @@
         </div>
       </div>
       <div class="col-6 col-md-3 d-none d-sm-block footer-image-right">
-        <img src="file:///home/veselka/Documents/websites/Zonnedaeuw/images/footer_flower_right_flip.png" alt="Herbs"
-             width="100%">
+        <img src="./images/footer_image_right.png" alt="Herbs" width="100%">
       </div>
     </div>
   </footer>
 </div>
-
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

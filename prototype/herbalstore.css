@@ -71,7 +71,14 @@ padding-bottom: 50px;
     background: #ccc;
     border: 1px solid #545b628c;
 }
+/* CONTACT OVERVIEW */
 
+.row .information-row}
+  border: 1px solid gainsboro;
+  background-color: white;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .container.footer{
     background-color: #c3b8a0;
     width: 100%;
