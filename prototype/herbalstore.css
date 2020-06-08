@@ -5,28 +5,27 @@ body {
 }
 /*HOME OVERVIEW */
 
-.hero-image{
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/home_main_image.png");
-
- /* Set a specific height */
-  width:100%;
-  height:500px;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+ .hero-image{
   position: relative;
+  margin-bottom: 2%;
+ }
+
+.img-fluid{
+  width: 100%;
+  height: auto;
 }
 
 .hero-text {
-  text-align: center;
+  margin: 0;
+  color:rgb(33, 37, 41);;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(33, 37, 41, 0.185);
+  font-size: 15px;
+ 
 }
 /*ABOUT US OVERVIEW */
 .avatar {
@@ -34,6 +33,10 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.img-thumbnail{
+  width: 15%;
 }
 
 .information-for-rob{
@@ -73,7 +76,7 @@ padding-bottom: 50px;
 }
 /* CONTACT OVERVIEW */
 
-.row .information-row}
+.row .information-row{
   border: 1px solid gainsboro;
   background-color: white;
   margin-left: 0px;
