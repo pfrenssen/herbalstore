@@ -1,0 +1,15 @@
+{%
+  set classes = [
+    'block',
+    'hero-image',
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% block content %}
+    {{ content }}
+    <div class="hero-text">
+      <h2>Gezondheidswinkel</h2>
+      <p>Health/beauty</p>
+    </div>
+  {% endblock %}
+</div>
