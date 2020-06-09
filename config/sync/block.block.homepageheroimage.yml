@@ -1,0 +1,31 @@
+uuid: f7022dba-e950-42f5-9e6d-ca131c1d5d0f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_image:22e9dc90-25a0-4b32-9ed7-1caf35447cac'
+  module:
+    - block_content
+    - system
+  theme:
+    - barrio_herbalstore
+id: homepageheroimage
+theme: barrio_herbalstore
+region: featured_top
+weight: 0
+provider: null
+plugin: 'block_content:22e9dc90-25a0-4b32-9ed7-1caf35447cac'
+settings:
+  id: 'block_content:22e9dc90-25a0-4b32-9ed7-1caf35447cac'
+  label: 'Homepage hero image'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
