@@ -3,3 +3,214 @@
  * Subtheme specific CSS.
  */
 
+body {
+  background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
+  color: #514B64;
+  min-height: 100vh;
+}
+/*HOME OVERVIEW */
+
+ .hero-image{
+  position: relative;
+  margin-bottom: 2%;
+ }
+
+.img-fluid{
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  margin: 0;
+  color:rgb(33, 37, 41);;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(33, 37, 41, 0.185);
+  font-size: 15px;
+
+}
+/*ABOUT US OVERVIEW */
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.img-thumbnail{
+  width: 15%;
+}
+
+.information-for-rob{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+/* PRODUCTS OVERVIEW */
+.row.category-details-row{
+    border: 1px solid #ccc;
+    padding-top: 15px;
+    padding-right: 15px;
+    background: white;
+}
+
+.product{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.products .card-footer {
+    text-align: center;
+}
+
+.row.pagination{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.col-sm-12.block{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #ccc;
+    border: 1px solid #545b628c;
+}
+/* CONTACT OVERVIEW */
+
+.row .information-row{
+  border: 1px solid gainsboro;
+  background-color: white;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.container.footer{
+    background-color: #c3b8a0;
+    width: 100%;
+    /* text-align: center; */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 50px;
+    margin-top: 50px;
+    transition: all .4s;
+}
+
+.col-lg-3.col-xs-12.left-img{
+    padding-left: 0px;
+    text-align: left;
+
+}
+
+  .col-lg-3.col-xs-12.img-right{
+    text-align: right;
+    padding-right: 0px;
+
+    }
+/* PRODUCT OVERVIEW */
+.category-subcategory .breadcrumb {
+    background-color:transparent;
+    padding-top: 20px;
+}
+
+.footer {
+  background-color: #c3b8a0;
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+  transition: all .4s;
+}
+
+
+/* footer left*/
+
+.footer .footer-left {
+  padding-right: 15px;
+}
+
+.footer .footer-center{
+  margin: 0 auto;
+  width: max-content;
+}
+
+.footer .social-media-icons{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer .social-media-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #3c3831;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #3c3831;
+  text-decoration: none;
+}
+
+.footer .footer-center i {
+    margin-left: 0;
+  }
+}
+
+.footer .footer-image-left{
+    text-align: left;
+}
+
+.footer .footer-image-right{
+    text-align: right;
+}
+
+.footer-left.footer-text-down{
+    text-align: center;
+}
