@@ -1,0 +1,11 @@
+herbal_2col_article_image:
+  label: Two column article with image
+  category: Barrio Herbalstore
+  template: layouts/herbal-2col-article-image
+  default_region: text
+  regions:
+    text:
+      label: Article text
+    image:
+      label: Image
+

@@ -7,7 +7,29 @@ dependencies:
     - field.field.block_content.image.field_block_image
     - image.style.medium
   module:
+    - ds
     - image
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: no_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_block_image
 id: block_content.image.default
 targetEntityType: block_content
 bundle: image
@@ -21,6 +43,6 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
+    region: ds_content
 hidden:
   langcode: true

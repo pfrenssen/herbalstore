@@ -18,7 +18,7 @@
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
         "drupal/ds": "^3.5",
-        "drupal/page_manager": "^4.0@beta",
+        "drupal/page_manager": "^4.0-beta6",
         "drupal/panels": "^4.4",
         "drush/drush": "^10.0.2",
         "vlucas/phpdotenv": "^5.0",

@@ -1,0 +1,14 @@
+{% if content %}
+	<article {{ attributes.addClass(['row', 'mt-5']) }}>
+    {% if content.text %}
+      <div {{ region_attributes.text.addClass(['p-0']) }}>
+        {{ content.text }}
+      </div>
+    {% endif %}
+    {% if content.image %}
+      <div {{ region_attributes.image.addClass(['pl-4', 'd-none', 'd-md-block']) }}>
+        {{ content.image }}
+      </div>
+    {% endif %}
+	</article>
+{% endif %}
