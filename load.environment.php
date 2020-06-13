@@ -6,10 +6,11 @@
  */
 
 use Dotenv\Dotenv;
-use Dotenv\Exception\InvalidPathException;
 
-/**
- * Load any .env file. See /.env.example.
- */
-$dotenv = Dotenv::createImmutable(__DIR__, ['.env', '.env.dist']);
-$dotenv->safeLoad();
+// Load environment variables.
+$dotenv = Dotenv::createImmutable(__DIR__, ['.env.dist', '.env'], FALSE);
+$dotenv->load();
+
+// Set dynamic environment variables.
+$_ENV['PROJECTROOT'] = __DIR__;
+$_ENV['WEBROOT'] = __DIR__ . '/web';

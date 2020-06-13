@@ -8,9 +8,10 @@
 /web/libraries/
 
 
-# Ignore files local to the current environment.
+# Ignore files specific to the current environment.
 /.env
 /behat.yml
+/drush/drush.yml
 
 # Ignore sensitive information
 /web/sites/*/settings.php
