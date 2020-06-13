@@ -6,11 +6,18 @@
 body {
   min-height: 100vh;
 }
-/*HOME OVERVIEW */
 
+/* HOME */
+
+/* Hero image */
 .hero-image {
   position: relative;
   margin-bottom: 2%;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 .img-fluid {
