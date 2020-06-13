@@ -27,7 +27,7 @@ class RoboFile extends Tasks {
       'WEBDRIVER_HOST',
     ];
     foreach ($environment_variables as $environment_variable) {
-      $value = getenv($environment_variable);
+      $value = $_ENV[$environment_variable];
       if ($value === FALSE) {
         throw new \InvalidArgumentException(
           "Environment variable $environment_variable is not set."
