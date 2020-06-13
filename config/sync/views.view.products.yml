@@ -244,6 +244,11 @@ display:
         type: normal
         title: Products
         menu_name: main
+        description: ''
+        parent: ''
+        weight: 0
+        expanded: false
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
