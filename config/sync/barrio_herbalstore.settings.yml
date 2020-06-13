@@ -25,7 +25,8 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: true
+  use_default: false
+  path: themes/custom/barrio_herbalstore/images/logo.png
 favicon:
   use_default: true
 bootstrap_barrio_region_clean_top_header: 0
@@ -91,3 +92,12 @@ bootstrap_barrio_icons: ''
 bootstrap_barrio_system_messages: ''
 bootstrap_barrio_table_style: ''
 bootstrap_barrio_table_head: ''
+bootstrap_barrio_region_clean_messages: 0
+bootstrap_barrio_region_class_messages: row
+bootstrap_barrio_region_clean_featured_bottom: 0
+bootstrap_barrio_region_class_featured_bottom: row
+bootstrap_barrio_region_clean_footer: 0
+bootstrap_barrio_region_class_footer: row
+bootstrap_barrio_navbar_top_class: ''
+bootstrap_barrio_navbar_class: ''
+bootstrap_barrio_bootstrap_icons: 0
