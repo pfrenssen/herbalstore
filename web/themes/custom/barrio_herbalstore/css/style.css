@@ -191,19 +191,14 @@ article.article-image .block-region-image img {
 .footer .footer-center i {
   background-color: #33383b;
   color: #fff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
+  font-size: 22px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   text-align: center;
-  line-height: 42px;
+  line-height: 43px;
   margin: 10px 15px;
   vertical-align: middle;
-}
-
-.footer .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
 }
 
 .footer .footer-center p {
