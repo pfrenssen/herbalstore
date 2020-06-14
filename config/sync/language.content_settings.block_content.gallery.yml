@@ -1,0 +1,11 @@
+uuid: e47e244d-189d-4772-ad8c-769420d971b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.gallery
+id: block_content.gallery
+target_entity_type_id: block_content
+target_bundle: gallery
+default_langcode: site_default
+language_alterable: false

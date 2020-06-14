@@ -1,0 +1,21 @@
+uuid: 4cbecb4a-560c-4d63-871d-4b54bbff9558
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+  theme:
+    - bootstrap_barrio
+id: hero_image
+label: 'Hero image'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap_barrio.extra
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - '_original image_'
+breakpoint_group: bootstrap_barrio
+fallback_image_style: large

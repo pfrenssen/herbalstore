@@ -1,23 +1,23 @@
-uuid: d6a6dcfa-9e10-416c-94f7-2c2400b3b838
+uuid: 42d78cd8-809d-40fe-8479-b0679a0d07b7
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:983fe87e-8679-4d1d-8f0a-04db308ac58f'
+    - 'block_content:gallery:7c0b5091-c7c8-47e1-97a3-f23e80866797'
   module:
     - block_content
     - system
   theme:
     - barrio_herbalstore
-id: howtoshopwithus
+id: homepagegallery
 theme: barrio_herbalstore
 region: featured_bottom
-weight: -5
+weight: -4
 provider: null
-plugin: 'block_content:983fe87e-8679-4d1d-8f0a-04db308ac58f'
+plugin: 'block_content:7c0b5091-c7c8-47e1-97a3-f23e80866797'
 settings:
-  id: 'block_content:983fe87e-8679-4d1d-8f0a-04db308ac58f'
-  label: 'How to shop with us'
+  id: 'block_content:7c0b5091-c7c8-47e1-97a3-f23e80866797'
+  label: 'Enkele sfeerfoto''s'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /products
+    pages: '<front>'
     negate: false
     context_mapping: {  }

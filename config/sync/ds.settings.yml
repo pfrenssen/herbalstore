@@ -3,7 +3,18 @@ field_template: false
 ft-default: default
 ft-show-colon: false
 classes:
-  region: {  }
+  region:
+    - row
+    - mt-5
+    - no-gutters
+    - image-wrapper
+    - float-right
+    - col-md-12
+    - d-none
+    - d-md-block
+    - p-0
+    - p-3
+    - pr-3
   field: {  }
 use_field_names: true
 _core:

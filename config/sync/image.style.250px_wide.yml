@@ -1,0 +1,15 @@
+uuid: f0e70e92-973a-4519-8e1f-bf54c6471e00
+langcode: nl
+status: true
+dependencies: {  }
+name: 250px_wide
+label: '250px wide'
+effects:
+  b3877a93-e0e8-4c3e-8774-afb92cfd2508:
+    uuid: b3877a93-e0e8-4c3e-8774-afb92cfd2508
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: null
+      upscale: false

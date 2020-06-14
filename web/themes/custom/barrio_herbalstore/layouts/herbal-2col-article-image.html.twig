@@ -1,7 +1,7 @@
 {% if content %}
-	<article {{ attributes.addClass(['row', 'mt-5']) }}>
+	<article {{ attributes.addClass(['row', 'mt-5', 'article-image']) }}>
     {% if content.text %}
-      <div {{ region_attributes.text.addClass(['p-0']) }}>
+      <div {{ region_attributes.text.addClass(['col-md', 'p-0']) }}>
         {{ content.text }}
       </div>
     {% endif %}
