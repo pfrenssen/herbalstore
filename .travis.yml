@@ -26,10 +26,11 @@ services:
 
 install:
   - composer --verbose install
+  - cp .env.dist .env
+  - ./vendor/bin/robo dev:setup
   - ./vendor/bin/drush site:install --existing-config --db-url=mysql://root@localhost/herbalstore --yes
 
 before_script:
-  - ./vendor/bin/robo behat:generate-config
   # Start the PHP web server and wait for it to come online.
   - ./vendor/bin/drush runserver :8888 &> /dev/null &
   - until curl -s localhost:8888; do true; done > /dev/null
