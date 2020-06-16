@@ -7,7 +7,6 @@ label: 'Site administrator'
 weight: 2
 is_admin: null
 permissions:
-  - 'access content overview'
   - 'access contextual links'
   - 'access in-place editing'
   - 'access toolbar'
