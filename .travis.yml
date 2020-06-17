@@ -31,7 +31,7 @@ install:
   - cp resources/travis-ci/settings.php web/sites/default/
   - ls web/sites/default/settings* -l
   - ./vendor/bin/robo dev:setup
-  - ./vendor/bin/drush site:install --existing-config --db-url=mysql://root@localhost/herbalstore --yes
+  - ./vendor/bin/drush site:install --existing-config --db-url=mysql://root@localhost/herbalstore --yes -vvv
 
 before_script:
   # Start the PHP web server and wait for it to come online.
