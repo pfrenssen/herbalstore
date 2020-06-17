@@ -31,10 +31,13 @@ services:
 
 install:
   - composer --verbose install
-  - ls web/sites/default/settings* -l
+  - ls web/sites/default/ -l
   - cp resources/travis-ci/settings.php web/sites/default/
-  - ls web/sites/default/settings* -l
+  - ls web/sites/default/ -l
+  - find web/sites/default/ -type f | xargs tail -n +1
   - ./vendor/bin/robo dev:setup
+  - cat drush/drush.yml
+  - cat behat.yml
   - ./vendor/bin/drush sql-create --yes
   - ./vendor/bin/drush site:install --existing-config --db-url=mysql://root@localhost/herbalstore --yes -vvv
 
