@@ -25,7 +25,7 @@ services:
   - mysql
 
 install:
-  - composer --verbose install
+  - composer install
   - cp resources/travis-ci/settings.php web/sites/default/
   - ./vendor/bin/robo dev:setup
   - ./vendor/bin/drush site:install --existing-config --db-url=mysql://root@localhost/herbalstore --yes -vvv
