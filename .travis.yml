@@ -15,10 +15,6 @@ env:
     - SCREENSHOTS_PATH="/tmp"
     # Todo: install Selenium.
     - WEBDRIVER_HOST="http://127.0.0.1:4444"
-    - MYSQL_DATABASE=drupal
-    - MYSQL_HOSTNAME=127.0.0.1
-    - MYSQL_PORT=3306
-    - MYSQL_USER=root
 
 mysql:
   database: herbalstore
@@ -30,13 +26,8 @@ services:
 
 install:
   - composer --verbose install
-  - ls web/sites/default/ -l
   - cp resources/travis-ci/settings.php web/sites/default/
-  - ls web/sites/default/ -l
-  - find web/sites/default/ -type f | xargs tail -n +1
   - ./vendor/bin/robo dev:setup
-  - cat drush/drush.yml
-  - cat behat.yml
   - ./vendor/bin/drush sql-create --yes
   - ./vendor/bin/drush site:install --existing-config --db-url=mysql://root@localhost/herbalstore --yes -vvv
 
