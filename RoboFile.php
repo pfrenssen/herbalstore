@@ -62,7 +62,7 @@ class RoboFile extends Tasks {
   protected function generateConfig(string $source, string $destination): void {
     $replace = [];
 
-    foreach (array_keys($_ENV) as $env_var) {
+    foreach (array_keys($_SERVER) as $env_var) {
       $value = $_SERVER[$env_var];
       $replace['${' . $env_var . '}'] = $value;
     }
