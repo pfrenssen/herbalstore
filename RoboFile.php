@@ -64,7 +64,9 @@ class RoboFile extends Tasks {
 
     foreach (array_keys($_SERVER) as $env_var) {
       $value = $_SERVER[$env_var];
-      $replace['${' . $env_var . '}'] = $value;
+      if (is_scalar($value)) {
+        $replace['${' . $env_var . '}'] = $value;
+      }
     }
 
     $this->taskFilesystemStack()
