@@ -15,6 +15,10 @@ env:
     - SCREENSHOTS_PATH="/tmp"
     # Todo: install Selenium.
     - WEBDRIVER_HOST="http://127.0.0.1:4444"
+    - MYSQL_DATABASE=drupal
+    - MYSQL_HOSTNAME=127.0.0.1
+    - MYSQL_PORT=3306
+    - MYSQL_USER=root
 
 mysql:
   database: herbalstore
