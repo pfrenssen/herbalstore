@@ -27,7 +27,6 @@ services:
 install:
   - composer --verbose install
   - ls web/sites/default/settings* -l
-  - cp .env.dist .env
   - cp resources/travis-ci/settings.php web/sites/default/
   - ls web/sites/default/settings* -l
   - ./vendor/bin/robo dev:setup

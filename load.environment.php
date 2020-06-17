@@ -8,8 +8,13 @@
 use Dotenv\Dotenv;
 
 // Load environment variables.
-$dotenv = Dotenv::createImmutable(__DIR__, ['.env.dist', '.env'], FALSE);
-$dotenv->load();
+foreach (['.env', '.env.dist'] as $file) {
+  $path = __DIR__ . DIRECTORY_SEPARATOR . $file;
+  if (is_file($path) && is_readable($path)) {
+    $dotenv = Dotenv::createImmutable(__DIR__, $file);
+    $dotenv->load();
+  }
+}
 
 // Set dynamic environment variables.
 $_ENV['PROJECTROOT'] = __DIR__;
