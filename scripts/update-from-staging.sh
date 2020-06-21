@@ -15,5 +15,10 @@ git pull
 # Copy the files and images.
 ./vendor/bin/drush rsync @staging:%files @self:%files --yes
 
+# Perform updates.
+./vendor/bin/drush updatedb --yes --no-post-updates
+./vendor/bin/drush config:import --yes
+./vendor/bin/drush updatedb --yes
+
 # Clear the cache.
 ./vendor/bin/drush cr
