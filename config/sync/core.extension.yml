@@ -1,4 +1,6 @@
 module:
+  admin_toolbar: 0
+  admin_toolbar_links_access_filter: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -16,7 +18,6 @@ module:
   file: 0
   filter: 0
   hal: 0
-  help: 0
   image: 0
   language: 0
   layout_discovery: 0
