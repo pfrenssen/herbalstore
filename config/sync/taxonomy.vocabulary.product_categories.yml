@@ -2,7 +2,7 @@ uuid: 29a87967-2ae0-40a9-935f-c9ecb90e9d78
 langcode: nl
 status: true
 dependencies: {  }
-name: 'Product categories'
+name: Productcategorieën
 vid: product_categories
 description: ''
 weight: 0
