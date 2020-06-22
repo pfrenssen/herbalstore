@@ -46,6 +46,7 @@ Feature: User authentication
       | admin/structure/views |
       | node/add              |
       | node/add/page         |
+      | node/add/product      |
       | user/register         |
 
   @api

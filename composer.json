@@ -22,6 +22,7 @@
         "drupal/mail_login": "^1.1",
         "drupal/page_manager": "^4.0-beta6",
         "drupal/panels": "^4.4",
+        "drupal/pathauto": "^1.8",
         "drupal/photoswipe": "^2.9",
         "drush/drush": "^10.0.2",
         "timdiels1/photoswipe": "^4.1",
