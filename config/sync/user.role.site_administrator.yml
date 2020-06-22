@@ -7,9 +7,10 @@ label: 'Site administrator'
 weight: 2
 is_admin: null
 permissions:
-  - 'access content overview'
+  - 'access administration pages'
   - 'access contextual links'
   - 'access in-place editing'
+  - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'
   - 'administer nodes'
@@ -17,8 +18,11 @@ permissions:
   - 'bypass node access'
   - 'change own username'
   - 'create page content'
+  - 'create terms in product_categories'
+  - 'delete terms in product_categories'
   - 'edit any page content'
   - 'edit own page content'
+  - 'edit terms in product_categories'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'update any basic block content'

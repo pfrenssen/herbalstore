@@ -11,7 +11,7 @@ php:
 env:
   global:
     - COMPOSER_MEMORY_LIMIT=2G
-    - BASE_URL="http://127.0.0.1:8888"
+    - BASE_URL="http://localhost:8888"
     - SCREENSHOTS_PATH="/tmp"
     # Todo: install Selenium.
     - WEBDRIVER_HOST="http://127.0.0.1:4444"
@@ -25,14 +25,15 @@ services:
   - mysql
 
 install:
-  - composer --verbose install
+  - composer install
+  - cp resources/travis-ci/settings.php web/sites/default/
+  - ./vendor/bin/robo dev:setup
   - ./vendor/bin/drush site:install --existing-config --db-url=mysql://root@localhost/herbalstore --yes
 
 before_script:
-  - ./vendor/bin/robo behat:generate-config
   # Start the PHP web server and wait for it to come online.
   - ./vendor/bin/drush runserver :8888 &> /dev/null &
-  - until curl -s localhost:8888; do true; done > /dev/null
+  - until curl -s localhost:8888; do sleep 0.5; done > /dev/null
 
 script:
   - ./vendor/bin/behat
