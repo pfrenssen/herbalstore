@@ -82,10 +82,12 @@ Feature: User authentication
     Examples:
       | path                                                        |
       | admin/config                                                |
+      | admin/content                                               |
       | admin/people                                                |
       | admin/structure                                             |
       | admin/structure/taxonomy                                    |
       | admin/structure/taxonomy/manage/product_categories/overview |
+      | node/add/product                                            |
 
   @api
   Scenario Outline: Administrator cannot access pages intended for site building and development
@@ -101,4 +103,3 @@ Feature: User authentication
       | admin/config/people/accounts         |
       | admin/config/regional/settings       |
       | admin/config/search/path             |
-      | admin/content                        |
