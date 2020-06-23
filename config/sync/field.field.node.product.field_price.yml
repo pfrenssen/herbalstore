@@ -9,7 +9,7 @@ id: node.product.field_price
 field_name: field_price
 entity_type: node
 bundle: product
-label: Price
+label: Prijs
 description: ''
 required: true
 translatable: false
