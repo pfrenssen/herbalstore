@@ -83,6 +83,11 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
+        "patches": {
+            "drupal/core": {
+                "Class active-trail not added to li element when linking to front page - https://www.drupal.org/project/drupal/issues/1578832": "https://www.drupal.org/files/issues/2020-03-14/D8.9.x-menu_class_active_trail-1578832-64_0.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"

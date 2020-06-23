@@ -8,7 +8,9 @@ global-styling:
       css/colors.css: {}
 bootstrap:
   js:
-    /libraries/popper/popper.min.js: {}
+    # Popper is disabled, it seems to be only used for popovers which we are
+    # not using at the moment.
+    # /libraries/popper/popper.min.js: {}
     /libraries/bootstrap/dist/js/bootstrap.min.js: {}
   css:
     component:
