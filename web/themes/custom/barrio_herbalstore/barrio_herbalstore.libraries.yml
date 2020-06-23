@@ -8,7 +8,10 @@ global-styling:
       css/colors.css: {}
 bootstrap:
   js:
-    /libraries/popper/popper.min.js: {}
+    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
+    # @todo Install popper locally.
+    # @see https://phabricator.frenssen.be/T149
+    # /libraries/popper/popper.min.js: {}
     /libraries/bootstrap/dist/js/bootstrap.min.js: {}
   css:
     component:

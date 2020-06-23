@@ -5,7 +5,7 @@ core: 8.x
 base theme: bootstrap_barrio
 
 libraries:
-  - barrio_herbalstore/bootstrap_cdn
+  - barrio_herbalstore/bootstrap
   - barrio_herbalstore/global-styling
 
 regions:
