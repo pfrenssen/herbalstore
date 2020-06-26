@@ -22,9 +22,9 @@ ssh pocomas@srv1.pocomas.be 'cd /home/pocomas/domains/zonnedauw.pocomas.be/herba
 ssh pocomas@srv1.pocomas.be 'cd /home/pocomas/domains/zonnedauw.pocomas.be/herbalstore && ./vendor/bin/composer install'
 
 # Perform updates.
-./vendor/bin/drush @staging updatedb --yes --no-post-updates
-./vendor/bin/drush @staging config:import --yes
 ./vendor/bin/drush @staging updatedb --yes
+./vendor/bin/drush @staging cr
+./vendor/bin/drush @staging config:import --yes
 
 # Disable maintenance mode.
 ./vendor/bin/drush @staging state:set system.maintenance_mode 0 --input-format=integer
