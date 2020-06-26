@@ -47,6 +47,8 @@ article.article-image .block-region-image {
 
 article.article-image .block-region-image img {
   margin: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Gallery */
@@ -57,6 +59,18 @@ article.article-image .block-region-image img {
 	border-radius: .25rem;
 	max-width: 100%;
 	height: auto;
+}
+
+/* PRODUCT */
+
+.category-subcategory .breadcrumb {
+  background-color: transparent;
+  padding-top: 20px;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*ABOUT US OVERVIEW */
@@ -84,7 +98,7 @@ article.article-image .block-region-image img {
   background: white;
 }
 
-.product {
+.products .product {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
@@ -136,11 +150,6 @@ article.article-image .block-region-image img {
   text-align: right;
   padding-right: 0px;
 
-}
-/* PRODUCT OVERVIEW */
-.category-subcategory .breadcrumb {
-  background-color: transparent;
-  padding-top: 20px;
 }
 
 .footer {
@@ -234,4 +243,9 @@ article.article-image .block-region-image img {
 
 .footer-left.footer-text-down {
   text-align: center;
+}
+
+/* Development */
+.placeholder {
+  background: pink url("/themes/custom/barrio_herbalstore/images/placeholder.png");
 }

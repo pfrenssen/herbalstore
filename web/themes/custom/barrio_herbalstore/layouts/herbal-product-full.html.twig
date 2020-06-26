@@ -1,0 +1,24 @@
+{% if content %}
+  <nav class="category-subcategory placeholder" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Products</a></li>
+      <li class="breadcrumb-item"><a href="#">Category1</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Subcategory</li>
+    </ol>
+  </nav>
+  {% if content.breadcrumb %}
+  {% endif %}
+  <div {{ attributes.addClass(['row', 'product']) }}>
+    {% if content.image %}
+      <div {{ region_attributes.image.addClass(['col-md-8', 'product-image']) }}>
+        {{ content.image }}
+      </div>
+    {% endif %}
+    {% if content.content %}
+      <div {{ region_attributes.content.addClass(['col-md-4', 'product-content']) }}>
+        {{ content.content }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

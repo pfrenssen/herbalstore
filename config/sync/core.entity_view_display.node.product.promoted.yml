@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.promoted
-    - field.field.node.product.body
+    - field.field.node.product.field_body
     - field.field.node.product.field_category
     - field.field.node.product.field_price
     - field.field.node.product.field_product_image
@@ -28,7 +28,7 @@ content:
     type: image
     region: content
 hidden:
-  body: true
+  field_body: true
   field_category: true
   field_price: true
   langcode: true

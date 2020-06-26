@@ -4,11 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.product.body
+    - field.field.node.product.field_body
     - field.field.node.product.field_category
     - field.field.node.product.field_price
     - field.field.node.product.field_product_image
-    - image.style.large
     - node.type.product
   module:
     - ds
@@ -18,25 +17,23 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_twocol
-      library: layout_discovery/twocol
+      id: herbal_product_full
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
         label: ''
     regions:
-      top:
-        - field_category
-      first:
+      image:
         - field_product_image
-      second:
+      content:
         - node_title
         - field_price
-        - body
+        - field_body
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 1
         label: hidden
         formatter: default
 id: node.product.full
@@ -44,24 +41,16 @@ targetEntityType: node
 bundle: product
 mode: full
 content:
-  body:
-    label: hidden
+  field_body:
     type: text_default
-    weight: 4
+    weight: 3
+    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    region: second
-  field_category:
-    weight: 0
-    label: visually_hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: top
   field_price:
-    weight: 3
-    label: inline
+    weight: 2
+    label: visually_hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
@@ -69,16 +58,17 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
-    region: second
+    region: content
   field_product_image:
-    weight: 1
+    weight: 0
     label: visually_hidden
     settings:
-      image_style: large
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: first
+    region: image
 hidden:
+  field_category: true
   langcode: true
   links: true

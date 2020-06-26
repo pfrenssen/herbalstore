@@ -14,6 +14,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/admin_toolbar": "^2.3",
+        "drupal/allowed_formats": "^1.3",
         "drupal/block_content_permissions": "^1.7",
         "drupal/bootstrap_barrio": "^4.22",
         "drupal/core": "^8.8.0",
@@ -22,6 +23,7 @@
         "drupal/mail_login": "^1.1",
         "drupal/page_manager": "^4.0-beta6",
         "drupal/panels": "^4.4",
+        "drupal/pathauto": "^1.8",
         "drupal/photoswipe": "^2.9",
         "drush/drush": "^10.0.2",
         "timdiels1/photoswipe": "^4.1",
@@ -85,6 +87,9 @@
         "patches": {
             "drupal/core": {
                 "Class active-trail not added to li element when linking to front page - https://www.drupal.org/project/drupal/issues/1578832": "https://www.drupal.org/files/issues/2020-03-14/D8.9.x-menu_class_active_trail-1578832-64_0.patch"
+            },
+            "drupal/token": {
+                "token_element_children produce notice on integer keys - https://www.drupal.org/project/token/issues/3154183": "https://www.drupal.org/files/issues/2020-06-23/3154183-2.patch"
             }
         },
         "drupal-scaffold": {

@@ -3,13 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.product.body
+    - field.field.node.product.field_body
     - field.field.node.product.field_category
     - field.field.node.product.field_price
     - field.field.node.product.field_product_image
     - image.style.thumbnail
     - node.type.product
   module:
+    - allowed_formats
     - image
     - path
     - text
@@ -18,24 +19,25 @@ targetEntityType: node
 bundle: product
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 5
+  field_body:
+    weight: 6
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 5
       placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    type: text_textarea
     region: content
   field_category:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_price:
-    weight: 7
+    weight: 5
     settings:
       placeholder: ''
     third_party_settings: {  }

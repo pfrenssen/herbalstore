@@ -1,0 +1,33 @@
+uuid: a851dc0e-fa14-4c8c-bfa2-0630f22d8214
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: products
+label: Products
+type: 'canonical_entities:node'
+pattern: 'producten/[node:field_category:entity:parents:join-path]/[node:field_category]/[node:title]'
+selection_criteria:
+  213e9dfe-93ed-41b4-9922-3ea96b6db3c8:
+    id: node_type
+    bundles:
+      product: product
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 213e9dfe-93ed-41b4-9922-3ea96b6db3c8
+  6a732628-8279-4f13-922c-43a52bc9562d:
+    id: language
+    langcodes:
+      nl: nl
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 6a732628-8279-4f13-922c-43a52bc9562d
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Taal
