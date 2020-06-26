@@ -28,6 +28,10 @@ settings:
             - BulletedList
             - NumberedList
         -
+          name: 'Block formatting'
+          items:
+            - Format
+        -
           name: Tools
           items:
             - Source
