@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeInterface;
 
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
@@ -32,4 +33,15 @@ function barrio_herbalstore_form_system_theme_settings_alter(&$form, FormStateIn
       'bg-white' => t('White'),
       'bg-transparent' => t('Transparent'),
   );
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function barrio_herbalstore_preprocess_page_title(&$variables) {
+  // Hide the page title on product pages.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (!empty($node) && $node instanceof NodeInterface && $node->bundle() === 'product') {
+    $variables['title'] = '';
+  }
 }
