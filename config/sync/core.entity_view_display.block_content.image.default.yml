@@ -5,7 +5,7 @@ dependencies:
   config:
     - block_content.type.image
     - field.field.block_content.image.field_block_image
-    - image.style.medium
+    - image.style.large
   module:
     - ds
     - image
@@ -39,7 +39,7 @@ content:
     weight: 0
     label: visually_hidden
     settings:
-      image_style: medium
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image
