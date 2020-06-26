@@ -34,7 +34,7 @@ content:
     region: content
   field_price:
     weight: 103
-    label: above
+    label: visually_hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
