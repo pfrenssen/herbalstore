@@ -67,6 +67,9 @@
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-drupal-scaffold-cmd": [
+            "./vendor/bin/robo environment:setup-basic-auth"
         ]
     },
     "repositories": [
