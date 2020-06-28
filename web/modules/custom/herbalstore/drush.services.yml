@@ -1,0 +1,8 @@
+services:
+  herbalstore.commands:
+    class: \Drupal\herbalstore\Commands\HerbalstoreCommands
+    arguments:
+      - '@entity_type.manager'
+      - '@file_system'
+    tags:
+      - { name: drush.command }

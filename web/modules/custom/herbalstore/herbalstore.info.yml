@@ -1,0 +1,6 @@
+name: Herbalstore
+type: module
+description: Custom code for the Herbalstore project.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
