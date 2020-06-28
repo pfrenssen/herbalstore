@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.product.field_category
     - field.field.node.product.field_price
     - field.field.node.product.field_product_image
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.product
   module:
     - ds
@@ -17,16 +17,19 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: herbal_product_teaser
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
         label: ''
     regions:
-      content:
+      image:
         - field_product_image
+      content:
         - node_title
+        - field_price
+      read_more:
         - node_link
     fields:
       node_title:
@@ -40,12 +43,12 @@ third_party_settings:
           class: ''
       node_link:
         plugin_id: node_link
-        weight: 2
+        weight: 3
         label: hidden
         formatter: default
         settings:
           'link text': Details
-          'link class': ''
+          'link class': 'btn btn-primary'
           wrapper: ''
           class: ''
 id: node.product.teaser
@@ -53,18 +56,29 @@ targetEntityType: node
 bundle: product
 mode: teaser
 content:
-  field_product_image:
-    type: image
-    weight: 0
+  field_price:
+    type: number_decimal
+    weight: 2
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_product_image:
+    type: image
+    weight: 0
+    region: image
+    label: hidden
+    settings:
+      image_style: medium
       image_link: content
     third_party_settings: {  }
 hidden:
   field_body: true
   field_category: true
-  field_price: true
   langcode: true
   links: true
+  search_api_excerpt: true

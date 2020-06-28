@@ -1,0 +1,23 @@
+uuid: f65395b2-b3dd-4ede-8032-9898ff0b72dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.categorie
+  module:
+    - facets
+  theme:
+    - barrio_herbalstore
+id: categorie
+theme: barrio_herbalstore
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'facet_block:categorie'
+settings:
+  id: 'facet_block:categorie'
+  label: Categorie
+  provider: facets
+  label_display: '0'
+  block_id: categorie
+visibility: {  }

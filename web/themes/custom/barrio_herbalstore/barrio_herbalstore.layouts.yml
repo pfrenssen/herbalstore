@@ -13,9 +13,22 @@ herbal_product_full:
   label: Product page full
   category: Barrio Herbalstore
   template: layouts/herbal-product-full
+  default_region: content
+  regions:
+    image:
+      label: Image
+    content:
+      label: Content
+
+herbal_product_teaser:
+  label: Product page teaser
+  category: Barrio Herbalstore
+  template: layouts/herbal-product-teaser
   default_region: text
   regions:
     image:
       label: Image
     content:
       label: Content
+    read_more:
+      label: Read more

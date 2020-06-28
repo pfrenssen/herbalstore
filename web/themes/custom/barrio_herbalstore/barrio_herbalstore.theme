@@ -44,4 +44,10 @@ function barrio_herbalstore_preprocess_page_title(&$variables) {
   if (!empty($node) && $node instanceof NodeInterface && $node->bundle() === 'product') {
     $variables['title'] = '';
   }
+
+  // Hide the page title on the products page.
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name === 'view.products.page_1') {
+    $variables['title'] = '';
+  }
 }

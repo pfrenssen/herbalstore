@@ -61,6 +61,92 @@ article.article-image .block-region-image img {
 	height: auto;
 }
 
+/* PRODUCTS */
+
+.page-view-products .products-overview.row {
+  border: 1px solid #ccc;
+  padding-top: 15px;
+  padding-right: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  background: white;
+}
+
+.page-view-products .block-facets ul {
+  padding-left: 0;
+}
+
+.page-view-products .block-facets ul ul li {
+  margin-left: 0;
+}
+
+.page-view-products .block-facets a {
+  width: 100%;
+  display: block;
+  padding: 20px 10px;
+}
+
+.page-view-products .block-facets a.is-active {
+  background-color: #d01818;
+}
+
+.page-view-products .block-facets ul li a {
+  background-color: #242323;
+  color: #fff
+}
+
+.page-view-products .block-facets ul ul li a {
+  background-color: #4f607a;
+}
+
+.page-view-products .block-facets ul ul ul li a {
+  background-color: #637f9e;
+}
+
+.page-view-products .block-facets ul ul ul ul li a {
+  background-color: #7193b6;
+}
+
+.page-view-products .block-facets ul ul ul ul li a {
+  background-color: #81a7d0;
+}
+
+.products .product {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.products .product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.products .product h4 {
+  font-size: 1rem;
+}
+
+.products .product h4 a {
+  color: #111;
+}
+
+.products .card-footer {
+  text-align: center;
+}
+
+.row.pagination {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.col-sm-12.block {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: #ccc;
+  border: 1px solid #545b628c;
+}
+
 /* PRODUCT */
 
 .category-subcategory .breadcrumb {
@@ -90,36 +176,6 @@ article.article-image .block-region-image img {
   padding-bottom: 50px;
 }
 
-/* PRODUCTS OVERVIEW */
-.row.category-details-row {
-  border: 1px solid #ccc;
-  padding-top: 15px;
-  padding-right: 15px;
-  background: white;
-}
-
-.products .product {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.products .card-footer {
-  text-align: center;
-}
-
-.row.pagination {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.col-sm-12.block {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  background: #ccc;
-  border: 1px solid #545b628c;
-}
 /* CONTACT OVERVIEW */
 
 .row .information-row {

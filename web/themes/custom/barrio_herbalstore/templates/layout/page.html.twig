@@ -68,19 +68,21 @@
  */
 #}
 {% if page.header %}
-<div class="container">
+<div class="container-xl">
   <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
     {{ page.header }}
   </nav>
 </div>
 {% endif %}
 <!-- End header -->
-<div class="container">
+<div class="container-xl">
   {{ page.messages }}
   {{ page.featured_top }}
-  {{ page.content }}
+  {% block content %}
+    {{ page.content }}
+  {% endblock %}
 </div>
-<div class="container">
+<div class="container-xl">
   {{page.featured_bottom}}
 
   <footer class="footer">

@@ -1,0 +1,12 @@
+{% extends "@barrio_herbalstore/layout/page.html.twig" %}
+
+{% block content %}
+  <div class="row products-overview">
+    <div class="col-lg-3 col-md-4 facets">
+      {{ page.sidebar_first }}
+    </div>
+    <div class="col-lg-9 col-md-8 products">
+      {{ page.content }}
+    </div>
+  </div>
+{% endblock %}
