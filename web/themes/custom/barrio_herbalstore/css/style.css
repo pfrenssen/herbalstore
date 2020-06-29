@@ -72,6 +72,10 @@ article.article-image .block-region-image img {
   background: white;
 }
 
+.page-view-products .facets-widget-links ul{
+  list-style-type: none;
+}
+
 .page-view-products .block-facets ul {
   padding-left: 0;
 }
@@ -91,8 +95,8 @@ article.article-image .block-region-image img {
 }
 
 .page-view-products .block-facets ul li a {
-  background-color: #242323;
-  color: #fff
+  background-color: #343a40;
+  color: #fff;
 }
 
 .page-view-products .block-facets ul ul li a {
@@ -125,20 +129,22 @@ article.article-image .block-region-image img {
 
 .products .product h4 {
   font-size: 1rem;
+  text-align: center;
 }
 
 .products .product h4 a {
-  color: #111;
+  color: #476C66;
+  
 }
 
 .products .card-footer {
   text-align: center;
 }
 
-.row.pagination {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.page-view-products  .pagination{
+  justify-content: center;
 }
+
 
 .col-sm-12.block {
   margin-top: 40px;
