@@ -22,3 +22,6 @@ git pull
 
 # Clear the cache.
 ./vendor/bin/drush cr
+
+# Index content in the search engine.
+./vendor/bin/drush sapi-i
