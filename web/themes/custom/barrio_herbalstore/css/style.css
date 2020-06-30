@@ -171,11 +171,26 @@ article.article-image .block-region-image img {
   padding-top: 20px;
 }
 
+.field--name-field-product-image .field__item{
+  background: #fff;
+}
+
 .product-image img {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
 
+.field--name-node-title h2{
+  color:#476C66;
+}
+
+.field--name-field-price .field__item{
+  font-weight: 600;
+  font-size: 1.2em;
+  padding-bottom: 20px;
+}
 /*ABOUT US OVERVIEW */
 .avatar {
   vertical-align: middle;
