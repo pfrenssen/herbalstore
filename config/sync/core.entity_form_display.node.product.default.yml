@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.product.field_category
     - field.field.node.product.field_price
     - field.field.node.product.field_product_image
+    - field.field.node.product.field_product_link
     - image.style.thumbnail
     - node.type.product
   module:
     - allowed_formats
     - image
+    - link
     - path
     - text
 id: node.product.default
@@ -50,6 +52,14 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_product_link:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   langcode:
     type: language_select

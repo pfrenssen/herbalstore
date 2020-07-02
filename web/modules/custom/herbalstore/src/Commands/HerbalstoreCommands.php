@@ -90,8 +90,7 @@ class HerbalstoreCommands extends DrushCommands {
    *
    * @command herbalstore:import-products
    */
-  public function commandName(string $file, $options = ['author' => self::REQ]): int {
-
+  public function importProducts(string $file, $options = ['author' => self::REQ]): int {
     $cwd = $this->getConfig()->getContext('environment')->get('env.cwd', getcwd());
     $path = realpath($cwd . DIRECTORY_SEPARATOR . $file);
     if (!$path || !is_file($path) || !is_readable($path)) {
@@ -246,6 +245,7 @@ class HerbalstoreCommands extends DrushCommands {
         'field_price' => strtr($this->sanitizeString($product->price), ',', '.'),
         'field_category' => ['target_id' => $category_tid],
         'field_product_image' => ['target_id' => $file->id()],
+        'field_product_link' => $this->sanitizeString($product->url),
       ];
 
       if ($author_id) {
