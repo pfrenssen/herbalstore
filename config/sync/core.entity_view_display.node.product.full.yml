@@ -14,7 +14,6 @@ dependencies:
     - ds
     - herbalstore
     - image
-    - link
     - text
     - user
 third_party_settings:
@@ -82,7 +81,7 @@ content:
     type: image
     region: image
   field_product_link:
-    type: link
+    type: herbalstore_custom_text_link
     weight: 5
     region: content
     label: hidden
