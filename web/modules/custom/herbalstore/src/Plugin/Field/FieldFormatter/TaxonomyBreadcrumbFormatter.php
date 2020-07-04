@@ -13,6 +13,7 @@ use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Field\Plugin\Field\FieldType\EntityReferenceItem;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\Core\Url;
 use Drupal\taxonomy\TermInterface;
 use Drupal\taxonomy\TermStorageInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -99,13 +100,28 @@ class TaxonomyBreadcrumbFormatter extends FormatterBase implements ContainerFact
     $term_storage = $this->entityTypeManager->getStorage('taxonomy_term');
     $parents = $term_storage->loadAllParents($term->id());
     foreach ($parents as $parent) {
+      $url = Url::fromRoute('view.products.page_1', [], ['query' => [
+        'f' => ['categorie:' . $parent->id()]
+      ]]);
       $link = [
         '#wrapper_attributes' => ['class' => ['breadcrumb-item']],
         '#title' => $parent->label(),
         '#type' => 'link',
-        '#url' => $parent->toUrl(),
+        '#url' => $url,
       ];
-      array_unshift($element['#items'], $link);;
+      array_unshift($element['#items'], $link);
+    }
+
+    // Prepend the products and home links.
+    $crumbs = ['Products' => 'view.products.page_1', 'Home' => '<front>'];
+    foreach ($crumbs as $title => $route) {
+      $link = [
+        '#wrapper_attributes' => ['class' => ['breadcrumb-item']],
+        '#title' => $this->t($title),
+        '#type' => 'link',
+        '#url' => Url::fromRoute($route),
+      ];
+      array_unshift($element['#items'], $link);
     }
 
     return $element;
