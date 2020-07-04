@@ -15,6 +15,8 @@ herbal_product_full:
   template: layouts/herbal-product-full
   default_region: content
   regions:
+    breadcrumb:
+      label: Breadcrumb
     image:
       label: Image
     content:
