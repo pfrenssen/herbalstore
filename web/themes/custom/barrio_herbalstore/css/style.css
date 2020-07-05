@@ -140,8 +140,8 @@ article.article-image .block-region-image img {
 
 .products .product h4 a {
   color: #476C66;
-  
 }
+
 .products .field--name-field-price{
     font-weight: 600;
     font-size: 1.2em;
@@ -155,7 +155,6 @@ article.article-image .block-region-image img {
 .page-view-products  .pagination{
   justify-content: center;
 }
-
 
 .col-sm-12.block {
   margin-top: 40px;
@@ -239,6 +238,14 @@ article.article-image .block-region-image img {
   padding-right: 0px;
 
 }
+
+/* Featured bottom */
+
+.region-featured-bottom {
+  margin-top: 40px;
+}
+
+/* FOOTER */
 
 .footer {
   background-color: #c3b8a0;

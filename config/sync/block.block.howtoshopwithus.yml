@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:983fe87e-8679-4d1d-8f0a-04db308ac58f'
 settings:
   id: 'block_content:983fe87e-8679-4d1d-8f0a-04db308ac58f'
-  label: 'How to shop with us'
+  label: 'Hoe bestellen'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /products
+    pages: "/aanbod\r\n/aanbod/*"
     negate: false
     context_mapping: {  }
