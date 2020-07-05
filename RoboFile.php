@@ -67,7 +67,6 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
 
     // Remove the basic auth directive from the .htaccess file if it exists.
     $this->taskReplaceInFile('web/.htaccess')
-      //->regex('/^AuthType Basic.*Require valid-user$/m')
       ->regex('/^AuthType Basic\n.*\n.*\nRequire valid-user\n/m')
       ->to('')
       ->run();
