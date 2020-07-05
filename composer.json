@@ -21,7 +21,7 @@
         "drupal/core-composer-scaffold": "^8.8.0",
         "drupal/ds": "^3.5",
         "drupal/facets": "^1.4",
-        "drupal/mail_login": "^1.1",
+        "drupal/mail_login": "^2.1",
         "drupal/page_manager": "^4.0-beta6",
         "drupal/panels": "^4.4",
         "drupal/pathauto": "^1.8",
