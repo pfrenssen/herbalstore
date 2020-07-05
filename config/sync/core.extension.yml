@@ -39,6 +39,7 @@ module:
   photoswipe: 0
   quickedit: 0
   rdf: 0
+  responsive_favicons: 0
   responsive_image: 0
   search_api: 0
   search_api_db: 0
