@@ -8,24 +8,24 @@ dependencies:
 id: products
 label: Products
 type: 'canonical_entities:node'
-pattern: 'producten/[node:field_category:entity:parents:join-path]/[node:field_category]/[node:title]'
+pattern: 'aanbod/[node:field_category:entity:parents:join-path]/[node:field_category]/[node:title]'
 selection_criteria:
-  213e9dfe-93ed-41b4-9922-3ea96b6db3c8:
+  cedb17a3-2bb3-40b0-af6d-abe6fc7900d9:
     id: node_type
     bundles:
       product: product
     negate: false
     context_mapping:
       node: node
-    uuid: 213e9dfe-93ed-41b4-9922-3ea96b6db3c8
-  6a732628-8279-4f13-922c-43a52bc9562d:
+    uuid: cedb17a3-2bb3-40b0-af6d-abe6fc7900d9
+  b9e8e69c-d98f-4f37-8627-7edf23303303:
     id: language
     langcodes:
       nl: nl
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: 6a732628-8279-4f13-922c-43a52bc9562d
+    uuid: b9e8e69c-d98f-4f37-8627-7edf23303303
 selection_logic: and
 weight: -5
 relationships:
