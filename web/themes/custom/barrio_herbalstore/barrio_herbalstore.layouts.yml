@@ -34,3 +34,16 @@ herbal_product_teaser:
       label: Content
     read_more:
       label: Read more
+
+herbal_contact_main:
+  label: Contact page main layout
+  category: Barrio Herbalstore
+  template: layouts/herbal-contact-main
+  default_region: address
+  regions:
+    contact:
+      label: Contact
+    open_hours:
+      label: Open hours
+    map:
+      label: Map
