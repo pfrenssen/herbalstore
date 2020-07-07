@@ -5,9 +5,9 @@ dependencies:
   config:
     - page_manager.page.contact
   content:
-    - 'block_content:basic:06b78893-333a-43bf-8583-98b2c90eb786'
-    - 'block_content:basic:376abf09-fd5b-4e2d-8012-07d9dc80f94f'
-    - 'block_content:basic:6f24dafb-a325-4af9-ab09-c815ea7b9732'
+    - 'block_content:basic:46e01931-81ce-4e8c-b732-fd3883c2576d'
+    - 'block_content:basic:5c8c2308-1808-4b26-83e0-8401a99b3db5'
+    - 'block_content:basic:a1145e1d-e74f-4687-a888-e504128c3523'
   module:
     - block_content
     - panels
@@ -16,8 +16,8 @@ label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    4506579a-7c69-4e0f-8631-e09f98061d1c:
-      id: 'block_content:376abf09-fd5b-4e2d-8012-07d9dc80f94f'
+    9c3af35e-6a40-4f77-8d3a-1d806b16c6b8:
+      id: 'block_content:a1145e1d-e74f-4687-a888-e504128c3523'
       label: 'Contact information'
       provider: block_content
       label_display: '0'
@@ -26,10 +26,10 @@ variant_settings:
       view_mode: full
       region: contact
       weight: 0
-      uuid: 4506579a-7c69-4e0f-8631-e09f98061d1c
+      uuid: 9c3af35e-6a40-4f77-8d3a-1d806b16c6b8
       context_mapping: {  }
-    584edc64-e29b-4499-b0f5-564492a62ae8:
-      id: 'block_content:06b78893-333a-43bf-8583-98b2c90eb786'
+    3e990d69-b301-4cd5-99ff-a3872ab5e48d:
+      id: 'block_content:46e01931-81ce-4e8c-b732-fd3883c2576d'
       label: Openingsuren
       provider: block_content
       label_display: '0'
@@ -38,10 +38,10 @@ variant_settings:
       view_mode: full
       region: open_hours
       weight: 0
-      uuid: 584edc64-e29b-4499-b0f5-564492a62ae8
+      uuid: 3e990d69-b301-4cd5-99ff-a3872ab5e48d
       context_mapping: {  }
-    d9eb2c3d-98c0-428f-82e8-67ffd8fd5d2e:
-      id: 'block_content:6f24dafb-a325-4af9-ab09-c815ea7b9732'
+    de607e83-ae02-4056-8cdc-c6513186fcb5:
+      id: 'block_content:5c8c2308-1808-4b26-83e0-8401a99b3db5'
       label: Map
       provider: block_content
       label_display: '0'
@@ -50,7 +50,7 @@ variant_settings:
       view_mode: full
       region: map
       weight: 0
-      uuid: d9eb2c3d-98c0-428f-82e8-67ffd8fd5d2e
+      uuid: de607e83-ae02-4056-8cdc-c6513186fcb5
       context_mapping: {  }
   id: panels_variant
   uuid: 121101b9-2d6f-4bfe-aae7-0693526e69f6
