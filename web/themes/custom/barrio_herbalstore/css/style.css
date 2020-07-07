@@ -207,36 +207,24 @@ article.article-image .block-region-image img {
   padding-bottom: 50px;
 }
 
-/* CONTACT OVERVIEW */
+/* CONTACT */
 
-.row .information-row {
-  border: 1px solid gainsboro;
-  background-color: white;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.container.footer {
-  background-color: #c3b8a0;
-  width: 100%;
-  /* text-align: center; */
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 50px;
-  margin-top: 50px;
-  transition: all .4s;
+.contact {
+  margin-top: 20px;
 }
 
-.col-lg-3.col-xs-12.left-img {
-  padding-left: 0px;
-  text-align: left;
-
+.contact h3 {
+  font-size: 1.4rem;
 }
 
-.col-lg-3.col-xs-12.img-right {
-  text-align: right;
-  padding-right: 0px;
+.contact .contact-info a {
+  font-size: 0.9em;
+}
 
+.contact-map iframe {
+	border: 0;
+	width: 100% !important;
+	height: 400px;
 }
 
 /* Featured bottom */

@@ -45,9 +45,15 @@ function barrio_herbalstore_preprocess_page_title(&$variables) {
     $variables['title'] = '';
   }
 
-  // Hide the page title on the products page.
+  // Hide the page title on the following pages.
+  $route_names = [
+    // Contact page.
+    'page_manager.page_view_contact_contact-panels_variant-0',
+    // Products page.
+    'view.products.page_1'
+  ];
   $route_name = \Drupal::routeMatch()->getRouteName();
-  if ($route_name === 'view.products.page_1') {
+  if (in_array($route_name, $route_names)) {
     $variables['title'] = '';
   }
 }

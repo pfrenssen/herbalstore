@@ -1,12 +1,12 @@
 {% if content %}
-  <div {{ attributes.addClass(['row', 'information-row']) }}>
-    <div class="col-sm">
+  <div {{ attributes.addClass(['row', 'contact']) }}>
+    <div class="col-sm col-md-6 col-lg-auto contact-info">
       {{ content.contact }}
     </div>
-    <div class="col-sm" >
+    <div class="col-sm col-md-6 col-lg-auto contact-hours" >
       {{ content.open_hours}}
     </div>
-    <div class="col-sm">
+    <div class="col-md contact-map">
       {{ content.map}}
     </div>
   </div>
