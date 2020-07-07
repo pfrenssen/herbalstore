@@ -1,0 +1,13 @@
+{% if content %}
+  <div {{ attributes.addClass(['row', 'information-row']) }}>
+    <div class="col-sm">
+      {{ content.contact }}
+    </div>
+    <div class="col-sm" >
+      {{ content.open_hours}}
+    </div>
+    <div class="col-sm">
+      {{ content.map}}
+    </div>
+  </div>
+{% endif %}
