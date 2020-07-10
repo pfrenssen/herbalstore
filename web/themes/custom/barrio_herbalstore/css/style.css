@@ -215,6 +215,15 @@ article.article-image .block-region-image img {
 
 .contact h3 {
   font-size: 1.4rem;
+  color: #27582B;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contact  dl dt{
+  color: #343a40;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .contact .contact-info a {
