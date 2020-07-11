@@ -32,7 +32,6 @@ third_party_settings:
         - field_product_image
       content:
         - node_title
-        - field_price
         - field_body
         - field_product_link
     fields:
@@ -48,7 +47,7 @@ mode: full
 content:
   field_body:
     type: text_default
-    weight: 4
+    weight: 3
     region: content
     label: hidden
     settings: {  }
@@ -60,17 +59,6 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_price:
-    weight: 3
-    label: visually_hidden
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
-    region: content
   field_product_image:
     weight: 1
     label: visually_hidden
@@ -82,7 +70,7 @@ content:
     region: image
   field_product_link:
     type: herbalstore_custom_text_link
-    weight: 5
+    weight: 4
     region: content
     label: hidden
     settings:
@@ -93,6 +81,7 @@ content:
       rel: '0'
     third_party_settings: {  }
 hidden:
+  field_price: true
   langcode: true
   links: true
   search_api_excerpt: true
