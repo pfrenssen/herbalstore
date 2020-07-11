@@ -1,31 +1,31 @@
-uuid: d6a6dcfa-9e10-416c-94f7-2c2400b3b838
+uuid: 0afded38-6990-4514-b6aa-68f13f14a1dc
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:983fe87e-8679-4d1d-8f0a-04db308ac58f'
+    - 'block_content:hero_image:fb7eff34-a698-432c-9d7e-fc03149409b4'
   module:
     - block_content
     - system
   theme:
     - barrio_herbalstore
-id: howtoshopwithus
+id: contactimage
 theme: barrio_herbalstore
 region: featured_bottom
-weight: -6
+weight: -4
 provider: null
-plugin: 'block_content:983fe87e-8679-4d1d-8f0a-04db308ac58f'
+plugin: 'block_content:fb7eff34-a698-432c-9d7e-fc03149409b4'
 settings:
-  id: 'block_content:983fe87e-8679-4d1d-8f0a-04db308ac58f'
-  label: 'Hoe bestellen'
+  id: 'block_content:fb7eff34-a698-432c-9d7e-fc03149409b4'
+  label: 'Contact image'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/aanbod\r\n/aanbod/*"
+    pages: /contact
     negate: false
     context_mapping: {  }

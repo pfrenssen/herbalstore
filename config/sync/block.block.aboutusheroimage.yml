@@ -1,9 +1,9 @@
-uuid: 315764b3-7cab-4675-96f7-0ee9c6d7627a
+uuid: f7bf4062-a5bf-41ea-a61f-b016420011e5
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:hero_image:4067707e-253e-4007-93e1-edc3954611b9'
+    - 'block_content:hero_image:0de14920-17e9-410a-afbb-05958d8c5412'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: barrio_herbalstore
 region: featured_top
 weight: 0
 provider: null
-plugin: 'block_content:4067707e-253e-4007-93e1-edc3954611b9'
+plugin: 'block_content:0de14920-17e9-410a-afbb-05958d8c5412'
 settings:
-  id: 'block_content:4067707e-253e-4007-93e1-edc3954611b9'
+  id: 'block_content:0de14920-17e9-410a-afbb-05958d8c5412'
   label: 'About us hero image'
   provider: block_content
   label_display: '0'

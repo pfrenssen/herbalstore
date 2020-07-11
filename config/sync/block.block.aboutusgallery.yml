@@ -1,23 +1,23 @@
-uuid: a91fe04b-bc32-4b48-8bfd-16bd3b491ae0
+uuid: fe696598-07d8-49ac-beb1-6e9154b2a14c
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:hero_image:b9ff79e5-8f0c-4e4f-a453-b63c18ae8928'
+    - 'block_content:gallery:04dcd6da-3f14-4b15-95a5-20be11f0831f'
   module:
     - block_content
     - system
   theme:
     - barrio_herbalstore
-id: contactformheroimage
+id: aboutusgallery
 theme: barrio_herbalstore
 region: featured_bottom
 weight: 0
 provider: null
-plugin: 'block_content:b9ff79e5-8f0c-4e4f-a453-b63c18ae8928'
+plugin: 'block_content:04dcd6da-3f14-4b15-95a5-20be11f0831f'
 settings:
-  id: 'block_content:b9ff79e5-8f0c-4e4f-a453-b63c18ae8928'
-  label: 'Contact form hero image'
+  id: 'block_content:04dcd6da-3f14-4b15-95a5-20be11f0831f'
+  label: 'About us gallery'
   provider: block_content
   label_display: '0'
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /contact
+    pages: /over-ons
     negate: false
     context_mapping: {  }

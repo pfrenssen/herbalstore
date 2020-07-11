@@ -5,7 +5,7 @@ dependencies:
   config:
     - page_manager.page.about_us
   content:
-    - 'block_content:profile:7df94436-2c3c-49af-89cd-f6d24ddbae9d'
+    - 'block_content:profile:2d122008-6453-4033-a538-2d384fb6e133'
   module:
     - block_content
     - panels
@@ -26,8 +26,8 @@ variant_settings:
       weight: 0
       uuid: ac4add0e-b8c1-48bc-8080-e5505cbc8f02
       context_mapping: {  }
-    50fa2be6-dc14-4197-980d-99a1ebc7e976:
-      id: 'block_content:7df94436-2c3c-49af-89cd-f6d24ddbae9d'
+    204a3280-3c74-4747-aa6e-7e4ed118d51a:
+      id: 'block_content:2d122008-6453-4033-a538-2d384fb6e133'
       label: 'About us profile'
       provider: block_content
       label_display: '0'
@@ -36,7 +36,7 @@ variant_settings:
       view_mode: full
       region: content
       weight: 0
-      uuid: 50fa2be6-dc14-4197-980d-99a1ebc7e976
+      uuid: 204a3280-3c74-4747-aa6e-7e4ed118d51a
       context_mapping: {  }
   id: panels_variant
   uuid: 731b736c-f0a4-417b-a947-b606d58697a2
