@@ -5,6 +5,9 @@
  * Functions to support theming in the SASS Starterkit subtheme.
  */
 
+declare(strict_types = 1);
+
+use Drupal\block_content\BlockContentInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\NodeInterface;
 
@@ -55,5 +58,16 @@ function barrio_herbalstore_preprocess_page_title(&$variables) {
   $route_name = \Drupal::routeMatch()->getRouteName();
   if (in_array($route_name, $route_names)) {
     $variables['title'] = '';
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function barrio_herbalstore_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  // Add per-bundle template suggestions for block content bundles.
+  $block = $variables['elements']['content']['#block_content'] ?? NULL;
+  if ($block && $block instanceof BlockContentInterface) {
+    array_splice($suggestions, 1, 0, 'block__block_content__bundle__' . $block->bundle());
   }
 }
