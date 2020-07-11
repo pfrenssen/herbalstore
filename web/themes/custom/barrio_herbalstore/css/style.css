@@ -288,18 +288,18 @@ article.article-image .block-region-image img {
   margin-bottom: 5px;
 }
 
-
 .footer .footer-center i {
   background-color: #33383b;
   color: #fff;
-  font-size: 22px;
+  font-size: 25px;
   width: 42px;
   height: 42px;
   border-radius: 50%;
   text-align: center;
   line-height: 43px;
-  margin: 10px 15px;
+  margin: 10px 15px 10px 0;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .footer .footer-center p {
@@ -319,10 +319,6 @@ article.article-image .block-region-image img {
 .footer .footer-center p a {
   color: #3c3831;
   text-decoration: none;
-}
-
-.footer .footer-center i {
-  margin-left: 0;
 }
 
 .footer .footer-image-left {

@@ -6,6 +6,7 @@ global-styling:
     component:
       css/style.css: {}
       css/colors.css: {}
+      fonts/icomoon.css: {}
 bootstrap:
   js:
     # Popper is disabled, it seems to be only used for popovers which we are
