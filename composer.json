@@ -95,6 +95,9 @@
             "drupal/core": {
                 "Class active-trail not added to li element when linking to front page - https://www.drupal.org/project/drupal/issues/1578832": "https://www.drupal.org/files/issues/2020-03-14/D8.9.x-menu_class_active_trail-1578832-64_0.patch"
             },
+            "drupal/bootstrap_barrio": {
+                "Bootstrap pagination styling not applied to ellipsis - https://www.drupal.org/project/bootstrap_barrio/issues/3158572": "https://www.drupal.org/files/issues/2020-07-12/3158572-2.patch"
+            },
             "drupal/token": {
                 "token_element_children produce notice on integer keys - https://www.drupal.org/project/token/issues/3154183": "https://www.drupal.org/files/issues/2020-06-23/3154183-2.patch"
             }
