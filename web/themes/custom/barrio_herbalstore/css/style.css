@@ -248,6 +248,10 @@ article.article-image .block-region-image img {
   padding: 15px;
 }
 
+.profile .profile-picture img {
+  width: 150px;
+}
+
 /* FOOTER */
 
 .footer {

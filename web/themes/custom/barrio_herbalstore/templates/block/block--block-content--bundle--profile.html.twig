@@ -16,7 +16,7 @@
     <div{{ content_attributes.addClass(['row']) }}>
       {% if content.field_profile_picture %}
         <div class="col-12 profile-picture bg-white text-center pt-5">
-          <img src="{{ file_url(content.field_profile_picture['#items'].entity.uri.value) }}" alt="{{ content.field_profile_picture.alt }}" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" width="100">
+          <img src="{{ file_url(content.field_profile_picture['#items'].entity.uri.value) }}" alt="{{ content.field_profile_picture.alt }}" class="img-fluid rounded-circle mb-3 shadow-sm">
         </div>
       {% endif %}
       {% if content.field_profile_name %}
