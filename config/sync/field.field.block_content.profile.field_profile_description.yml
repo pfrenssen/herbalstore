@@ -1,0 +1,29 @@
+uuid: 7b374489-86fc-489e-a283-22f7068a61d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.profile
+    - field.storage.block_content.field_profile_description
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    basic_text: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: block_content.profile.field_profile_description
+field_name: field_profile_description
+entity_type: block_content
+bundle: profile
+label: Omschrijving
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

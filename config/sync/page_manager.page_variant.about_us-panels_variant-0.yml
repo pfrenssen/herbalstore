@@ -1,0 +1,55 @@
+uuid: c38e9c00-1e40-45d0-9d6a-8031a0dc733c
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.about_us
+  content:
+    - 'block_content:profile:7df94436-2c3c-49af-89cd-f6d24ddbae9d'
+  module:
+    - block_content
+    - panels
+id: about_us-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    ac4add0e-b8c1-48bc-8080-e5505cbc8f02:
+      id: 'block_content:7df94436-2c3c-49af-89cd-f6d24ddbae9d'
+      label: 'About us profile'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: address
+      weight: 0
+      uuid: ac4add0e-b8c1-48bc-8080-e5505cbc8f02
+      context_mapping: {  }
+    50fa2be6-dc14-4197-980d-99a1ebc7e976:
+      id: 'block_content:7df94436-2c3c-49af-89cd-f6d24ddbae9d'
+      label: 'About us profile'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: content
+      weight: 0
+      uuid: 50fa2be6-dc14-4197-980d-99a1ebc7e976
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 731b736c-f0a4-417b-a947-b606d58697a2
+  label: null
+  weight: 0
+  layout: herbal_about_us_main
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: about_us-panels_variant-0
+  builder: standard
+page: about_us
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

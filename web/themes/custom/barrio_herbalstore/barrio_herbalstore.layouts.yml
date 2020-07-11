@@ -35,6 +35,15 @@ herbal_product_teaser:
     read_more:
       label: Read more
 
+herbal_about_us_main:
+  label: About us
+  category: Barrio Herbalstore
+  template: layouts/herbal-about-us-main
+  default_region: address
+  regions:
+    content:
+      label: Content
+
 herbal_contact_main:
   label: Contact page main layout
   category: Barrio Herbalstore

@@ -1,0 +1,19 @@
+uuid: e6a78384-e782-4ab4-9997-bc0461e66265
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.profile
+    - field.storage.block_content.field_profile_position
+id: block_content.profile.field_profile_position
+field_name: field_profile_position
+entity_type: block_content
+bundle: profile
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

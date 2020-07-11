@@ -1,0 +1,31 @@
+uuid: a91fe04b-bc32-4b48-8bfd-16bd3b491ae0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_image:b9ff79e5-8f0c-4e4f-a453-b63c18ae8928'
+  module:
+    - block_content
+    - system
+  theme:
+    - barrio_herbalstore
+id: contactformheroimage
+theme: barrio_herbalstore
+region: featured_bottom
+weight: 0
+provider: null
+plugin: 'block_content:b9ff79e5-8f0c-4e4f-a453-b63c18ae8928'
+settings:
+  id: 'block_content:b9ff79e5-8f0c-4e4f-a453-b63c18ae8928'
+  label: 'Contact form hero image'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }
