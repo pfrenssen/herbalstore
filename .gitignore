@@ -7,11 +7,11 @@
 /web/profiles/contrib/
 /web/libraries/
 
-
 # Ignore files specific to the current environment.
 /.env
 /behat.yml
 /drush/drush.yml
+/web/sites/*/services.yml
 
 # Ignore sensitive information
 /web/sites/*/settings.php
