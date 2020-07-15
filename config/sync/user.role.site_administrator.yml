@@ -37,6 +37,7 @@ permissions:
   - 'update any gallery block content'
   - 'update any hero_image block content'
   - 'update any image block content'
+  - 'update any profile block content'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view page revisions'
