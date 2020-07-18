@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
 }
 
-/* HOME */
+/* COMPONENTS */
 
 /* Hero image */
 .hero-image {
@@ -21,15 +21,18 @@ body {
   margin: 0;
 }
 
+/* HOME */
+
+/* Hero image */
 .hero-text {
   margin: 0;
-  color: rgb(33, 37, 41);;
+  color: rgb(239, 229, 229);
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
-  background: rgba(33, 37, 41, 0.185);
+  padding: 10px 30px;
+  background: rgba(33, 37, 41, 0.3);
   font-size: 15px;
 }
 
