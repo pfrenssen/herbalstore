@@ -6,6 +6,11 @@
     'profile',
   ]
 %}
+{#
+  Ensure cache tags bubble up since we are not rendering the full {{ content }}.
+  @see https://www.drupal.org/project/drupal/issues/2660002
+#}
+{% set catch_cache = content|render %}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
