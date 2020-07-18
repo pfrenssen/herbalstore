@@ -195,7 +195,8 @@ display:
         menu_name: main
         weight: -49
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
     cache_metadata:
