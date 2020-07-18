@@ -71,3 +71,15 @@ function barrio_herbalstore_theme_suggestions_block_alter(array &$suggestions, a
     array_splice($suggestions, 1, 0, 'block__block_content__bundle__' . $block->bundle());
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function barrio_herbalstore_preprocess_block(&$variables) {
+  // Ensure the facet block showing categories is invalidated whenever the
+  // categories change.
+  $plugin_id = $variables['plugin_id'] ?? NULL;
+  if ($plugin_id === 'facet_block:categorie') {
+    $variables['#cache']['tags'][] = 'taxonomy_term_list';
+  }
+}
