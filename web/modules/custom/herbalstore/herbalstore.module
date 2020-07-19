@@ -1,0 +1,45 @@
+<?php
+
+declare(strict_types = 1);
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\taxonomy\TermInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function herbalstore_form_taxonomy_overview_terms_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Add a column to the taxonomy terms overview that shows how many nodes are
+  // referencing each term.
+  array_splice($form['terms']['#header'], 1, 0, [t('Count')]);
+
+  $term_keys = Element::children($form['terms']);
+  $empty_count = [
+    '#markup' => '',
+    '#type' => 'item',
+  ];
+  foreach ($term_keys as $key) {
+    $term = $form['terms'][$key]['#term'] ?? NULL;
+    if ($term instanceof TermInterface) {
+      // Skip the count if the term has children.
+      foreach ($term_keys as $child_key) {
+        $child_term = $form['terms'][$child_key]['#term'] ?? NULL;
+        if ($child_term instanceof TermInterface) {
+          $parent_id = (int) $child_term->get('parent')->target_id ?? 0;
+          if ($parent_id === (int) $term->id()) {
+            array_splice($form['terms'][$key], 1, 0, [$empty_count]);
+            continue 2;
+          }
+        }
+      }
+      $count = \Drupal::database()->query('SELECT COUNT(*) FROM {taxonomy_index} WHERE tid = :tid', [':tid' => $term->id()])->fetchField();
+
+      $count_element = [
+        '#markup' => $count,
+        '#type' => 'item',
+      ];
+      array_splice($form['terms'][$key], 1, 0, [$count_element]);
+    }
+  }
+}
