@@ -11,6 +11,7 @@
     ],
     "require": {
         "php": "^7.2",
+        "composer/composer": "^1.9",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/admin_toolbar": "^2.3",
@@ -36,7 +37,6 @@
     },
     "require-dev": {
         "ext-json": "*",
-        "composer/composer": "^1.9",
         "drupal/default_content": "^1.0@alpha",
         "drupal/drupal-extension": "~4.0",
         "lovers-of-behat/screenshot-extension": "dev-master",
