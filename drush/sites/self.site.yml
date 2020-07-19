@@ -12,3 +12,9 @@ staging:
   user: pocomas
   root: /home/pocomas/domains/zonnedauw.pocomas.be/herbalstore/web
   uri: http://zonnedauw.pocomas.be
+
+production:
+  host: gezondheidzonnedauw.be
+  user: zon
+  root: /home/zon/domains/gezondheidzonnedauw.be/herbalstore/web
+  uri: http://www.gezondheidzonnedauw.be
