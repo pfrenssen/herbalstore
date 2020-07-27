@@ -10,10 +10,10 @@ git pull
 ./vendor/bin/robo dev:setup
 
 # Copy the database.
-./vendor/bin/drush sql:sync @staging @self --yes
+./vendor/bin/drush sql:sync @production @self --yes
 
 # Copy the files and images.
-./vendor/bin/drush rsync @staging:%files @self:%files --yes
+./vendor/bin/drush rsync @production:%files @self:%files --yes
 
 # Perform updates.
 ./vendor/bin/drush updatedb --yes --no-post-updates
