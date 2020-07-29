@@ -1,0 +1,13 @@
+name: zonnedauw
+recipe: drupal8
+config:
+  php: '7.2'
+  webroot: web
+services:
+  appserver:
+    build:
+      - composer install
+tooling:
+  robo:
+    service: appserver
+    cmd: /app/vendor/bin/robo
