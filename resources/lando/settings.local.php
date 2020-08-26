@@ -12,5 +12,6 @@ $databases['default']['default'] = [
 
 $settings['hash_salt'] = md5(getenv('LANDO_HOST_IP'));
 $settings['trusted_host_patterns'][] = '^.*\.lndo\.site$';
+$settings['trusted_host_patterns'][] = '^appserver$';
 $settings['config_sync_directory'] = '../config/sync';
 $settings['file_temp_path'] = '../tmp';

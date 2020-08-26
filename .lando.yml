@@ -9,6 +9,9 @@ services:
     build:
       - composer install
 tooling:
+  behat:
+    service: appserver
+    cmd: /app/vendor/bin/behat
   robo:
     service: appserver
     cmd: /app/vendor/bin/robo
