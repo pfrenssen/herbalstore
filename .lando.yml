@@ -1,6 +1,7 @@
 name: zonnedauw
 recipe: drupal8
 config:
+  drush: false
   php: '7.2'
   webroot: web
 services:
