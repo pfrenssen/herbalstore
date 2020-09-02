@@ -22,6 +22,8 @@ $dynamic_vars = [
   'WEBROOT' => __DIR__ . DIRECTORY_SEPARATOR . 'web',
 ];
 foreach ($dynamic_vars as $name => $value) {
-  $_ENV[$name] = $value;
-  $_SERVER[$name] = $value;
+  if (!isset($_SERVER[$name])) {
+    $_ENV[$name] = $value;
+    $_SERVER[$name] = $value;
+  }
 }
