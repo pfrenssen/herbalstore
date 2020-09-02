@@ -10,7 +10,7 @@ default:
         tags: '~@wip'
   extensions:
     Drupal\MinkExtension:
-      base_url: '${BASE_URL}'
+      base_url: '${BEHAT_BASE_URL}'
       ajax_timeout: 10
       goutte: ~
       javascript_session: 'selenium2'
