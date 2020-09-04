@@ -39,7 +39,7 @@
         "ext-json": "*",
         "drupal/drupal-extension": "~4.0",
         "lovers-of-behat/screenshot-extension": "dev-master",
-        "drupal/core-dev": "^8.8.0"
+        "drupal/core-dev": "^9.0.5"
     },
     "conflict": {
         "drupal/drupal": "*"
