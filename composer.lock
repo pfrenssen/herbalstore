@@ -2447,17 +2447,17 @@
         },
         {
             "name": "drupal/bootstrap_barrio",
-            "version": "5.1.2",
+            "version": "5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
-                "reference": "5.1.2"
+                "reference": "5.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.1.2.zip",
-                "reference": "5.1.2",
-                "shasum": "b525646a047859523396d92fd328a4a325233fe7"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.1.4.zip",
+                "reference": "5.1.4",
+                "shasum": "957a76d18eecfb1062088f22d3ba9ae9b79af240"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -2466,8 +2466,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "5.1.2",
-                    "datestamp": "1597889062",
+                    "version": "5.1.4",
+                    "datestamp": "1603660710",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7815,16 +7815,16 @@
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v4.5.2",
+            "version": "v4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "5f2480a90ab911babc53039835fe78c6fc12646d"
+                "reference": "a716fb03f965dc0846df479e14388b1b4b93d7ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/5f2480a90ab911babc53039835fe78c6fc12646d",
-                "reference": "5f2480a90ab911babc53039835fe78c6fc12646d",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a716fb03f965dc0846df479e14388b1b4b93d7ce",
+                "reference": "a716fb03f965dc0846df479e14388b1b4b93d7ce",
                 "shasum": ""
             },
             "replace": {
@@ -7868,7 +7868,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-08-06T16:22:43+00:00"
+            "time": "2020-10-13T15:38:30+00:00"
         },
         {
             "name": "twig/twig",
