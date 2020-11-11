@@ -15,3 +15,8 @@ tooling:
   robo:
     service: appserver
     cmd: /app/vendor/bin/robo
+  update-drupal:
+    service: appserver
+    description: Performs a Drupal database update.
+    dir: /app
+    cmd: ./vendor/bin/drush deploy --yes
