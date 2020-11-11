@@ -37,8 +37,7 @@
     "require-dev": {
         "ext-json": "*",
         "drupal/drupal-extension": "~4.0",
-        "lovers-of-behat/screenshot-extension": "dev-master",
-        "drupal/core-dev": "^8.8.0"
+        "lovers-of-behat/screenshot-extension": "dev-master"
     },
     "conflict": {
         "drupal/drupal": "*"
