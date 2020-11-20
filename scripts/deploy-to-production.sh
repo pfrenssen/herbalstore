@@ -19,6 +19,7 @@ mkdir -p backups/deploy-$SUFFIX
 ssh pocomas@srv1.pocomas.be 'cd /home/pocomas/domains/zonnedauw.pocomas.be/herbalstore && git pull'
 
 # Update dependencies.
+ssh pocomas@srv1.pocomas.be 'cd /home/pocomas/domains/zonnedauw.pocomas.be/herbalstore && chmod -R u+w ./web/sites/default/'
 ssh pocomas@srv1.pocomas.be 'cd /home/pocomas/domains/zonnedauw.pocomas.be/herbalstore && ./vendor/bin/composer install'
 
 # Perform updates.
