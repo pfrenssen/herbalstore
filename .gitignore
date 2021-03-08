@@ -12,6 +12,7 @@
 /behat.yml
 /drush/drush.yml
 /web/sites/*/services.yml
+/web/stats
 
 # Ignore scaffolded files.
 /web/sites/default/default.services.yml
