@@ -10,6 +10,7 @@ use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Url;
+use Drupal\taxonomy\TermInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -90,20 +91,22 @@ class TaxonomyBreadcrumbFormatter extends FormatterBase implements ContainerFact
     $item = $items->first();
     /** @var \Drupal\taxonomy\TermInterface $term */
     $term = $item->entity;
-    /** @var \Drupal\taxonomy\TermStorageInterface $term_storage */
-    $term_storage = $this->entityTypeManager->getStorage('taxonomy_term');
-    $parents = $term_storage->loadAllParents($term->id());
-    foreach ($parents as $parent) {
-      $url = Url::fromRoute('view.products.page_1', [], ['query' => [
-        'f' => ['categorie:' . $parent->id()]
-      ]]);
-      $link = [
-        '#wrapper_attributes' => ['class' => ['breadcrumb-item']],
-        '#title' => $parent->label(),
-        '#type' => 'link',
-        '#url' => $url,
-      ];
-      array_unshift($element['#items'], $link);
+    if ($term instanceof TermInterface) {
+      /** @var \Drupal\taxonomy\TermStorageInterface $term_storage */
+      $term_storage = $this->entityTypeManager->getStorage('taxonomy_term');
+      $parents = $term_storage->loadAllParents($term->id());
+      foreach ($parents as $parent) {
+        $url = Url::fromRoute('view.products.page_1', [], ['query' => [
+          'f' => ['categorie:' . $parent->id()]
+        ]]);
+        $link = [
+          '#wrapper_attributes' => ['class' => ['breadcrumb-item']],
+          '#title' => $parent->label(),
+          '#type' => 'link',
+          '#url' => $url,
+        ];
+        array_unshift($element['#items'], $link);
+      }
     }
 
     // Prepend the products and home links.
