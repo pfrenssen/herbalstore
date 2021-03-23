@@ -1,20 +1,13 @@
-# Edit or remove this file as needed.
 # Docs at https://github.com/drush-ops/drush/blob/master/examples/example.site.yml
 
-#prod:
-#  host: prod.domain.com
-#  user: www-admin
-#  root: /path/to/drupal
-#  uri: http://www.example.com
-#
 staging:
-  host: zonnedauw.pocomas.be
-  user: pocomas
-  root: /home/pocomas/domains/zonnedauw.pocomas.be/herbalstore/web
-  uri: http://zonnedauw.pocomas.be
+  host: staging.gezondheidzonnedauw.be
+  user: zonnedauw
+  root: /home/zonnedauw/www.gezondheidzonnedauw.be/repo/web
+  uri: http://staging.gezondheidzonnedauw.be
 
 production:
   host: gezondheidzonnedauw.be
-  user: zon
-  root: /home/zon/domains/gezondheidzonnedauw.be/herbalstore/web
-  uri: http://www.gezondheidzonnedauw.be
+  user: zonnedauw
+  root: /home/zonnedauw/www.gezondheidzonnedauw.be/repo/web
+  uri: https://www.gezondheidzonnedauw.be
