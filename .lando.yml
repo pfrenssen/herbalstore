@@ -2,7 +2,7 @@ name: zonnedauw
 recipe: drupal8
 config:
   drush: false
-  php: '7.2'
+  php: '7.4'
   webroot: web
 services:
   appserver:
