@@ -86,6 +86,7 @@ Feature: User authentication
       | admin/content                                               |
       | admin/people                                                |
       | admin/structure                                             |
+      | admin/structure/menu                                        |
       | admin/structure/taxonomy                                    |
       | admin/structure/taxonomy/manage/product_categories/overview |
       | node/add/product                                            |
@@ -98,9 +99,20 @@ Feature: User authentication
 
     Examples:
       | path                                 |
+      | admin/appearance                     |
       | admin/config/content/formats         |
       | admin/config/development/logging     |
       | admin/config/development/performance |
       | admin/config/people/accounts         |
       | admin/config/regional/settings       |
       | admin/config/search/path             |
+      | admin/modules                        |
+      | admin/people/permissions             |
+      | admin/people/roles                   |
+      | admin/reports                        |
+      | admin/structure/block                |
+      | admin/structure/display-modes        |
+      | admin/structure/ds                   |
+      | admin/structure/page_manager         |
+      | admin/structure/types                |
+      | admin/structure/views                |
