@@ -3,6 +3,7 @@ Feature: User authentication
   As a product owner
   I want to make sure users with various roles can only access pages they are authorized to
 
+  @smoke
   Scenario: Anonymous user can see the user login page
     Given I am not logged in
     When I visit "user"
@@ -14,27 +15,36 @@ Feature: User authentication
     And I should not see the text "Uitloggen"
     And I should not see the text "Profiel bekijken"
 
+  @smoke
   Scenario: Unneeded default pages in Drupal are disabled
     Given I am not logged in
     When I go to "node"
     And the response status code should be 404
 
+  @smoke
   Scenario Outline: Anonymous user can access public pages
     Given I am not logged in
     Then I visit "<path>"
 
     Examples:
-      | path                |
-      | /                   |
-      | user/login          |
-      | user/password       |
+      | path                                                 |
+      | /                                                    |
+      | /nl/aanbod                                           |
+      | /nl/aanbod?f[0]=categorie%3A10                       |
+      | /nl/aanbod/voeding/superfoods/biotona-acai-superfood |
+      | /nl/contact                                          |
+      | /nl/over-ons                                         |
+      | /nl/over-ons                                         |
+      | user/login                                           |
+      | user/password                                        |
 
+  @smoke
   Scenario Outline: Anonymous user cannot access restricted pages
     Given I am not logged in
     When I go to "<path>"
     Then I should see the heading "Geen toegang"
     And I should see the text "U heeft geen toegangsrechten voor deze pagina."
-    And the response status code should be 403
+    And I should get an access denied error
 
     Examples:
       | path                  |
@@ -62,7 +72,7 @@ Feature: User authentication
   Scenario Outline: Authenticated user cannot access site administration
     Given I am logged in as a user with the "authenticated" role
     When I go to "<path>"
-    Then the response status code should be 403
+    Then I should get an access denied error
 
     Examples:
       | path                  |
@@ -95,7 +105,7 @@ Feature: User authentication
   Scenario Outline: Administrator cannot access pages intended for site building and development
     Given I am logged in as a user with the "site_administrator" role
     When I go to "<path>"
-    Then the response status code should be 403
+    Then I should get an access denied error
 
     Examples:
       | path                                 |
