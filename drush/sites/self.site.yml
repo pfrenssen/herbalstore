@@ -11,3 +11,5 @@ production:
   user: zonnedauw
   root: /home/zonnedauw/www.gezondheidzonnedauw.be/repo/web
   uri: https://www.gezondheidzonnedauw.be
+  paths:
+    drush-script: /home/zonnedauw/www.gezondheidzonnedauw.be/repo/vendor/bin/drush
