@@ -28,4 +28,3 @@ Feature: Products
     And I should see the link "Online bestellen"
     And I should see the product image
     And I should see the heading "Hoe bestellen"
-
