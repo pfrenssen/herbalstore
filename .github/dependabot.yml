@@ -6,26 +6,3 @@ updates:
     interval: daily
     time: "13:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: drupal/core-composer-scaffold
-    versions:
-    - "> 8.9.13"
-  - dependency-name: drush/drush
-    versions:
-    - 10.4.1
-  - dependency-name: composer/composer
-    versions:
-    - 1.10.21
-  - dependency-name: drupal/admin_toolbar
-    versions:
-    - 3.0.0
-  - dependency-name: drupal/ds
-    versions:
-    - 3.10.0
-    - 3.11.0
-  - dependency-name: drupal/facets
-    versions:
-    - 1.7.0
-  - dependency-name: drupal/core-composer-scaffold
-    versions:
-    - 8.9.13
