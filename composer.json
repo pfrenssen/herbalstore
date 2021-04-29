@@ -18,7 +18,7 @@
         "drupal/block_content_permissions": "^1.7",
         "drupal/bootstrap_barrio": "^5",
         "drupal/core": "^8.9.13",
-        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/core-composer-scaffold": "^9.1.7",
         "drupal/ds": "^3.5",
         "drupal/facets": "^1.4",
         "drupal/mail_login": "^2.2",
