@@ -16,9 +16,15 @@ $ LANDO_PROJECT_NAME=myproject envsubst < resources/lando/.lando.yml > .lando.ym
 $ LANDO_PROJECT_NAME=myproject envsubst < resources/lando/.env > .env
 ```
 
-Start the development environment.
+Start and configure the development environment.
 
 ```
 $ lando start
+$ lando robo dev:setup
 ```
 
+Sync data.
+
+```
+$ ./scripts/update-from-production.sh
+```
