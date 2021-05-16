@@ -1,4 +1,4 @@
-name: zonnedauw
+name: ${LANDO_PROJECT_NAME}
 recipe: drupal8
 config:
   drush: false

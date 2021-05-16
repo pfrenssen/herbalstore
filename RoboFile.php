@@ -18,6 +18,7 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
    */
   public function devSetup() {
     $this->behatGenerateConfig();
+    $this->drupalGenerateConfig();
     $this->drushGenerateConfig();
   }
 
@@ -32,6 +33,18 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
   }
 
   /**
+   * Generates the settings.php configuration file for Drupal.
+   *
+   * The `resources/settings.php` file will be put in place and the environment
+   * variables in it will be replaced.
+   */
+  public function drupalGenerateConfig(): void {
+    $this->taskFilesystemStack()->copy('web/sites/example.settings.local.php', 'web/sites/default/settings.local.php')->run();
+    $this->taskFilesystemStack()->copy('web/sites/default/default.services.yml', 'web/sites/default/services.yml')->run();
+    $this->generateConfig('resources/lando/settings.php', 'web/sites/default/settings.php');
+  }
+
+  /**
    * Generates the drush.yml configuration file.
    *
    * The `drush.yml.dist` file will be copied to `drush.yml` and the environment'
@@ -39,16 +52,6 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
    */
   public function drushGenerateConfig(): void {
     $this->generateConfig('drush/drush.yml.dist', 'drush/drush.yml');
-  }
-
-  /**
-   * Enables development mode.
-   */
-  public function siteDevMode(): void {
-    $this->output()->writeln('$ cp ./web/sites/example.settings.local.php ./web/sites/default/settings.local.php');
-    $this->output()->writeln('$ cp ./web/sites/default/default.services.yml ./web/sites/default/services.yml');
-    $this->output()->writeln('Uncomment the section about settings.local.php in ./web/sites/default/settings.php');
-    $this->output()->writeln('Set `debug = true` in ./web/sites/default/services.yml');
   }
 
   /**
