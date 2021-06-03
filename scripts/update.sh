@@ -1,10 +1,9 @@
 #!/bin/bash -e
+# Executes a Drupal database update. Intended to test the deployment of an
+# update. The latest backup will be restored before the update is executed.
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR/..
-
-# Get the latest code from the github repository.
-git pull
 
 # Install any new or updated dependencies.
 lando composer install
@@ -25,9 +24,7 @@ rm -rf web/sites/default/files
 cp -al userfiles/files web/sites/default/
 
 # Perform updates.
-lando drush updatedb --yes --no-post-updates
-lando drush config:import --yes
-lando drush updatedb --yes
+lando drush deploy --yes
 
 # Clear the cache.
 lando drush cr
