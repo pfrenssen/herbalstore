@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9a50f683a4ccb8444663b36c47b5d3c",
+    "content-hash": "434fca6ad1b224e3e50b594e3c076ee3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3273,20 +3273,20 @@
         },
         {
             "name": "drupal/photoswipe",
-            "version": "2.9.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/photoswipe.git",
-                "reference": "8.x-2.9"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/photoswipe-8.x-2.9.zip",
-                "reference": "8.x-2.9",
-                "shasum": "09ef87b039672fe6989f7555a2d86194d6ab2e9b"
+                "url": "https://ftp.drupal.org/files/projects/photoswipe-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "305a7afbb5e2e15f934c422872dbc60558405905"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "suggest": {
                 "bower-asset/photoswipe": "Required to user drupal/photoswipe."
@@ -3294,8 +3294,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.9",
-                    "datestamp": "1557133985",
+                    "version": "3.0.0",
+                    "datestamp": "1624202376",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9056,5 +9056,5 @@
     "platform-overrides": {
         "php": "7.4.16"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
