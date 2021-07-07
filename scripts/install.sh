@@ -10,6 +10,9 @@ LANDO_PROJECT_NAME=herbalstore envsubst < resources/lando/.env > .env
 # Start Lando.
 lando start
 
+# Ensure folders are writable.
+chmod u+w -R web/sites/default/
+
 # Generate the configuration files.
 lando robo dev:setup
 
