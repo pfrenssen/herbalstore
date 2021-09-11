@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^7.4",
-        "composer/installers": "^1.9",
+        "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3",
         "drupal/allowed_formats": "^1.3",
