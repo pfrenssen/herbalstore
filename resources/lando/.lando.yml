@@ -1,6 +1,7 @@
 name: ${LANDO_PROJECT_NAME}
 recipe: drupal8
 config:
+  composer: 2
   drush: false
   php: '7.4'
   webroot: web
