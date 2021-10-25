@@ -58,8 +58,6 @@ module:
   views: 10
   minimal: 1000
 theme:
-  stable: 0
-  classy: 0
   seven: 0
   bootstrap_barrio: 0
   barrio_herbalstore: 0
