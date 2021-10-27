@@ -1,5 +1,5 @@
 name: ${LANDO_PROJECT_NAME}
-recipe: drupal8
+recipe: drupal9
 config:
   composer: 2
   drush: false
