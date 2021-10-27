@@ -1,2 +1,4 @@
 mail_login_username_title: 'Email address'
 mail_login_username_description: 'Your email address.'
+mail_login_email_only_title: 'Email address'
+mail_login_email_only_description: 'Your email address.'
