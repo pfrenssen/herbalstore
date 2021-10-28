@@ -1,6 +1,6 @@
 # Herbalstore
 
-Website template for herbal stores.
+Website template for herbal stores, built with Drupal 9.
 
 ## Required software
 
