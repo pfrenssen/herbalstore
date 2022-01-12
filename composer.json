@@ -28,7 +28,7 @@
         "drupal/photoswipe": "^3",
         "drupal/responsive_favicons": "^1.5",
         "drupal/search_api": "^1.17",
-        "drush/drush": "^10.0.2",
+        "drush/drush": "^11.0.0",
         "timdiels1/photoswipe": "^4.1",
         "vlucas/phpdotenv": "^5.0",
         "webflo/drupal-finder": "^1.0.0"
