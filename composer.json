@@ -21,7 +21,7 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/ds": "^3.13",
         "drupal/facets": "^1.4",
-        "drupal/mail_login": "^2.2",
+        "drupal/mail_login": "^2.6",
         "drupal/page_manager": "^4.0-beta6",
         "drupal/panels": "^4.4",
         "drupal/pathauto": "^1.8",
@@ -47,6 +47,11 @@
         "sort-packages": true,
         "platform": {
             "php": "7.4.16"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true
         }
     },
     "autoload": {
