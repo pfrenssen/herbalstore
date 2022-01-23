@@ -16,10 +16,6 @@ chmod u+w -R web/sites/default/
 # Generate the configuration files.
 lando robo dev:setup
 
-# Sync the database and files from the latest backup.
-mkdir -p userfiles
-rsync -az --delete desktop.office.lan:/mnt/workspace/sites/zonnedauw/backups/daily.0/ userfiles
-
 # Restore the database.
 zcat userfiles/dump.sql.gz | lando drush sql:cli
 
