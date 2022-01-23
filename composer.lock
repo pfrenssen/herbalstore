@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea99eb5bc162211a2fba5c1841115107",
+    "content-hash": "936bdc68f68f721dc5b98ff045a049ef",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8512,36 +8512,36 @@
         },
         {
             "name": "lovers-of-behat/screenshot-extension",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LoversOfBehat/ScreenshotExtension.git",
-                "reference": "2e201ca937eabccc022340db4ad895d18a6523d1"
+                "reference": "f18f5af58ae91f302818d7868a653e0985788add"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LoversOfBehat/ScreenshotExtension/zipball/2e201ca937eabccc022340db4ad895d18a6523d1",
-                "reference": "2e201ca937eabccc022340db4ad895d18a6523d1",
+                "url": "https://api.github.com/repos/LoversOfBehat/ScreenshotExtension/zipball/f18f5af58ae91f302818d7868a653e0985788add",
+                "reference": "f18f5af58ae91f302818d7868a653e0985788add",
                 "shasum": ""
             },
             "require": {
                 "behat/behat": "^3.4",
-                "php": "~7.1",
-                "symfony/dependency-injection": "^2.1|^3.0|^4.0",
-                "symfony/event-dispatcher": "^2.0|^3.0|^4.0"
+                "php": "^7.1|^8",
+                "symfony/dependency-injection": "^2.1|^3|^4|^5|^6",
+                "symfony/event-dispatcher": "^2|^3|^4|^5|^6"
             },
             "require-dev": {
                 "behat/mink-goutte-driver": "^1.2",
-                "slevomat/coding-standard": "^5.0",
+                "slevomat/coding-standard": "^5|^6|^7",
                 "squizlabs/php_codesniffer": "^3.4"
             },
-            "default-branch": true,
             "type": "behat-extension",
             "autoload": {
                 "psr-4": {
                     "LoversOfBehat\\ScreenshotExtension\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -8553,10 +8553,10 @@
             ],
             "description": "Behat extension to take screenshots of failed steps",
             "support": {
-                "source": "https://github.com/LoversOfBehat/ScreenshotExtension/tree/0.1.1",
-                "issues": "https://github.com/LoversOfBehat/ScreenshotExtension/issues"
+                "issues": "https://github.com/LoversOfBehat/ScreenshotExtension/issues",
+                "source": "https://github.com/LoversOfBehat/ScreenshotExtension/tree/0.2.0"
             },
-            "time": "2020-04-04T21:08:44+00:00"
+            "time": "2021-12-26T20:45:00+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -8930,9 +8930,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "lovers-of-behat/screenshot-extension": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
