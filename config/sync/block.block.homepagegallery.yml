@@ -18,14 +18,14 @@ plugin: 'block_content:7c0b5091-c7c8-47e1-97a3-f23e80866797'
 settings:
   id: 'block_content:7c0b5091-c7c8-47e1-97a3-f23e80866797'
   label: 'Enkele sfeerfoto''s'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

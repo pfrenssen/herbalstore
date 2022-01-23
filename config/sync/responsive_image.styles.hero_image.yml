@@ -10,12 +10,12 @@ id: hero_image
 label: 'Hero image'
 image_style_mappings:
   -
-    breakpoint_id: bootstrap_barrio.extra
-    multiplier: 1x
     image_mapping_type: sizes
     image_mapping:
       sizes: 100vw
       sizes_image_styles:
         - '_original image_'
+    breakpoint_id: bootstrap_barrio.extra
+    multiplier: 1x
 breakpoint_group: bootstrap_barrio
 fallback_image_style: large

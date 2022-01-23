@@ -18,14 +18,14 @@ plugin: 'block_content:04dcd6da-3f14-4b15-95a5-20be11f0831f'
 settings:
   id: 'block_content:04dcd6da-3f14-4b15-95a5-20be11f0831f'
   label: 'About us gallery'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /over-ons
     negate: false
     context_mapping: {  }
+    pages: /over-ons

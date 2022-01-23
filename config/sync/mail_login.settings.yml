@@ -1,10 +1,10 @@
-mail_login_enabled: 1
-mail_login_override_login_labels: 1
-mail_login_username_title: E-mailadres
-mail_login_username_description: 'Uw e-mailadres.'
 _core:
   default_config_hash: SMMHLGfy4YoZHXabFVqh8vjsvM_MzWgohArG_gXaIXQ
 langcode: nl
+mail_login_enabled: 1
 mail_login_email_only: 0
+mail_login_override_login_labels: 1
+mail_login_username_title: E-mailadres
+mail_login_username_description: 'Uw e-mailadres.'
 mail_login_email_only_title: 'Login by email address'
 mail_login_email_only_description: 'You can use your email address only to login.'

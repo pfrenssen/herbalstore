@@ -11,45 +11,45 @@ dependencies:
     - panels
 id: about_us-panels_variant-0
 label: Panels
+weight: 0
 variant: panels_variant
 variant_settings:
+  id: panels_variant
+  label: null
+  weight: 0
+  uuid: 731b736c-f0a4-417b-a947-b606d58697a2
   blocks:
     ac4add0e-b8c1-48bc-8080-e5505cbc8f02:
       id: 'block_content:7df94436-2c3c-49af-89cd-f6d24ddbae9d'
       label: 'About us profile'
-      provider: block_content
       label_display: '0'
+      provider: block_content
       status: true
       info: ''
       view_mode: full
+      context_mapping: {  }
       region: address
       weight: 0
       uuid: ac4add0e-b8c1-48bc-8080-e5505cbc8f02
-      context_mapping: {  }
     204a3280-3c74-4747-aa6e-7e4ed118d51a:
       id: 'block_content:2d122008-6453-4033-a538-2d384fb6e133'
       label: 'About us profile'
-      provider: block_content
       label_display: '0'
+      provider: block_content
       status: true
       info: ''
       view_mode: full
+      context_mapping: {  }
       region: content
       weight: 0
       uuid: 204a3280-3c74-4747-aa6e-7e4ed118d51a
-      context_mapping: {  }
-  id: panels_variant
-  uuid: 731b736c-f0a4-417b-a947-b606d58697a2
-  label: null
-  weight: 0
+  page_title: ''
   layout: herbal_about_us_main
   layout_settings: {  }
-  page_title: ''
+  builder: standard
   storage_type: page_manager
   storage_id: about_us-panels_variant-0
-  builder: standard
 page: about_us
-weight: 0
 selection_criteria: {  }
 selection_logic: and
 static_context: {  }

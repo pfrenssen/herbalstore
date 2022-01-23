@@ -58,13 +58,13 @@ mode: teaser
 content:
   field_product_image:
     type: image
-    weight: 0
-    region: image
     label: hidden
     settings:
-      image_style: medium
       image_link: content
+      image_style: medium
     third_party_settings: {  }
+    weight: 0
+    region: image
 hidden:
   field_body: true
   field_category: true
