@@ -18,14 +18,14 @@ plugin: 'block_content:22e9dc90-25a0-4b32-9ed7-1caf35447cac'
 settings:
   id: 'block_content:22e9dc90-25a0-4b32-9ed7-1caf35447cac'
   label: 'Homepage hero image'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

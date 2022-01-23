@@ -15,7 +15,7 @@ bundle: gallery
 mode: default
 content:
   field_gallery_images:
-    weight: 0
+    type: photoswipe_field_formatter
     label: hidden
     settings:
       photoswipe_node_style_first: ''
@@ -28,7 +28,8 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
-    type: photoswipe_field_formatter
+    weight: 0
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

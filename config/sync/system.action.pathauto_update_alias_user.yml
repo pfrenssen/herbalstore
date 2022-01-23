@@ -2,11 +2,11 @@ uuid: 9a7af88c-141a-4cae-9f3b-cdc5e264d3f5
 langcode: nl
 status: true
 dependencies:
+  module:
+    - pathauto
   enforced:
     module:
       - user
-  module:
-    - pathauto
 _core:
   default_config_hash: x_ok_ZsfA4Xk4B_hVW3O4-3PcNoK57nXLz_Dlletidg
 id: pathauto_update_alias_user

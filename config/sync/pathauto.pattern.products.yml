@@ -12,20 +12,20 @@ pattern: 'aanbod/[node:field_category:entity:parents:join-path]/[node:field_cate
 selection_criteria:
   cedb17a3-2bb3-40b0-af6d-abe6fc7900d9:
     id: node_type
-    bundles:
-      product: product
     negate: false
+    uuid: cedb17a3-2bb3-40b0-af6d-abe6fc7900d9
     context_mapping:
       node: node
-    uuid: cedb17a3-2bb3-40b0-af6d-abe6fc7900d9
+    bundles:
+      product: product
   b9e8e69c-d98f-4f37-8627-7edf23303303:
     id: language
-    langcodes:
-      nl: nl
     negate: false
+    uuid: b9e8e69c-d98f-4f37-8627-7edf23303303
     context_mapping:
       language: 'node:langcode:language'
-    uuid: b9e8e69c-d98f-4f37-8627-7edf23303303
+    langcodes:
+      nl: nl
 selection_logic: and
 weight: -5
 relationships:

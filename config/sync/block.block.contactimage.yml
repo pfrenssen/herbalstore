@@ -18,14 +18,14 @@ plugin: 'block_content:fb7eff34-a698-432c-9d7e-fc03149409b4'
 settings:
   id: 'block_content:fb7eff34-a698-432c-9d7e-fc03149409b4'
   label: 'Contact image'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /contact
     negate: false
     context_mapping: {  }
+    pages: /contact
