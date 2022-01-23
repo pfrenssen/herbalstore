@@ -9,6 +9,7 @@ services:
   appserver:
     build:
       - composer install
+    scanner: false
 tooling:
   behat:
     service: appserver
@@ -21,3 +22,8 @@ tooling:
     description: Performs a Drupal database update.
     dir: /app
     cmd: ./vendor/bin/drush deploy --yes
+  check-config:
+    service: appserver
+    description: Checks that the exported Drupal config is up to date.
+    dir: /app
+    cmd: './vendor/bin/drush config:status 2>&1 | grep "No differences" || echo "Error: config is not up-to-date. Run ''lando drush cex'' and commit changes." && false'

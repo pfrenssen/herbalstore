@@ -40,3 +40,6 @@ lando drush cr
 
 # Index content in the search engine.
 lando drush sapi-i
+
+# Check that config is fully exported.
+lando check-config
