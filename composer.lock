@@ -2532,29 +2532,29 @@
         },
         {
             "name": "drupal/photoswipe",
-            "version": "3.0.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/photoswipe.git",
-                "reference": "3.0.1"
+                "reference": "3.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/photoswipe-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "6800c86e5b85c34fd7ccbd90a5422c8b2958dcbf"
+                "url": "https://ftp.drupal.org/files/projects/photoswipe-3.1.2.zip",
+                "reference": "3.1.2",
+                "shasum": "bf83c4324895334796116de992cddfe3376b4b16"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9.3"
             },
             "suggest": {
-                "bower-asset/photoswipe": "Required to user drupal/photoswipe."
+                "bower-asset/photoswipe": "Required to use drupal/photoswipe. Expected version: ^4"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1644998768",
+                    "version": "3.1.2",
+                    "datestamp": "1648124655",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3622,16 +3622,16 @@
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.16.0",
+            "version": "2.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-feed.git",
-                "reference": "cbd0e10c867a1efa6594164d229d8caf4a4ae4c7"
+                "reference": "1ccb024ea615606ed1d676ba0fa3f22a398f3ac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/cbd0e10c867a1efa6594164d229d8caf4a4ae4c7",
-                "reference": "cbd0e10c867a1efa6594164d229d8caf4a4ae4c7",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/1ccb024ea615606ed1d676ba0fa3f22a398f3ac0",
+                "reference": "1ccb024ea615606ed1d676ba0fa3f22a398f3ac0",
                 "shasum": ""
             },
             "require": {
@@ -3695,7 +3695,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-12-17T09:12:35+00:00"
+            "time": "2022-03-24T10:26:04+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
