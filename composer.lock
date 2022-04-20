@@ -2532,29 +2532,29 @@
         },
         {
             "name": "drupal/photoswipe",
-            "version": "3.0.1",
+            "version": "3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/photoswipe.git",
-                "reference": "3.0.1"
+                "reference": "3.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/photoswipe-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "6800c86e5b85c34fd7ccbd90a5422c8b2958dcbf"
+                "url": "https://ftp.drupal.org/files/projects/photoswipe-3.1.3.zip",
+                "reference": "3.1.3",
+                "shasum": "ab912c1ec6c2202bd4ddd83f61f276f52d0a4433"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9.3"
             },
             "suggest": {
-                "bower-asset/photoswipe": "Required to user drupal/photoswipe."
+                "bower-asset/photoswipe": "Required to use drupal/photoswipe. Expected version: ^4"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1644998768",
+                    "version": "3.1.3",
+                    "datestamp": "1650379678",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
