@@ -2406,29 +2406,29 @@
         },
         {
             "name": "drupal/photoswipe",
-            "version": "3.0.1",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/photoswipe.git",
-                "reference": "3.0.1"
+                "reference": "3.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/photoswipe-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "6800c86e5b85c34fd7ccbd90a5422c8b2958dcbf"
+                "url": "https://ftp.drupal.org/files/projects/photoswipe-3.2.0.zip",
+                "reference": "3.2.0",
+                "shasum": "84b4d077f9e6f7028ac717ecc3bc370d9e33f63a"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9.3"
             },
             "suggest": {
-                "bower-asset/photoswipe": "Required to user drupal/photoswipe."
+                "npm-asset/photoswipe": "Required to use drupal/photoswipe. Expected version: ^4"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1644998768",
+                    "version": "3.2.0",
+                    "datestamp": "1659950844",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2449,12 +2449,12 @@
                     "homepage": "https://www.drupal.org/user/3668491"
                 },
                 {
-                    "name": "ParisLiakos",
-                    "homepage": "https://www.drupal.org/user/1011436"
-                },
-                {
                     "name": "julou",
                     "homepage": "https://www.drupal.org/user/273952"
+                },
+                {
+                    "name": "ParisLiakos",
+                    "homepage": "https://www.drupal.org/user/1011436"
                 },
                 {
                     "name": "sun",
@@ -9098,5 +9098,5 @@
     "platform-overrides": {
         "php": "7.4.16"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
