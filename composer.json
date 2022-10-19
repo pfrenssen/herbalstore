@@ -73,6 +73,11 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
+        "patches": {
+            "drupal/facets": {
+                "Hierarchical facets broken after updating to Facets 2.0.3 - https://www.drupal.org/project/facets/issues/3308792": "https://www.drupal.org/files/issues/2022-10-19/3308792-2.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
