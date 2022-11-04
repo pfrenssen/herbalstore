@@ -1,6 +1,6 @@
 {
     "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "description": "Project template for Drupal 9 projects with composer",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^7.4 || ^8.0",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3",
@@ -46,7 +46,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.4.16"
+            "php": "8.0"
         },
         "allow-plugins": {
             "composer/installers": true,
