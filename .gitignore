@@ -15,6 +15,9 @@
 /web/sites/*/services.yml
 /web/stats
 
+# Ignore user files.
+/userfiles
+
 # Ignore scaffolded files.
 /web/sites/default/default.services.yml
 /web/sites/default/default.settings.php
