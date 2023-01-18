@@ -1,15 +1,27 @@
 name: ${LANDO_PROJECT_NAME}
 recipe: drupal9
 config:
-  composer: 2
+  config:
+    php: resources/lando/php.ini
+  composer_version: 2
   drush: false
   php: '8.0'
   webroot: web
+  xdebug: off
 services:
   appserver:
     build:
       - composer install
     scanner: false
+    overrides:
+      environment:
+        XDEBUG_CONFIG:
+        XDEBUG_MODE:
+        PHP_IDE_CONFIG: "serverName=${LANDO_PROJECT_NAME}.lndo.site"
+        XDEBUG_SESSION_START: lando
+      extra_hosts:
+        - "host.docker.internal:host-gateway"
+
 tooling:
   behat:
     service: appserver
@@ -27,3 +39,18 @@ tooling:
     description: Checks that the exported Drupal config is up to date.
     dir: /app
     cmd: './vendor/bin/drush config:status 2>&1 | grep "No differences" || (echo "Error: config is not up-to-date. Run ''lando drush cex'' and commit changes." && false)'
+  xdebug:
+    description: Loads Xdebug in the selected mode. E.g. "lando xdebug develop,debug"
+    cmd:
+      - appserver: /app/resources/lando/xdebug.sh
+    user: root
+  xdebug-on:
+    description: Turns on Xdebug.
+    cmd:
+      - appserver: /app/resources/lando/xdebug.sh debug
+    user: root
+  xdebug-off:
+    description: Turns off Xdebug.
+    cmd:
+      - appserver: /app/resources/lando/xdebug.sh off
+    user: root
