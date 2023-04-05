@@ -4,6 +4,7 @@ config:
   config:
     php: resources/lando/php.ini
   composer_version: 2
+  database: mariadb
   drush: false
   php: '8.0'
   webroot: web
