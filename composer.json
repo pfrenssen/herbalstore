@@ -26,7 +26,7 @@
         "drupal/panels": "^4.4",
         "drupal/pathauto": "^1.8",
         "drupal/photoswipe": "^3",
-        "drupal/responsive_favicons": "^1.5",
+        "drupal/responsive_favicons": "^2.0",
         "drupal/search_api": "^1.17",
         "drush/drush": "^11.0.3",
         "timdiels1/photoswipe": "^4.1",
