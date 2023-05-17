@@ -10,6 +10,6 @@ production:
   host: gezondheidzonnedauw.be
   user: zonnedauw
   root: /home/zonnedauw/www.gezondheidzonnedauw.be/repo/web
-  uri: https://www.gezondheidzonnedauw.be
+  uri: https://gezondheidzonnedauw.be
   paths:
     drush-script: /home/zonnedauw/www.gezondheidzonnedauw.be/repo/vendor/bin/drush

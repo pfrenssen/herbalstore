@@ -6,7 +6,7 @@ config:
   composer_version: 2
   database: mariadb
   drush: false
-  php: '8.0'
+  php: '8.1'
   webroot: web
   xdebug: off
 services:
