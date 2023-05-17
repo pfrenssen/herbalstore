@@ -8,3 +8,8 @@ mail_login_username_title: E-mailadres
 mail_login_username_description: 'Uw e-mailadres.'
 mail_login_email_only_title: 'Login by email address'
 mail_login_email_only_description: 'You can use your email address only to login.'
+mail_login_password_reset_username_title: 'Username or email address'
+mail_login_password_reset_username_description: 'Password reset instructions will be sent to your registered email address.'
+mail_login_password_reset_email_only_title: 'Email address'
+mail_login_password_reset_email_only_description: 'Password reset instructions will be sent to your registered email address.'
+mail_login_case_sensitive: 1
