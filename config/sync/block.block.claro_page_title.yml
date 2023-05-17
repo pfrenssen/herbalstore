@@ -1,20 +1,20 @@
-uuid: 824ef87d-1347-4a77-a82a-12662326a966
-langcode: nl
+uuid: df43c0ce-597f-4e92-a668-4d6c67dc13bc
+langcode: en
 status: true
 dependencies:
   theme:
-    - seven
+    - claro
 _core:
-  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
-id: seven_page_title
-theme: seven
+  default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
+id: claro_page_title
+theme: claro
 region: header
 weight: -30
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: Paginatitel
+  label: 'Page title'
   label_display: '0'
   provider: core
 visibility: {  }
