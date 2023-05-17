@@ -63,7 +63,7 @@ module:
   views: 10
   minimal: 1000
 theme:
-  seven: 0
   bootstrap_barrio: 0
   barrio_herbalstore: 0
+  claro: 0
 profile: minimal
