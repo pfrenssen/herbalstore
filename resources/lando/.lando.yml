@@ -1,14 +1,15 @@
 name: ${LANDO_PROJECT_NAME}
 recipe: drupal9
 config:
+  composer_version: 2-latest
   config:
     php: resources/lando/php.ini
-  composer_version: 2
   database: mariadb
   drush: false
-  php: '8.1'
+  php: '8.2'
   webroot: web
   xdebug: off
+
 services:
   appserver:
     build:
@@ -16,17 +17,35 @@ services:
     scanner: false
     overrides:
       environment:
+        # Override XDEBUG_CONFIG to avoid hardcoding the host IP.
+        # Todo Remove when Lando supports host.docker.internal.
+        # Ref https://github.com/lando/php/issues/43
         XDEBUG_CONFIG:
         XDEBUG_MODE:
         PHP_IDE_CONFIG: "serverName=${LANDO_PROJECT_NAME}.lndo.site"
         XDEBUG_SESSION_START: lando
       extra_hosts:
+        # Allow XDebug to access the host on linux.
+        # Todo Remove when Lando supports host.docker.internal.
+        # Ref https://github.com/lando/php/issues/43
         - "host.docker.internal:host-gateway"
 
 tooling:
   behat:
     service: appserver
     cmd: /app/vendor/bin/behat
+  check-config:
+    service: appserver
+    description: Checks that the exported Drupal config is up to date.
+    dir: /app
+    cmd: './vendor/bin/drush config:status 2>&1 | grep "No differences" || (echo "Error: config is not up-to-date. Run ''lando drush cex'' and commit changes." && false)'
+  phpcs:
+    service: appserver
+    cmd: /app/vendor/bin/phpcs
+  phpunit:
+    service: appserver
+    description: Runs phpunit tests.
+    cmd: /app/vendor/bin/phpunit -v -c /app/phpunit.xml
   robo:
     service: appserver
     cmd: /app/vendor/bin/robo
@@ -35,11 +54,6 @@ tooling:
     description: Performs a Drupal database update.
     dir: /app
     cmd: ./vendor/bin/drush deploy --yes
-  check-config:
-    service: appserver
-    description: Checks that the exported Drupal config is up to date.
-    dir: /app
-    cmd: './vendor/bin/drush config:status 2>&1 | grep "No differences" || (echo "Error: config is not up-to-date. Run ''lando drush cex'' and commit changes." && false)'
   xdebug:
     description: Loads Xdebug in the selected mode. E.g. "lando xdebug develop,debug"
     cmd:

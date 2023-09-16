@@ -36,7 +36,8 @@
     "require-dev": {
         "ext-json": "*",
         "drupal/drupal-extension": "~4.0",
-        "lovers-of-behat/screenshot-extension": "^0.2"
+        "lovers-of-behat/screenshot-extension": "^0.2",
+        "phpcompatibility/php-compatibility": "dev-develop"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -51,7 +52,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
     "autoload": {
