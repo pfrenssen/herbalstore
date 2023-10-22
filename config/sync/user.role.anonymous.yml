@@ -1,7 +1,12 @@
 uuid: 31be1868-d45a-4f60-b126-59a22ecfe9be
 langcode: nl
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - filter
+    - system
 _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
 id: anonymous

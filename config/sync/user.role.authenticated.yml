@@ -1,7 +1,13 @@
 uuid: c40a80f2-c53a-466a-a50e-1fb243204733
 langcode: nl
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.basic_text
+  module:
+    - filter
+    - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
