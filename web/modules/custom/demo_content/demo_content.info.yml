@@ -2,4 +2,4 @@ name: demo_content
 type: module
 description: Demo content for the herbal store website.
 package: Custom
-core: 8.x
+core_version_requirement: ^9 || ^10
