@@ -16,7 +16,7 @@
         "drupal/admin_toolbar": "^3",
         "drupal/allowed_formats": "^2.0",
         "drupal/block_content_permissions": "^1.7",
-        "drupal/bootstrap_barrio": "~5.1.0",
+        "drupal/bootstrap_barrio": "dev-5.x",
         "drupal/core": "^9",
         "drupal/core-composer-scaffold": "^9",
         "drupal/ds": "^3.13",
@@ -77,6 +77,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
+            "drupal/bootstrap_barrio": {
+                "CKEditor 5 support - https://www.drupal.org/project/bootstrap_barrio/issues/3395926": "https://www.drupal.org/files/issues/2023-10-22/3395926-2.patch"
+            },
             "drupal/facets": {
                 "Hierarchical facets broken after updating to Facets 2.0.3 - https://www.drupal.org/project/facets/issues/3308792": "https://www.drupal.org/files/issues/2022-10-19/3308792-2.patch"
             }

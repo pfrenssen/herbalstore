@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f8aa45e8e0e6f108b8b6be87ad50901",
+    "content-hash": "304b2142e9f13cd8f9a21ed8d6fcf8c9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1487,17 +1487,11 @@
         },
         {
             "name": "drupal/bootstrap_barrio",
-            "version": "5.1.10",
+            "version": "dev-5.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
-                "reference": "5.1.10"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.1.10.zip",
-                "reference": "5.1.10",
-                "shasum": "26222d1519b3e6581c96141750ca9a20ff48e84b"
+                "reference": "c5cc858b1cb08bdfd33bcd30373d79f8f249d5d3"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10",
@@ -1505,12 +1499,15 @@
             },
             "type": "drupal-theme",
             "extra": {
+                "branch-alias": {
+                    "dev-5.x": "5.x-dev"
+                },
                 "drupal": {
-                    "version": "5.1.10",
-                    "datestamp": "1676931875",
+                    "version": "5.1.10+2-dev",
+                    "datestamp": "1688253044",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -9789,6 +9786,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/bootstrap_barrio": 20,
         "phpcompatibility/php-compatibility": 20
     },
     "prefer-stable": true,
