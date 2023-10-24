@@ -10,6 +10,7 @@ use Drupal\Core\Entity\EntityStorageException;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\file\FileInterface;
+use Drupal\file\FileRepositoryInterface;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\TermInterface;
 use Drupal\user\UserInterface;
@@ -37,32 +38,21 @@ class HerbalstoreCommands extends DrushCommands {
   protected const PRODUCT_IMAGE_DESTINATION = 'public://imported-product-images';
 
   /**
-   * The entity type manager.
-   *
-   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
-   */
-  protected $entityTypeManager;
-
-  /**
-   * The file system.
-   *
-   * @var \Drupal\Core\File\FileSystemInterface
-   */
-  protected $fileSystem;
-
-  /**
    * Constructs a HerbalstoreCommands object.
    *
-   * @param EntityTypeManagerInterface $entityTypeManager
+   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
    *   The entity type manager.
    * @param \Drupal\Core\File\FileSystemInterface $fileSystem
    *   The file system.
+   * @param \Drupal\file\FileRepositoryInterface $fileRepository
+   *   The file repository.
    */
-  public function __construct(EntityTypeManagerInterface $entityTypeManager, FileSystemInterface $fileSystem) {
+  public function __construct(
+    protected EntityTypeManagerInterface $entityTypeManager,
+    protected FileSystemInterface $fileSystem,
+    protected FileRepositoryInterface $fileRepository
+  ) {
     parent::__construct();
-
-    $this->entityTypeManager = $entityTypeManager;
-    $this->fileSystem = $fileSystem;
   }
 
   /**
@@ -229,7 +219,7 @@ class HerbalstoreCommands extends DrushCommands {
       $filename = basename($parts['path']);
       $destination = $this->fileSystem->getDestinationFilename('public://imported-product-images/' . $filename, FileSystemInterface::EXISTS_RENAME);
 
-      $file = file_save_data($image, $destination);
+      $file = $this->fileRepository->writeData($image, $destination);
       if (!$file || !$file instanceof FileInterface) {
         $this->logger()->error(sprintf('Could not save image for product "%s". Aborting.', $title));
         return self::EXIT_FAILURE;

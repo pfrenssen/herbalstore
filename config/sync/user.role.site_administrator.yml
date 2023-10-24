@@ -1,7 +1,18 @@
 uuid: 5d68e6d2-8b9f-4f16-b3fd-95570232318a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.page
+    - node.type.product
+    - taxonomy.vocabulary.product_categories
+  module:
+    - block_content_permissions
+    - contextual
+    - node
+    - system
+    - taxonomy
+    - toolbar
 id: site_administrator
 label: 'Site administrator'
 weight: 2
@@ -10,7 +21,6 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access contextual links'
-  - 'access in-place editing'
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'

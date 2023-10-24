@@ -116,7 +116,6 @@ $info = [
 
   // Preview files.
   'preview_library' => 'barrio_herbalstore/color.preview',
-  'preview_html' => 'color/preview.html',
 
   // Attachments.
   '#attached' => [
