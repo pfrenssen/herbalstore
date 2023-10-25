@@ -10,11 +10,11 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3",
-        "drupal/allowed_formats": "^2.0",
+        "drupal/allowed_formats": "^2 || ^3",
         "drupal/block_content_permissions": "^1.7",
         "drupal/bootstrap_barrio": "dev-5.x",
         "drupal/core": "^9",
@@ -25,11 +25,11 @@
         "drupal/page_manager": "^4.0-beta6",
         "drupal/panels": "^4.4",
         "drupal/pathauto": "^1.8",
-        "drupal/photoswipe": "^3",
+        "drupal/photoswipe": "^3 || ^4",
         "drupal/responsive_favicons": "^2.0",
         "drupal/search_api": "^1.17",
         "drupal/upgrade_status": "^4.0",
-        "drush/drush": "^11.0.3",
+        "drush/drush": "^11.0.3 || ^12",
         "timdiels1/photoswipe": "^4.1",
         "vlucas/phpdotenv": "^5.0",
         "webflo/drupal-finder": "^1.0.0"
@@ -48,7 +48,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "8.0.28"
+            "php": "8.1.24"
         },
         "allow-plugins": {
             "composer/installers": true,
