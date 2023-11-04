@@ -81,7 +81,8 @@
                 "CKEditor 5 support - https://www.drupal.org/project/bootstrap_barrio/issues/3395926": "https://www.drupal.org/files/issues/2023-10-22/3395926-2.patch"
             },
             "drupal/facets": {
-                "Hierarchical facets broken after updating to Facets 2.0.3 - https://www.drupal.org/project/facets/issues/3308792": "https://www.drupal.org/files/issues/2022-10-19/3308792-2.patch"
+                "Hierarchical facets broken after updating to Facets 2.0.3 - https://www.drupal.org/project/facets/issues/3308792": "https://www.drupal.org/files/issues/2022-10-19/3308792-2.patch",
+                "Drupal 8.2 compatibility - https://www.drupal.org/project/facets/issues/3336646": "https://www.drupal.org/files/issues/2023-08-16/3336646-function-is-deprecated.patch"
             }
         },
         "drupal-scaffold": {
