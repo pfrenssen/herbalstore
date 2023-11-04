@@ -36,6 +36,7 @@
     },
     "require-dev": {
         "ext-json": "*",
+        "behat/mink-goutte-driver": "^2",
         "drupal/drupal-extension": "^5",
         "lovers-of-behat/screenshot-extension": "^0.2",
         "phpcompatibility/php-compatibility": "dev-develop"
