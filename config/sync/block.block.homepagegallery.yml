@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:7c0b5091-c7c8-47e1-97a3-f23e80866797'
 settings:
   id: 'block_content:7c0b5091-c7c8-47e1-97a3-f23e80866797'
-  label: 'Enkele sfeerfoto''s'
+  label: "Enkele sfeerfoto's"
   label_display: visible
   provider: block_content
   status: true

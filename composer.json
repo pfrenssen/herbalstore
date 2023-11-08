@@ -17,8 +17,8 @@
         "drupal/allowed_formats": "^2 || ^3",
         "drupal/block_content_permissions": "^1.7",
         "drupal/bootstrap_barrio": "dev-5.x",
-        "drupal/core": "^9",
-        "drupal/core-composer-scaffold": "^9",
+        "drupal/core": "~10.0.0",
+        "drupal/core-composer-scaffold": "~10.0.0",
         "drupal/ds": "^3.13",
         "drupal/facets": "^2.0",
         "drupal/mail_login": "^2.6",
@@ -29,14 +29,15 @@
         "drupal/responsive_favicons": "^2.0",
         "drupal/search_api": "^1.17",
         "drupal/upgrade_status": "^4.0",
-        "drush/drush": "^11.0.3 || ^12",
+        "drush/drush": "^12",
         "timdiels1/photoswipe": "^4.1",
         "vlucas/phpdotenv": "^5.0",
         "webflo/drupal-finder": "^1.0.0"
     },
     "require-dev": {
         "ext-json": "*",
-        "drupal/drupal-extension": "~4.0",
+        "behat/mink-goutte-driver": "^2",
+        "drupal/drupal-extension": "^5",
         "lovers-of-behat/screenshot-extension": "^0.2",
         "phpcompatibility/php-compatibility": "dev-develop"
     },
@@ -81,7 +82,8 @@
                 "CKEditor 5 support - https://www.drupal.org/project/bootstrap_barrio/issues/3395926": "https://www.drupal.org/files/issues/2023-10-22/3395926-2.patch"
             },
             "drupal/facets": {
-                "Hierarchical facets broken after updating to Facets 2.0.3 - https://www.drupal.org/project/facets/issues/3308792": "https://www.drupal.org/files/issues/2022-10-19/3308792-2.patch"
+                "Hierarchical facets broken after updating to Facets 2.0.3 - https://www.drupal.org/project/facets/issues/3308792": "https://www.drupal.org/files/issues/2022-10-19/3308792-2.patch",
+                "Drupal 8.2 compatibility - https://www.drupal.org/project/facets/issues/3336646": "https://www.drupal.org/files/issues/2023-08-16/3336646-function-is-deprecated.patch"
             }
         },
         "drupal-scaffold": {
