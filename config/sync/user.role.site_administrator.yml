@@ -9,6 +9,7 @@ dependencies:
   module:
     - block_content_permissions
     - contextual
+    - file
     - node
     - system
     - taxonomy
@@ -31,6 +32,7 @@ permissions:
   - 'create terms in product_categories'
   - 'delete all revisions'
   - 'delete any product content'
+  - 'delete own files'
   - 'delete own product content'
   - 'delete product revisions'
   - 'delete terms in product_categories'
