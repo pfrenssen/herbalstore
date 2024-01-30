@@ -9,7 +9,7 @@ Feature: User authentication
     When I visit "user"
     Then I should see the text "Inloggen"
     And I should see the text "Uw wachtwoord opnieuw instellen"
-    And I should see the text "Gebruikersnaam"
+    And I should see the text "E-mailadres"
     And I should see the text "Wachtwoord"
     But I should not see the text "Nieuw account aanmaken"
     And I should not see the text "Uitloggen"
