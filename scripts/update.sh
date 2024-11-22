@@ -6,21 +6,18 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR/..
 
 # Create environment specific files.
-LANDO_PROJECT_NAME=herbalstore envsubst < resources/lando/.lando.yml > .lando.yml
-LANDO_PROJECT_NAME=herbalstore envsubst < resources/lando/.env > .env
+cp resources/ddev/settings.php web/sites/default/
+cp resources/ddev/behat.yml .
 
-# Rebuild Lando.
-lando rebuild -y
+# Start the development environment.
+ddev start -y
 
 # Install any new or updated dependencies.
-lando composer install
-
-# Regenerate the configuration files since they might have changed.
-lando robo dev:setup
+ddev composer install
 
 # Restore the database.
-lando drush sql-drop -y
-zcat userfiles/dump.sql.gz | lando drush sql:cli
+ddev drush sql-drop -y
+ddev import-db --file=userfiles/dump.sql.gz
 
 # Hardlink the files folder. Remove the existing destination since an empty
 # folder might be scaffolded here.
@@ -33,13 +30,13 @@ mkdir -p tmp/
 mkdir -p private/
 
 # Perform updates.
-lando drush deploy --yes
+ddev drush deploy --yes
 
 # Clear the cache.
-lando drush cr
+ddev drush cr
 
 # Index content in the search engine.
-lando drush sapi-i
+ddev drush sapi-i
 
 # Check that config is fully exported.
-lando check-config
+ddev check-config

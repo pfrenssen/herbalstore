@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Drupal\herbalstore\Plugin\Field\FieldFormatter;
 
@@ -96,9 +96,11 @@ class TaxonomyBreadcrumbFormatter extends FormatterBase implements ContainerFact
       $term_storage = $this->entityTypeManager->getStorage('taxonomy_term');
       $parents = $term_storage->loadAllParents($term->id());
       foreach ($parents as $parent) {
-        $url = Url::fromRoute('view.products.page_1', [], ['query' => [
-          'f' => ['categorie:' . $parent->id()]
-        ]]);
+        $url = Url::fromRoute('view.products.page_1', [], [
+          'query' => [
+            'f' => ['categorie:' . $parent->id()],
+          ],
+        ]);
         $link = [
           '#wrapper_attributes' => ['class' => ['breadcrumb-item']],
           '#title' => $parent->label(),
@@ -114,6 +116,7 @@ class TaxonomyBreadcrumbFormatter extends FormatterBase implements ContainerFact
     foreach ($crumbs as $title => $route) {
       $link = [
         '#wrapper_attributes' => ['class' => ['breadcrumb-item']],
+        // @phpcs:ignore
         '#title' => $this->t($title),
         '#type' => 'link',
         '#url' => Url::fromRoute($route),

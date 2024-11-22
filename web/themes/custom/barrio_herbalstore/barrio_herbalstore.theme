@@ -5,10 +5,10 @@
  * Functions to support theming in the SASS Starterkit subtheme.
  */
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
-use Drupal\block_content\BlockContentInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\block_content\BlockContentInterface;
 use Drupal\node\NodeInterface;
 
 /**
@@ -17,25 +17,24 @@ use Drupal\node\NodeInterface;
  * Replace Barrio setting options with subtheme ones.
  *
  * Example on how to alter theme settings form
- *
  */
 function barrio_herbalstore_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
-  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
-      'bg-primary' => t('Primary'),
-      'bg-secondary' => t('Secondary'),
-      'bg-light' => t('Light'),
-      'bg-dark' => t('Dark'),
-      'bg-white' => t('White'),
-      'bg-transparent' => t('Transparent'),
-  );
-  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
-      'bg-primary' => t('Primary'),
-      'bg-secondary' => t('Secondary'),
-      'bg-light' => t('Light'),
-      'bg-dark' => t('Dark'),
-      'bg-white' => t('White'),
-      'bg-transparent' => t('Transparent'),
-  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
 }
 
 /**
@@ -53,7 +52,7 @@ function barrio_herbalstore_preprocess_page_title(&$variables) {
     // Contact page.
     'page_manager.page_view_contact_contact-panels_variant-0',
     // Products page.
-    'view.products.page_1'
+    'view.products.page_1',
   ];
   $route_name = \Drupal::routeMatch()->getRouteName();
   if (in_array($route_name, $route_names)) {

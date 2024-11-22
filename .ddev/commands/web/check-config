@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Checks that the exported Drupal config is up-to-date.
+## Usage: check-config
+## Example: ddev check-config
+
+./vendor/bin/drush config:status 2>&1 | grep "No differences" || (echo "Error: config is not up-to-date. Run ''ddev drush cex'' and commit changes." && false)

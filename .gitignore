@@ -9,7 +9,6 @@
 
 # Ignore files specific to the current environment.
 /.env
-/.lando.yml
 /behat.yml
 /drush/drush.yml
 /web/sites/*/services.yml
