@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Drupal\herbalstore\Commands;
 
@@ -50,7 +50,7 @@ class HerbalstoreCommands extends DrushCommands {
   public function __construct(
     protected EntityTypeManagerInterface $entityTypeManager,
     protected FileSystemInterface $fileSystem,
-    protected FileRepositoryInterface $fileRepository
+    protected FileRepositoryInterface $fileRepository,
   ) {
     parent::__construct();
   }
@@ -60,6 +60,8 @@ class HerbalstoreCommands extends DrushCommands {
    *
    * @param string $file
    *   The path to the JSON file to import.
+   * @param array $options
+   *   A list of options to pass to the Drush command. See below.
    *
    * @return int
    *   The exit code.
@@ -196,7 +198,8 @@ class HerbalstoreCommands extends DrushCommands {
           }
           try {
             $term->save();
-          } catch (EntityStorageException $e) {
+          }
+          catch (EntityStorageException $e) {
             $this->logger()->error(sprintf('Error occurred saving category "%s". Aborting.', $category));
             return self::EXIT_FAILURE;
           }
@@ -229,7 +232,7 @@ class HerbalstoreCommands extends DrushCommands {
         'title' => $title,
         'type' => 'product',
         'field_body' => [
-          'value' => $description = check_markup($this->sanitizeString($product->description), 'basic_text'),
+          'value' => check_markup($this->sanitizeString($product->description), 'basic_text'),
           'format' => 'basic_text',
         ],
         'field_price' => strtr($this->sanitizeString($product->price), ',', '.'),

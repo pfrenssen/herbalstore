@@ -5,6 +5,9 @@
  * Lists available colors and color schemes for the Bootstrap Barrio theme.
  */
 
+declare(strict_types=1);
+
+// @phpcs:ignore
 $info = [
   // Available colors and color labels used in theme.
   'fields' => [
