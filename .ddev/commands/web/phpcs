@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Runs PHP_CodeSniffer
+## Usage: phpcs
+## Example: ddev phpcs
+
+./vendor/bin/phpcs
