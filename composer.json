@@ -50,6 +50,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "discard-changes": true,
         "sort-packages": true,
         "platform": {
             "php": "8.3.12"
