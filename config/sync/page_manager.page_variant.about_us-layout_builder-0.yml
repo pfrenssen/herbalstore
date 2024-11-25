@@ -1,0 +1,55 @@
+uuid: 92354593-9013-4dc0-b137-378029c2eaf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.about_us
+  content:
+    - 'block_content:profile:2d122008-6453-4033-a538-2d384fb6e133'
+  module:
+    - block_content
+    - ds
+id: about_us-layout_builder-0
+label: 'Layout builder'
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: 08418473-61c3-44a9-9736-44f86eb52ed1
+  sections:
+    -
+      layout_id: ds_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+      components:
+        0f953728-125c-4b89-bff5-f4e013076c79:
+          uuid: 0f953728-125c-4b89-bff5-f4e013076c79
+          region: ds_content
+          configuration:
+            id: 'block_content:2d122008-6453-4033-a538-2d384fb6e133'
+            label: 'About us profile'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: about_us
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

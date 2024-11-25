@@ -49,8 +49,10 @@ function barrio_herbalstore_preprocess_page_title(&$variables) {
 
   // Hide the page title on the following pages.
   $route_names = [
+    // About us page.
+    'page_manager.page_view_about_us_about_us-layout_builder-0',
     // Contact page.
-    'page_manager.page_view_contact_contact-panels_variant-0',
+    'page_manager.page_view_contact_contact-layout_builder-0',
     // Products page.
     'view.products.page_1',
   ];

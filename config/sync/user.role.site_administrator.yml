@@ -3,11 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
+    - block_content.type.gallery
+    - block_content.type.hero_image
+    - block_content.type.image
+    - block_content.type.profile
     - node.type.page
     - node.type.product
     - taxonomy.vocabulary.product_categories
   module:
-    - block_content_permissions
+    - block_content
     - contextual
     - file
     - node
@@ -36,19 +41,19 @@ permissions:
   - 'delete own product content'
   - 'delete product revisions'
   - 'delete terms in product_categories'
+  - 'edit any basic block content'
+  - 'edit any gallery block content'
+  - 'edit any hero_image block content'
+  - 'edit any image block content'
   - 'edit any page content'
   - 'edit any product content'
+  - 'edit any profile block content'
   - 'edit own page content'
   - 'edit own product content'
   - 'edit terms in product_categories'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'revert product revisions'
-  - 'update any basic block content'
-  - 'update any gallery block content'
-  - 'update any hero_image block content'
-  - 'update any image block content'
-  - 'update any profile block content'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view page revisions'

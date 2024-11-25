@@ -1,0 +1,77 @@
+uuid: 988d7e2d-b01f-499a-a64f-f8ead393460f
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.contact
+  content:
+    - 'block_content:basic:46e01931-81ce-4e8c-b732-fd3883c2576d'
+    - 'block_content:basic:5c8c2308-1808-4b26-83e0-8401a99b3db5'
+    - 'block_content:basic:a1145e1d-e74f-4687-a888-e504128c3523'
+  module:
+    - block_content
+  theme:
+    - barrio_herbalstore
+id: contact-layout_builder-0
+label: 'Layout builder'
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: 96e872a7-448b-4efc-b0e0-0ea8f6ea766b
+  sections:
+    -
+      layout_id: herbal_contact_main
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+      components:
+        b16877ce-2446-4442-8576-47dd1904c18f:
+          uuid: b16877ce-2446-4442-8576-47dd1904c18f
+          region: contact
+          configuration:
+            id: 'block_content:a1145e1d-e74f-4687-a888-e504128c3523'
+            label: 'Contact information'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 0
+          additional: {  }
+        c6ea3a67-02d5-4abd-873f-a40057e897be:
+          uuid: c6ea3a67-02d5-4abd-873f-a40057e897be
+          region: open_hours
+          configuration:
+            id: 'block_content:46e01931-81ce-4e8c-b732-fd3883c2576d'
+            label: Openingsuren
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 0
+          additional: {  }
+        fd5e9559-4a2b-4072-9e82-8f50247e7077:
+          uuid: fd5e9559-4a2b-4072-9e82-8f50247e7077
+          region: map
+          configuration:
+            id: 'block_content:5c8c2308-1808-4b26-83e0-8401a99b3db5'
+            label: Map
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: contact
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

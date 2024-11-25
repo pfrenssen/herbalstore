@@ -9,7 +9,6 @@ dependencies:
     - search_api.server.database
   module:
     - node
-    - search_api
 id: products
 name: Products
 description: ''
