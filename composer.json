@@ -1,16 +1,16 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 9 projects with composer",
+    "name": "pfrenssen/herbalstore",
+    "description": "Drupal project for a herbal store.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "",
-            "role": ""
+            "name": "Pieter Frenssen",
+            "role": "Backend developer"
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.3",
         "bower-asset/photoswipe": "^5",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
@@ -31,7 +31,7 @@
         "drupal/responsive_favicons": "^2.0",
         "drupal/search_api": "^1.17",
         "drupal/upgrade_status": "^4.0",
-        "drush/drush": "^12",
+        "drush/drush": "^13",
         "oomphinc/composer-installers-extender": "^2.0",
         "timdiels1/photoswipe": "^4.1",
         "vlucas/phpdotenv": "^5.0",
@@ -52,7 +52,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "8.1.24"
+            "php": "8.3.12"
         },
         "allow-plugins": {
             "composer/installers": true,
