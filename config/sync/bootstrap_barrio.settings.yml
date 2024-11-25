@@ -1,6 +1,5 @@
 _core:
   default_config_hash: 0vCEAWHuUkmEDidCINdoHdUzLT1x6oAl9W8LRWOjm-I
-langcode: nl
 bootstrap_barrio_library: '0'
 bootstrap_barrio_fluid_container: 0
 bootstrap_barrio_sidebar_position: both
