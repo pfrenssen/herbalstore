@@ -11,6 +11,7 @@
     ],
     "require": {
         "php": "^8.1",
+        "bower-asset/photoswipe": "^5",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3",
@@ -26,11 +27,12 @@
         "drupal/page_manager": "^4.0-beta6",
         "drupal/panels": "^4.4",
         "drupal/pathauto": "^1.8",
-        "drupal/photoswipe": "^3 || ^4",
+        "drupal/photoswipe": "^5",
         "drupal/responsive_favicons": "^2.0",
         "drupal/search_api": "^1.17",
         "drupal/upgrade_status": "^4.0",
         "drush/drush": "^12",
+        "oomphinc/composer-installers-extender": "^2.0",
         "timdiels1/photoswipe": "^4.1",
         "vlucas/phpdotenv": "^5.0",
         "webflo/drupal-finder": "^1.0.0"
@@ -55,8 +57,9 @@
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "oomphinc/composer-installers-extender": true
         }
     },
     "autoload": {
@@ -70,19 +73,15 @@
     "repositories": [
         {
             "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
     "extra": {
         "composer-exit-on-patch-failure": true,
-        "patchLevel": {
-            "drupal/core": "-p2"
-        },
-        "patches": {
-            "drupal/bootstrap_barrio": {
-                "CKEditor 5 support - https://www.drupal.org/project/bootstrap_barrio/issues/3395926": "https://www.drupal.org/files/issues/2023-10-22/3395926-2.patch"
-            }
-        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
@@ -90,11 +89,27 @@
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": [
+                "type:bower-asset",
+                "type:drupal-library",
+                "type:npm-asset"
+            ],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/bootstrap_barrio": {
+                "CKEditor 5 support - https://www.drupal.org/project/bootstrap_barrio/issues/3395926": "https://www.drupal.org/files/issues/2023-10-22/3395926-2.patch"
+            }
         }
     }
 }
