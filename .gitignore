@@ -11,6 +11,7 @@
 /.env
 /behat.yml
 /drush/drush.yml
+/tmp/
 /web/sites/*/services.yml
 /web/stats
 

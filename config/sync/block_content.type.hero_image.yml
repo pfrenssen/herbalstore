@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: hero_image
 label: 'Hero image'
-revision: 0
+revision: false
 description: ''

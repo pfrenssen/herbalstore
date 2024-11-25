@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: Productcategorieën
 vid: product_categories
-description: ''
+description: null
 weight: 0
+new_revision: false

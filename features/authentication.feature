@@ -92,7 +92,6 @@ Feature: User authentication
 
     Examples:
       | path                                                        |
-      | admin/config                                                |
       | admin/content                                               |
       | admin/people                                                |
       | admin/structure                                             |
@@ -110,6 +109,7 @@ Feature: User authentication
     Examples:
       | path                                 |
       | admin/appearance                     |
+      | admin/config                         |
       | admin/config/content/formats         |
       | admin/config/development/logging     |
       | admin/config/development/performance |
