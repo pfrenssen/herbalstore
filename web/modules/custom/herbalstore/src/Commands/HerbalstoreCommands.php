@@ -8,6 +8,7 @@ use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
 use Drupal\Component\Plugin\Exception\PluginNotFoundException;
 use Drupal\Core\Entity\EntityStorageException;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\File\FileExists;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\file\FileInterface;
 use Drupal\file\FileRepositoryInterface;
@@ -220,7 +221,7 @@ class HerbalstoreCommands extends DrushCommands {
       }
       $parts = parse_url($image_url);
       $filename = basename($parts['path']);
-      $destination = $this->fileSystem->getDestinationFilename('public://imported-product-images/' . $filename, FileSystemInterface::EXISTS_RENAME);
+      $destination = $this->fileSystem->getDestinationFilename('public://imported-product-images/' . $filename, FileExists::Rename);
 
       $file = $this->fileRepository->writeData($image, $destination);
       if (!$file || !$file instanceof FileInterface) {
