@@ -17,7 +17,7 @@
         "drupal/admin_toolbar": "^3",
         "drupal/allowed_formats": "^2 || ^3",
         "drupal/block_content_permissions": "^1.7",
-        "drupal/bootstrap_barrio": "^5.1.11",
+        "drupal/bootstrap_barrio": "~5.1.11",
         "drupal/coder": "^8.3",
         "drupal/core": "~10.3.0",
         "drupal/core-composer-scaffold": "~10.3.0",
