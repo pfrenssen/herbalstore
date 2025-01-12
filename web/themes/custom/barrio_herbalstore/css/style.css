@@ -15,7 +15,7 @@ body {
   margin-bottom: 2%;
 }
 
-.hero-image img {
+.hero-image .field--type-image img {
   max-width: 100%;
   height: auto;
   margin: 0;
@@ -301,7 +301,7 @@ article.article-image .block-region-image img {
   margin-bottom: 5px;
 }
 
-.footer .footer-center i {
+.footer .footer-center [class^="icon-"] {
   background-color: #33383b;
   color: #fff;
   font-size: 25px;
