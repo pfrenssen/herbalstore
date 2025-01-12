@@ -301,7 +301,7 @@ article.article-image .block-region-image img {
   margin-bottom: 5px;
 }
 
-.footer .footer-center i {
+.footer .footer-center [class^="icon-"] {
   background-color: #33383b;
   color: #fff;
   font-size: 25px;
