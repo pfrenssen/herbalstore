@@ -30,8 +30,8 @@ $ ./scripts/update.sh
 
 #### PHPStorm server setup
 
-* name: `herbalstore.lndo.site`
-* host: `herbalstore.lndo.site`
+* name: `herbalstore.ddev.site`
+* host: `herbalstore.ddev.site`
 * port: 80
 * debugger: XDebug
 * use path mappings: checked

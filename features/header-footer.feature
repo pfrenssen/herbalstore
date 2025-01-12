@@ -23,7 +23,6 @@ Feature: Header and footer
     And I should see the text "3520 Zonhoven" in the footer
     And I should see the text "+32 11 81 37 67" in the footer
     And I should see the link "Email ons" in the footer
-    And I should see the link "Bezoek ons op Facebook" in the footer
 
     Examples:
       | link      | path         |

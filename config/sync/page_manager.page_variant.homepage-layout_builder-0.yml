@@ -1,0 +1,62 @@
+uuid: 71a80450-56b9-4368-96df-4837954e100c
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+  content:
+    - 'block_content:basic:1172c25c-b832-4087-8cd5-d38ec62b275c'
+    - 'block_content:image:8a32c123-c0a2-4871-8b93-774bedc0800a'
+  module:
+    - block_content
+  theme:
+    - barrio_herbalstore
+id: homepage-layout_builder-0
+label: Homepage
+weight: -10
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: 0aaa13d9-f918-472a-a752-a15401b7c891
+  sections:
+    -
+      layout_id: herbal_2col_article_image
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+      components:
+        d1f75333-90cf-4673-990f-e3303ee21d43:
+          uuid: d1f75333-90cf-4673-990f-e3303ee21d43
+          region: text
+          configuration:
+            id: 'block_content:1172c25c-b832-4087-8cd5-d38ec62b275c'
+            label: 'Homepage introduction text'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 0
+          additional: {  }
+        3682494e-1b01-44eb-bd28-f198875670c8:
+          uuid: 3682494e-1b01-44eb-bd28-f198875670c8
+          region: image
+          configuration:
+            id: 'block_content:8a32c123-c0a2-4871-8b93-774bedc0800a'
+            label: 'Homepage introduction image'
+            label_display: '0'
+            provider: block_content
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: homepage
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

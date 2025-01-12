@@ -18,13 +18,11 @@ content:
     type: photoswipe_field_formatter
     label: hidden
     settings:
-      photoswipe_node_style_first: ''
-      photoswipe_node_style: 510x382
+      photoswipe_thumbnail_style_first: ''
+      photoswipe_thumbnail_style: 510x382
       photoswipe_image_style: ''
-      photoswipe_caption: title
-      photoswipe_caption_custom: ''
-      photoswipe_view_mode: default
       photoswipe_reference_image_field: ''
+      photoswipe_view_mode: default
     third_party_settings:
       ds:
         ds_limit: ''
