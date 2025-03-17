@@ -26,7 +26,7 @@
         "drupal/page_manager": "^4.0-beta6",
         "drupal/pathauto": "^1.8",
         "drupal/photoswipe": "^5",
-        "drupal/responsive_favicons": "^2.0",
+        "drupal/responsive_favicons": "^3",
         "drupal/search_api": "^1.17",
         "drupal/upgrade_status": "^4.0",
         "drush/drush": "^13",
