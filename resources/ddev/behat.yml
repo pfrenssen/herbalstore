@@ -13,7 +13,7 @@ default:
     Drupal\MinkExtension:
       base_url: 'http://web'
       ajax_timeout: 10
-      goutte: ~
+      browserkit_http: ~
       javascript_session: 'selenium2'
       browser_name: 'chrome'
       selenium2:
@@ -36,9 +36,5 @@ default:
         log_out: 'Uitloggen'
         username_field: 'E-mailadres'
         password_field: 'Wachtwoord'
-    LoversOfBehat\ScreenshotExtension:
-      storage:
-        filesystem:
-          path: '../tmp/screenshots'
   formatters:
     progress: ~
