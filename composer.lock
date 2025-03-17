@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a1fd42b92753a866a11c36f9b44c17ab",
+    "content-hash": "950ce8771cbe280da3609f88441512f6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9093,54 +9093,6 @@
                 "source": "https://github.com/instaclick/php-webdriver/tree/1.4.19"
             },
             "time": "2024-03-19T01:58:53+00:00"
-        },
-        {
-            "name": "lovers-of-behat/screenshot-extension",
-            "version": "0.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LoversOfBehat/ScreenshotExtension.git",
-                "reference": "9f5f9c7d10161f1b3f98ed7bcda07a40c9c469c1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LoversOfBehat/ScreenshotExtension/zipball/9f5f9c7d10161f1b3f98ed7bcda07a40c9c469c1",
-                "reference": "9f5f9c7d10161f1b3f98ed7bcda07a40c9c469c1",
-                "shasum": ""
-            },
-            "require": {
-                "behat/behat": "^3.4",
-                "php": "^7.1|^8",
-                "symfony/dependency-injection": "^2.1|^3|^4|^5|^6",
-                "symfony/event-dispatcher": "^2|^3|^4|^5|^6"
-            },
-            "require-dev": {
-                "behat/mink-goutte-driver": "^1.2",
-                "slevomat/coding-standard": "^5|^6|^7",
-                "squizlabs/php_codesniffer": "^3.4"
-            },
-            "type": "behat-extension",
-            "autoload": {
-                "psr-4": {
-                    "LoversOfBehat\\ScreenshotExtension\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Pieter Frenssen",
-                    "email": "pieter@frenssen.be"
-                }
-            ],
-            "description": "Behat extension to take screenshots of failed steps",
-            "support": {
-                "issues": "https://github.com/LoversOfBehat/ScreenshotExtension/issues",
-                "source": "https://github.com/LoversOfBehat/ScreenshotExtension/tree/0.2.1"
-            },
-            "time": "2023-03-25T16:47:00+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
