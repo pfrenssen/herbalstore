@@ -1,0 +1,20 @@
+name: Herbal store
+type: theme
+description: 'Theme for a herbal store'
+core_version_requirement: ^10 || ^11
+base theme: bootstrap_barrio
+
+libraries:
+  - herbalstore_barrio_herbalstore/bootstrap
+  - herbalstore_barrio_herbalstore/global-styling
+
+regions:
+  header: Header
+  messages: "Messages"
+  breadcrumb: Breadcrumb
+  featured_top: 'Featured top'
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  featured_bottom: 'Featured bottom'
+  footer: 'Footer'

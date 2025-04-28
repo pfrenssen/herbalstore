@@ -1,0 +1,86 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+declare(strict_types=1);
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\block_content\BlockContentInterface;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ */
+function barrio_herbalstore_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function barrio_herbalstore_preprocess_page_title(&$variables) {
+  // Hide the page title on product pages.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (!empty($node) && $node instanceof NodeInterface && $node->bundle() === 'product') {
+    $variables['title'] = '';
+  }
+
+  // Hide the page title on the following pages.
+  $route_names = [
+    // About us page.
+    'page_manager.page_view_about_us_about_us-layout_builder-0',
+    // Contact page.
+    'page_manager.page_view_contact_contact-layout_builder-0',
+    // Products page.
+    'view.products.page_1',
+  ];
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if (in_array($route_name, $route_names)) {
+    $variables['title'] = '';
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function barrio_herbalstore_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  // Add per-bundle template suggestions for block content bundles.
+  $block = $variables['elements']['content']['#block_content'] ?? NULL;
+  if ($block && $block instanceof BlockContentInterface) {
+    array_splice($suggestions, 1, 0, 'block__block_content__bundle__' . $block->bundle());
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function barrio_herbalstore_preprocess_block(&$variables) {
+  // Ensure the facet block showing categories is invalidated whenever the
+  // categories change.
+  $plugin_id = $variables['plugin_id'] ?? NULL;
+  if ($plugin_id === 'facet_block:categorie') {
+    $variables['#cache']['tags'][] = 'taxonomy_term_list';
+  }
+}

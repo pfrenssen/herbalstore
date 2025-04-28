@@ -1,0 +1,13 @@
+{% if content %}
+  <div {{ attributes.addClass(['col-lg-4', 'col-sm-6', 'product']) }}>
+    <div class="card h-100">
+      {{ content.image }}
+      <div class="card-body">
+        {{ content.content }}
+      </div>
+      <div class="card-footer">
+        {{ content.read_more }}
+      </div>
+    </div>
+  </div>
+{% endif %}

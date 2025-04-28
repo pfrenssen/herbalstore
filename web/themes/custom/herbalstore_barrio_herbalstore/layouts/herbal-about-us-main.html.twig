@@ -1,0 +1,15 @@
+{% if content %}
+  {{ content }}
+  <div {{ attributes.addClass(['row', 'about-us']) }}>
+    {% if content.profile %}
+      <div class="col about-us-profile">
+        {{ content.profile }}
+      </div>
+    {% endif %}
+    {% if content.description %}
+      <div class="col about-us-description">
+        {{ content.description }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

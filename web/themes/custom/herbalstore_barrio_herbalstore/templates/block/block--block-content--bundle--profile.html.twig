@@ -1,0 +1,44 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'profile',
+  ]
+%}
+{#
+  Ensure cache tags bubble up since we are not rendering the full {{ content }}.
+  @see https://www.drupal.org/project/drupal/issues/2660002
+#}
+{% set catch_cache = content|render %}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <div{{ content_attributes.addClass(['row']) }}>
+      {% if content.field_profile_picture %}
+        <div class="col-12 profile-picture bg-white text-center pt-5">
+          <img src="{{ file_url(content.field_profile_picture['#items'].entity.uri.value) }}" alt="{{ content.field_profile_picture.alt }}" class="img-fluid rounded-circle mb-3 shadow-sm">
+        </div>
+      {% endif %}
+      {% if content.field_profile_name %}
+        <div class="col-12 profile-name bg-white text-center">
+          <h3>{{ content.field_profile_name.0 }}</h3>
+        </div>
+      {% endif %}
+      {% if content.field_profile_position %}
+        <div class="col-12 profile-position bg-white text-center small text-uppercase text-muted">
+          <span class="small text-uppercase text-muted">{{ content.field_profile_position.0 }}</span>
+        </div>
+      {% endif %}
+      {% if content.field_profile_description %}
+        <div class="col-12 profile-description bg-white p-5">
+          {{ content.field_profile_description }}
+        </div>
+      {% endif %}
+    </div>
+  {% endblock %}
+</div>

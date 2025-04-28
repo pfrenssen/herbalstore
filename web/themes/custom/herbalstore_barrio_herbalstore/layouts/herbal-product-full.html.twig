@@ -1,0 +1,17 @@
+{% if content %}
+  {% if content.breadcrumb %}
+    {{ content.breadcrumb }}
+  {% endif %}
+  <div {{ attributes.addClass(['row', 'product']) }}>
+    {% if content.image %}
+      <div {{ region_attributes.image.addClass(['col-md-4', 'product-image']) }}>
+        {{ content.image }}
+      </div>
+    {% endif %}
+    {% if content.content %}
+      <div {{ region_attributes.content.addClass(['col-md-8', 'product-content']) }}>
+        {{ content.content }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
