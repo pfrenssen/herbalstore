@@ -25,7 +25,6 @@
         "drupal/facets": "^3",
         "drupal/mail_login": "^4",
         "drupal/page_manager": "^4.0-beta6",
-        "drupal/panels": "^4.4",
         "drupal/pathauto": "^1.8",
         "drupal/photoswipe": "^5",
         "drupal/responsive_favicons": "^2.0",
