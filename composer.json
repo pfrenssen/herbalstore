@@ -16,7 +16,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3",
         "drupal/allowed_formats": "^2 || ^3",
-        "drupal/bootstrap_barrio": "~5.1.11",
+        "drupal/bootstrap_barrio": "~5.5.20",
         "drupal/coder": "^8.3",
         "drupal/core": "~11.1.0",
         "drupal/core-composer-scaffold": "~11.1.0",
