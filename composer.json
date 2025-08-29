@@ -16,7 +16,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3",
         "drupal/allowed_formats": "^2 || ^3",
-        "drupal/bootstrap_barrio": "~5.1.11",
+        "drupal/bootstrap_barrio": "~5.5.20",
         "drupal/coder": "^8.3",
         "drupal/core": "~11.1.0",
         "drupal/core-composer-scaffold": "~11.1.0",
@@ -105,9 +105,6 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/bootstrap_barrio": {
-                "CKEditor 5 support - https://www.drupal.org/project/bootstrap_barrio/issues/3395926": "https://www.drupal.org/files/issues/2023-10-22/3395926-2.patch"
-            }
         }
     }
 }
