@@ -221,28 +221,28 @@ article.article-image .block-region-image img {
 
 /* CONTACT */
 
-.contact {
+.content .contact {
   margin-top: 20px;
 }
 
-.contact h3 {
+.content .contact h3 {
   font-size: 1.4rem;
   color: #27582B;
   font-weight: bold;
   text-decoration: underline;
 }
 
-.contact  dl dt{
+.content .contact dl dt{
   color: #343a40;
   font-weight: 600;
   font-size: 1.1rem;
 }
 
-.contact .contact-info a {
+.content .contact .contact-info a {
   font-size: 0.9em;
 }
 
-.contact-map iframe {
+.content .contact-map iframe {
 	border: 0;
 	width: 100% !important;
 	height: 400px;
