@@ -13,7 +13,7 @@
         "php": "^8.3",
         "bower-asset/photoswipe": "^5",
         "composer/installers": "^2.0",
-        "cweagans/composer-patches": "^1.7",
+        "cweagans/composer-patches": "^2.0",
         "drupal/admin_toolbar": "^3",
         "drupal/allowed_formats": "^2 || ^3",
         "drupal/bootstrap_barrio": "~5.5.20",
