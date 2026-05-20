@@ -1,0 +1,17 @@
+{
+    "_hash": "8eddbeddc33a0b9f7f67b56234d9256631234fe6f4392fae137972d78ce77500",
+    "patches": {
+        "consolidation/robo": [
+            {
+                "package": "consolidation/robo",
+                "description": "Symfony Console 7.4 compatibility (https://github.com/consolidation/Robo/issues/1183)",
+                "url": "https://github.com/consolidation/robo/commit/b6a46073c19a4b9e7afb3be1ff8013e2ed160243.patch",
+                "sha256": "11facafa4d312b420964fbb0f32ca5e7f22587dd87e148373f6d1207cd2a85e6",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}

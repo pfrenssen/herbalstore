@@ -105,6 +105,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
+            "consolidation/robo": {
+                "Symfony Console 7.4 compatibility (https://github.com/consolidation/Robo/issues/1183)": "https://github.com/consolidation/robo/commit/b6a46073c19a4b9e7afb3be1ff8013e2ed160243.patch"
+            }
         }
     }
 }
