@@ -2,18 +2,19 @@ uuid: a851dc0e-fa14-4c8c-bfa2-0630f22d8214
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.product
   module:
     - language
     - node
 id: products
 label: Products
 type: 'canonical_entities:node'
-pattern: 'aanbod/[node:field_category:entity:parents:join-path]/[node:field_category]/[node:title]'
+pattern: '/aanbod/[node:field_category:entity:parents:join-path]/[node:field_category]/[node:title]'
 selection_criteria:
   cedb17a3-2bb3-40b0-af6d-abe6fc7900d9:
     id: 'entity_bundle:node'
     negate: false
-    uuid: cedb17a3-2bb3-40b0-af6d-abe6fc7900d9
     context_mapping:
       node: node
     bundles:
@@ -21,7 +22,6 @@ selection_criteria:
   b9e8e69c-d98f-4f37-8627-7edf23303303:
     id: language
     negate: false
-    uuid: b9e8e69c-d98f-4f37-8627-7edf23303303
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
