@@ -37,7 +37,7 @@
     "require-dev": {
         "ext-json": "*",
         "behat/mink-browserkit-driver": "^2.2",
-        "drupal/drupal-extension": "^5",
+        "drupal/drupal-extension": "^6",
         "phpcompatibility/php-compatibility": "dev-develop"
     },
     "conflict": {
