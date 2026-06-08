@@ -12,7 +12,6 @@ default:
   extensions:
     Drupal\MinkExtension:
       base_url: 'http://web'
-      ajax_timeout: 10
       browserkit_http: ~
       javascript_session: 'selenium2'
       browser_name: 'chrome'
@@ -23,7 +22,7 @@ default:
       blackbox: ~
       drupal:
         drupal_root: '/var/www/html/web'
-      region_map:
+      regions:
         header: 'nav.navbar-dark'
         footer: 'footer'
       selectors:
