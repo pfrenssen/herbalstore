@@ -42,7 +42,7 @@
   <rule ref="DrupalPractice"/>
 
   <rule ref="PHPCompatibility"/>
-  <config name="testVersion" value="8.3"/>
+  <config name="testVersion" value="8.5"/>
 
   <!-- Require strict types declaration in every PHP file. -->
   <!-- @see https://www.drupal.org/project/coder/issues/3473534 -->
