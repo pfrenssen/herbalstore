@@ -33,6 +33,7 @@ options:
   zoomTitle: Zoom
   arrowPrevTitle: Previous
   arrowNextTitle: Volgende
+  downloadTitle: Download
   indexIndicatorSep: ' / '
   errorMsg: 'The image could not be loaded.'
   preload:
