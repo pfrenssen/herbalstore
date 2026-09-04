@@ -75,60 +75,162 @@ article.article-image .block-region-image img {
   background: white;
 }
 
-.page-view-products .facets-widget-links ul {
-  list-style-type: none;
+/* Facets
+ *
+ * The "list of links" widget renders every result as:
+ *   <li class="facet-item"><a><span class="facet-item__status">(-)</span>
+ *   <span class="facet-item__value"></span><span class="facet-item__count"></span></a>
+ * Children are nested in a <div class="facets-widget-"><ul>, so each extra
+ * `ul` in a selector matches one level deeper in the category hierarchy.
+ */
+
+.page-view-products .block-facets .facets-widget-links {
+  border-radius: .25rem;
+  overflow: hidden;
 }
 
 .page-view-products .block-facets ul {
+  list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
-.page-view-products .block-facets ul ul li {
+.page-view-products .block-facets li.facet-item {
   margin-left: 0;
 }
 
-.page-view-products .block-facets label {
-  width: 100%;
-  display: block;
-  padding: 20px 10px;
+/* Every facet link fills the width of the sidebar and behaves as a bar. */
+.page-view-products .block-facets li.facet-item > a {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  padding: 12px 10px;
+  /* Slightly smaller than the body text so long category names and their
+     result count fit on a single line in the narrow sidebar. */
+  font-size: .9rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  transition: background-color .15s ease-in-out;
 }
 
-.page-view-products .block-facets label.is-active {
-  background-color: #28592c;
+/* Marker showing whether a category can be opened or is already open. It is
+ * drawn with borders rather than a triangle character, because fonts render
+ * those inconsistently (Chrome substitutes a colour emoji for U+25B6). Items
+ * without children keep the transparent marker so all labels stay aligned. */
+.page-view-products .block-facets li.facet-item > a::before {
+  content: "";
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  width: .5em;
+  height: .5em;
+  margin-right: .15em;
+  border: solid transparent;
+  border-width: 0 2px 2px 0;
+  opacity: .9;
 }
 
-.page-view-products .block-facets ul li label {
+.page-view-products .block-facets li.facet-item--collapsed > a::before {
+  border-color: currentColor;
+  transform: translateX(-.1em) rotate(-45deg);
+}
+
+.page-view-products .block-facets li.facet-item--expanded > a::before {
+  border-color: currentColor;
+  transform: translateY(-.1em) rotate(45deg);
+}
+
+.page-view-products .block-facets .facet-item__value {
+  flex: 1 1 auto;
+  /* Only break inside a word when it does not fit on a line of its own. */
+  overflow-wrap: break-word;
+}
+
+.page-view-products .block-facets .facet-item__count {
+  flex: 0 0 auto;
+  margin-left: auto;
+  font-size: .85em;
+  opacity: .7;
+}
+
+/* The "(-)" marker that removes the active filter. */
+.page-view-products .block-facets .facet-item__status {
+  flex: 0 0 auto;
+  font-weight: 700;
+}
+
+.page-view-products .block-facets li.facet-item > a:focus-visible {
+  outline: 2px solid #28592c;
+  outline-offset: -2px;
+}
+
+/* Top level categories: dark bars with light text. */
+.page-view-products .block-facets ul li.facet-item > a {
   background-color: #343a40;
-  border-bottom: 0.25px solid;
+  color: #fff;
+  font-weight: 500;
 }
 
-.page-view-products .block-facets .facets-widget-links ul li.facet-item label span {
+.page-view-products .block-facets ul li.facet-item > a:hover,
+.page-view-products .block-facets ul li.facet-item > a:focus {
+  background-color: #495057;
   color: #fff;
 }
 
-.page-view-products .block-facets ul ul li label {
-  background-color: #D3D3D3;
+/* Second level: light bars with dark text, indented one step. */
+.page-view-products .block-facets ul ul li.facet-item > a {
+  background-color: #d3d3d3;
+  color: #343a40;
+  font-weight: 400;
+  padding-left: 24px;
 }
 
-.page-view-products .block-facets .facets-widget-links ul ul li.facet-item label span {
+.page-view-products .block-facets ul ul li.facet-item > a:hover,
+.page-view-products .block-facets ul ul li.facet-item > a:focus {
+  background-color: #c2c2c2;
   color: #343a40;
 }
 
-.page-view-products .block-facets .facets-widget-links ul ul li.facet-item label.is-active span {
+/* Third and fourth level: progressively lighter and further indented. */
+.page-view-products .block-facets ul ul ul li.facet-item > a {
+  background-color: #e2e2e2;
+  padding-left: 38px;
+}
+
+.page-view-products .block-facets ul ul ul li.facet-item > a:hover,
+.page-view-products .block-facets ul ul ul li.facet-item > a:focus {
+  background-color: #d0d0d0;
+}
+
+.page-view-products .block-facets ul ul ul ul li.facet-item > a {
+  background-color: #eeeeee;
+  padding-left: 52px;
+}
+
+.page-view-products .block-facets ul ul ul ul li.facet-item > a:hover,
+.page-view-products .block-facets ul ul ul ul li.facet-item > a:focus {
+  background-color: #dedede;
+}
+
+/* The selected category, on any level. */
+.page-view-products .block-facets ul li.facet-item > a.is-active,
+.page-view-products .block-facets ul ul li.facet-item > a.is-active,
+.page-view-products .block-facets ul ul ul li.facet-item > a.is-active,
+.page-view-products .block-facets ul ul ul ul li.facet-item > a.is-active {
+  background-color: #28592c;
   color: #fff;
+  font-weight: 600;
 }
 
-.page-view-products .block-facets ul ul ul li label {
-  background-color: #D3D3D3;
-  color: #343a40;
-}
-
-.page-view-products .block-facets ul ul ul ul li label {
-  background-color: #7193b6;
-}
-
-.page-view-products .block-facets ul ul ul ul li label {
-  background-color: #81a7d0;
+.page-view-products .block-facets ul li.facet-item > a.is-active:hover,
+.page-view-products .block-facets ul li.facet-item > a.is-active:focus,
+.page-view-products .block-facets ul ul li.facet-item > a.is-active:hover,
+.page-view-products .block-facets ul ul li.facet-item > a.is-active:focus,
+.page-view-products .block-facets ul ul ul li.facet-item > a.is-active:hover,
+.page-view-products .block-facets ul ul ul li.facet-item > a.is-active:focus,
+.page-view-products .block-facets ul ul ul ul li.facet-item > a.is-active:hover,
+.page-view-products .block-facets ul ul ul ul li.facet-item > a.is-active:focus {
+  background-color: #1e4522;
+  color: #fff;
 }
 
 .products .product {
