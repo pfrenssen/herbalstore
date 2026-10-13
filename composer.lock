@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f142d7db748cfa08faefa0823c18e0c",
+    "content-hash": "ce5dc222d313df42eaf910fc8f64d7e1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4301,11 +4301,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b1f9890d9af53a25c58129e78f0aadd31f90d7f4",
-                "reference": "b1f9890d9af53a25c58129e78f0aadd31f90d7f4",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6155239b488e95d26d1ebd95c6b4bb294d7f09db",
+                "reference": "6155239b488e95d26d1ebd95c6b4bb294d7f09db",
                 "shasum": ""
             },
             "require": {
@@ -4361,7 +4361,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-06T06:15:36+00:00"
+            "time": "2026-10-08T21:09:11+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -9849,6 +9849,54 @@
                 }
             ],
             "time": "2026-07-27T10:28:41+00:00"
+        },
+        {
+            "name": "phpstan/extension-installer",
+            "version": "1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/extension-installer.git",
+                "reference": "85e90b3942d06b2326fba0403ec24fe912372936"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/extension-installer/zipball/85e90b3942d06b2326fba0403ec24fe912372936",
+                "reference": "85e90b3942d06b2326fba0403ec24fe912372936",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "php": "^7.2 || ^8.0",
+                "phpstan/phpstan": "^1.9.0 || ^2.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.2.0",
+                "phpstan/phpstan-strict-rules": "^0.11 || ^0.12 || ^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PHPStan\\ExtensionInstaller\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPStan\\ExtensionInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Composer plugin for automatic installation of PHPStan extensions",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/phpstan/extension-installer/issues",
+                "source": "https://github.com/phpstan/extension-installer/tree/1.4.3"
+            },
+            "time": "2024-09-04T20:21:43+00:00"
         },
         {
             "name": "symfony/browser-kit",

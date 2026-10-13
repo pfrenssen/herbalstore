@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Executes the PHPStan static analyser
+## Usage: phpstan
+## Example: ddev phpstan
+
+./vendor/bin/phpstan "$@"
