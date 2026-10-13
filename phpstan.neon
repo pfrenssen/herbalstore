@@ -1,0 +1,10 @@
+parameters:
+    level: 0
+    paths:
+        - web/modules/custom
+    ignoreErrors:
+        # Ignore warning flagging classes implementing ContainerInjectionInterface.
+        # https://www.drupal.org/docs/develop/development-tools/phpstan/handling-unsafe-usage-of-new-static
+        - "#^Unsafe usage of new static#"
+    # Type declarations are often optimistic in Drupal code but not necessarily correct.
+    treatPhpDocTypesAsCertain: false
