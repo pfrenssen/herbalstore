@@ -121,7 +121,6 @@ Feature: User authentication
       | admin/people/roles                   |
       | admin/reports                        |
       | admin/structure/block                |
-      | admin/structure/display-modes        |
       | admin/structure/ds                   |
       | admin/structure/page_manager         |
       | admin/structure/types                |

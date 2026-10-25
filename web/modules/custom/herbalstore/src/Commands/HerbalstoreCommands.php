@@ -133,8 +133,12 @@ class HerbalstoreCommands extends DrushCommands {
 
     // Retrieve the author ID.
     $author_id = NULL;
-    if (!empty($options['author']) && ($author = user_load_by_name($options['author'])) && $author instanceof UserInterface) {
-      $author_id = $author->id();
+    if (!empty($options['author'])) {
+      $authors = $this->entityTypeManager->getStorage('user')->loadByProperties(['name' => $options['author']]);
+      $author = reset($authors);
+      if ($author instanceof UserInterface) {
+        $author_id = $author->id();
+      }
     }
 
     // Ensure the folder for the imported images exists and is writeable.
@@ -233,7 +237,7 @@ class HerbalstoreCommands extends DrushCommands {
         'title' => $title,
         'type' => 'product',
         'field_body' => [
-          'value' => check_markup($this->sanitizeString($product->description), 'basic_text'),
+          'value' => $this->sanitizeString($product->description),
           'format' => 'basic_text',
         ],
         'field_price' => strtr($this->sanitizeString($product->price), ',', '.'),
