@@ -36,3 +36,10 @@ $ ./scripts/update.sh
 * debugger: XDebug
 * use path mappings: checked
 * map the root project to the absolute path `/app` on the server
+
+## Deployment
+
+Production is deployed by the server-management Ansible repository. It runs on
+nginx, so `web/.htaccess` is not used. Ansible writes
+`web/sites/default/settings.php` and `drush/drush.yml` from its own templates;
+no file in this repository is used for them in production.
