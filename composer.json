@@ -31,7 +31,6 @@
         "drupal/upgrade_status": "^4.0",
         "drush/drush": "^13",
         "timdiels1/photoswipe": "^4.1",
-        "vlucas/phpdotenv": "^5.0",
         "webflo/drupal-finder": "^1.0.0"
     },
     "require-dev": {
@@ -62,14 +61,6 @@
             "symfony/runtime": true,
             "phpstan/extension-installer": true
         }
-    },
-    "autoload": {
-        "files": ["load.environment.php"]
-    },
-    "scripts": {
-        "post-drupal-scaffold-cmd": [
-            "./vendor/bin/robo environment:setup-basic-auth"
-        ]
     },
     "repositories": [
         {
@@ -108,9 +99,6 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "consolidation/robo": {
-                "Symfony Console 7.4 compatibility (https://github.com/consolidation/Robo/issues/1183)": "https://github.com/consolidation/robo/commit/b6a46073c19a4b9e7afb3be1ff8013e2ed160243.patch"
-            }
         }
     }
 }
