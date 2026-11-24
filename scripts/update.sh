@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -ex
 # Executes a Drupal database update. Intended to test the deployment of an
 # update. The latest backup will be restored before the update is executed.
 
