@@ -5,7 +5,9 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR/..
 
-# Create environment specific files.
+# Create environment specific files. The site folder does not exist yet in a
+# fresh clone.
+mkdir -p web/sites/default
 cp resources/ddev/settings.php web/sites/default/
 cp resources/ddev/behat.yml .
 
