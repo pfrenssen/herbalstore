@@ -30,7 +30,7 @@
         "drupal/search_api": "^1.17",
         "drupal/upgrade_status": "^5.0",
         "drush/drush": "^13",
-        "timdiels1/photoswipe": "^4.1",
+        "mnsami/composer-custom-directory-installer": "^2.3",
         "webflo/drupal-finder": "^1.0.0"
     },
     "require-dev": {
@@ -59,7 +59,8 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "symfony/runtime": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "mnsami/composer-custom-directory-installer": true
         }
     },
     "repositories": [

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a68cef5780552369ef3c35870ee54a7",
+    "content-hash": "1b121d13186cd0933093e538cc92d119",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3697,6 +3697,83 @@
                 }
             ],
             "time": "2026-11-09T21:03:37+00:00"
+        },
+        {
+            "name": "mnsami/composer-custom-directory-installer",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mnsami/composer-custom-directory-installer.git",
+                "reference": "66df9d4430c32f191ff12476ddbaea68915f2999"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mnsami/composer-custom-directory-installer/zipball/66df9d4430c32f191ff12476ddbaea68915f2999",
+                "reference": "66df9d4430c32f191ff12476ddbaea68915f2999",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.3",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "composer/installers": "^2.3",
+                "friendsofphp/php-cs-fixer": "^3.75",
+                "phpstan/phpstan": "^2.3",
+                "phpunit/phpunit": "^10.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "Composer\\CustomDirectoryInstaller\\LibraryPlugin",
+                    "Composer\\CustomDirectoryInstaller\\PluginPlugin"
+                ],
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                },
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\CustomDirectoryInstaller\\": "src/Composer/CustomDirectoryInstaller"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mina Nabil Sami",
+                    "email": "mina.nsami@gmail.com"
+                }
+            ],
+            "description": "A composer plugin, to help install packages of different types in custom paths.",
+            "homepage": "https://github.com/mnsami/composer-custom-directory-installer",
+            "keywords": [
+                "composer",
+                "composer-installer",
+                "composer-plugin",
+                "custom-path",
+                "drupal",
+                "installer-paths",
+                "monorepo",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/mnsami/composer-custom-directory-installer/issues",
+                "security": "https://github.com/mnsami/composer-custom-directory-installer/security/policy",
+                "source": "https://github.com/mnsami/composer-custom-directory-installer"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/mnsami",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-10-13T23:16:14+00:00",
+            "published-time": "2026-10-13T23:18:16+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -8522,32 +8599,6 @@
             "time": "2026-11-04T08:27:22+00:00"
         },
         {
-            "name": "timdiels1/photoswipe",
-            "version": "v4.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/timdiels1/PhotoSwipe.git",
-                "reference": "dfc47b5d2198afb9c913c60d91e072fd7ece6060"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/timdiels1/PhotoSwipe/zipball/dfc47b5d2198afb9c913c60d91e072fd7ece6060",
-                "reference": "dfc47b5d2198afb9c913c60d91e072fd7ece6060",
-                "shasum": ""
-            },
-            "type": "drupal-library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Fork for Drupal of the PhotoSwipe repository: JavaScript image gallery for mobile and desktop, modular, framework independent",
-            "homepage": "http://photoswipe.com",
-            "support": {
-                "source": "https://github.com/timdiels1/PhotoSwipe/tree/master"
-            },
-            "time": "2018-04-11T13:16:46+00:00"
-        },
-        {
             "name": "twbs/bootstrap",
             "version": "v5.3.9",
             "source": {
@@ -10597,5 +10648,5 @@
     "platform-overrides": {
         "php": "8.4.22"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }
